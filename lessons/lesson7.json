@@ -1,0 +1,381 @@
+{
+  "num": "7과",
+  "lesson": "7",
+  "title": "여행을 가는 대신에 집에서 쉬는 것이 좋겠네요",
+  "en": "Instead of going on a trip, resting at home would be better",
+  "vocab": [
+    {
+      "theme": "휴식 · Rest",
+      "items": [
+        {
+          "kw": "긴장(하다/되다)",
+          "mean": "to be nervous, tense",
+          "ex": "말하기 시험을 볼 때 너무 긴장이 되어 제대로 대답하지 못했다.",
+          "exen": "I was so nervous during the speaking test that I couldn't answer properly."
+        },
+        {
+          "kw": "늦잠",
+          "mean": "sleeping in, oversleeping",
+          "ex": "나는 오늘 아침에 늦잠을 자서 수업에 지각했다.",
+          "exen": "I overslept this morning and was late to class."
+        },
+        {
+          "kw": "마음대로",
+          "mean": "as one pleases, freely",
+          "ex": "뷔페에 가면 음식을 마음대로 골라 먹을 수 있다.",
+          "exen": "At a buffet you can pick and eat whatever you like."
+        },
+        {
+          "kw": "목욕(하다)",
+          "mean": "to bathe, take a bath",
+          "ex": "따뜻한 물로 목욕을 해서 기분이 상쾌하다.",
+          "exen": "I bathed in warm water, so I feel refreshed."
+        },
+        {
+          "kw": "불안(하다/되다)",
+          "mean": "to be anxious, uneasy",
+          "ex": "집의 가스레인지를 끄지 않고 나온 것 같아 지금 매우 불안해요.",
+          "exen": "I think I left the stove on, so I'm very anxious right now."
+        },
+        {
+          "kw": "상담",
+          "mean": "consultation, counselling",
+          "ex": "나는 선생님께 상담을 받으려고 시간 약속을 했다.",
+          "exen": "I made an appointment to get counselling from my teacher."
+        },
+        {
+          "kw": "수다",
+          "mean": "chatting, chitchat",
+          "ex": "스트레스를 받았을 때 친구와 수다를 떨면 기분이 좋아진다.",
+          "exen": "When stressed, chatting with a friend makes me feel better."
+        },
+        {
+          "kw": "수면",
+          "mean": "sleep",
+          "ex": "밤에 수면이 부족하면 낮에 졸기 쉽다.",
+          "exen": "If you lack sleep at night, it's easy to doze off during the day."
+        },
+        {
+          "kw": "안정되다",
+          "mean": "to become stable, settled, calm",
+          "ex": "걱정되는 일이 있을 때 친구와 이야기하면 마음이 안정된다.",
+          "exen": "When something worries me, talking with a friend calms my mind."
+        },
+        {
+          "kw": "여유",
+          "mean": "leeway, spare time, breathing room",
+          "ex": "지난주에 바쁜 일이 끝나서 요즘은 여유가 좀 있어요.",
+          "exen": "The busy work ended last week, so these days I have some breathing room."
+        },
+        {
+          "kw": "우울(하다)",
+          "mean": "to be depressed, gloomy",
+          "ex": "비도 오고 약속도 취소돼서 기분이 우울해요.",
+          "exen": "It's raining and my plans got cancelled, so I feel gloomy."
+        },
+        {
+          "kw": "치료(하다)",
+          "mean": "to treat (medically), get treatment",
+          "ex": "나는 어제 갑자기 이가 아파서 병원에 가서 치료를 받았다.",
+          "exen": "My tooth suddenly hurt yesterday, so I went to the clinic for treatment."
+        },
+        {
+          "kw": "한숨",
+          "mean": "a sigh",
+          "ex": "정우는 걱정되는 일이 있는 것처럼 한숨을 쉬었다.",
+          "exen": "Jeongwoo sighed as if something was worrying him."
+        },
+        {
+          "kw": "휴식",
+          "mean": "rest, break",
+          "ex": "바쁜 현대인에게는 휴식이 꼭 필요하다.",
+          "exen": "Busy modern people absolutely need rest."
+        },
+        {
+          "kw": "숨을 쉬다",
+          "mean": "to breathe",
+          "ex": "감기 때문에 코가 막혀서 숨을 쉬는 것이 어렵다.",
+          "exen": "My nose is blocked from a cold, so it's hard to breathe."
+        }
+      ]
+    },
+    {
+      "theme": "휴가 · Vacation",
+      "items": [
+        {
+          "kw": "교외",
+          "mean": "outskirts, suburbs (outside the city)",
+          "ex": "이번 주말에는 도시를 떠나서 교외로 드라이브를 가려고 해요.",
+          "exen": "This weekend I plan to leave the city and drive out to the outskirts."
+        },
+        {
+          "kw": "구경거리",
+          "mean": "things to see, attractions",
+          "ex": "이 축제에는 재미있는 구경거리가 많네요.",
+          "exen": "This festival has lots of fun things to see."
+        },
+        {
+          "kw": "기분 전환",
+          "mean": "a change of mood, refreshing one's spirits",
+          "ex": "매일 일만 하다가 기분 전환을 하려고 여행을 다녀왔다.",
+          "exen": "After nothing but work every day, I took a trip for a change of mood."
+        },
+        {
+          "kw": "온천",
+          "mean": "hot spring",
+          "ex": "온천에 가서 온천물로 목욕을 하니까 피곤이 풀렸다.",
+          "exen": "I went to a hot spring and bathed, and my fatigue melted away."
+        },
+        {
+          "kw": "즐기다",
+          "mean": "to enjoy",
+          "ex": "이번 여름에는 조용한 바닷가에서 휴가를 즐기고 싶다.",
+          "exen": "This summer I want to enjoy my vacation at a quiet beach."
+        },
+        {
+          "kw": "피서",
+          "mean": "escaping the summer heat (summer getaway)",
+          "ex": "올 여름에는 산으로 피서를 갈 예정이다.",
+          "exen": "This summer I plan to go to the mountains to escape the heat."
+        },
+        {
+          "kw": "휴양지",
+          "mean": "resort, retreat (place for rest)",
+          "ex": "이번 여행은 관광지가 아니라 휴양지에 가서 푹 쉬고 싶다.",
+          "exen": "For this trip I want to go to a resort rather than a tourist spot and rest well."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-느라고",
+      "tag": "because of doing… (and so something couldn't happen)",
+      "def_ko": "앞의 행동이 뒤에 오는 내용에 대한 원인이나 목적이 됨을 나타내는 연결 어미.",
+      "def_en": "A connective ending showing the preceding action is the cause or reason for the following one — usually explaining why something couldn't be done. Both clauses share the same subject.",
+      "ex": [
+        {
+          "ko": "아까 씻느라고 전화를 못 받았어요.",
+          "en": "I was washing up, so I couldn't answer the phone."
+        },
+        {
+          "ko": "어제 시험공부를 하느라고 늦게 잤어요.",
+          "en": "I was studying for a test, so I went to bed late."
+        },
+        {
+          "ko": "친구 생일 선물을 사느라고 백화점에 다녀왔어요.",
+          "en": "I went to the department store to buy a friend's birthday gift."
+        },
+        {
+          "ko": "동생을 마중하느라고 기차역에 갔다 왔어요.",
+          "en": "I went to the train station to meet my sibling."
+        }
+      ],
+      "info_ko": "동사와 결합한다. 앞뒤 문장의 주어가 같아야 한다.",
+      "info_en": "Combines with verbs. Both clauses must have the same subject, and the result is usually negative (something didn't get done).",
+      "table": {
+        "head": [
+          "받침",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            "먹다",
+            "먹느라고"
+          ],
+          [
+            "받침 X",
+            "오다",
+            "오느라고"
+          ],
+          [
+            "받침 'ㄹ'",
+            "살다",
+            "사느라고"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-자마자",
+      "tag": "as soon as, right after",
+      "def_ko": "앞 내용의 사건이나 상황이 일어나고 곧바로 뒤 내용의 사건이나 상황이 일어남을 나타내는 연결 어미.",
+      "def_en": "A connective ending indicating the second action happens immediately after the first — 'as soon as…'.",
+      "ex": [
+        {
+          "ko": "리사는 밥을 먹자마자 커피를 마셨다.",
+          "en": "As soon as Lisa finished eating, she drank coffee."
+        },
+        {
+          "ko": "대학교를 졸업하자마자 취직하고 싶어요.",
+          "en": "I want to get a job as soon as I graduate from university."
+        },
+        {
+          "ko": "배가 고파서 빵을 사자마자 바로 다 먹었어요.",
+          "en": "I was hungry, so as soon as I bought the bread I ate it all."
+        },
+        {
+          "ko": "월급을 받자마자 새 휴대 전화를 샀어요.",
+          "en": "As soon as I got my paycheck, I bought a new phone."
+        }
+      ],
+      "info_ko": "동사와 결합한다. 받침에 관계없이 '-자마자'를 쓴다.",
+      "info_en": "Combines with verbs. The form is always -자마자, regardless of a final consonant.",
+      "table": {
+        "head": [
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "먹다",
+            "먹자마자"
+          ],
+          [
+            "오다",
+            "오자마자"
+          ],
+          [
+            "졸업하다",
+            "졸업하자마자"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-는 대신에",
+      "tag": "instead of ~ing",
+      "def_ko": "앞에 오는 내용 말고 그와 비슷한 수준의 뒤에 오는 내용으로 바꾸어 함을 나타내는 표현.",
+      "def_en": "An expression showing the second action replaces the first as an alternative — 'instead of ~ing, (do) …'.",
+      "ex": [
+        {
+          "ko": "밤이 너무 늦어서 친구에게 전화하는 대신에 이메일을 보냈어요.",
+          "en": "It was very late at night, so instead of calling my friend I sent an email."
+        },
+        {
+          "ko": "오늘은 너무 피곤해서 음식을 만들어 먹는 대신에 외식하기로 했어요.",
+          "en": "I'm too tired today, so instead of cooking we decided to eat out."
+        },
+        {
+          "ko": "이번 방학에는 고향에 다녀오는 대신에 여행을 할 계획이에요.",
+          "en": "This vacation, instead of going home, I plan to travel."
+        }
+      ],
+      "info_ko": "동사와 결합한다. 현재는 '-는 대신에', 과거는 '-은 대신에'를 쓴다.",
+      "info_en": "Combines with verbs: -는 대신에 for present, -(으)ㄴ 대신에 for a completed action.",
+      "table": {
+        "head": [
+          "형태",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "-는 대신에 · 받침 O",
+            "먹다",
+            "먹는 대신에"
+          ],
+          [
+            "-는 대신에 · 받침 X",
+            "오다",
+            "오는 대신에"
+          ],
+          [
+            "-는 대신에 · 받침 'ㄹ'",
+            "살다",
+            "사는 대신에"
+          ],
+          [
+            "-은 대신에 · 받침 O",
+            "먹다",
+            "먹은 대신에"
+          ],
+          [
+            "-은 대신에 · 받침 X",
+            "오다",
+            "온 대신에"
+          ],
+          [
+            "-은 대신에 · 받침 'ㄹ'",
+            "살다",
+            "산 대신에"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-어야지",
+      "tag": "only if / you have to…  ·  부가 문법 (Additional grammar)",
+      "extra": true,
+      "def_ko": "앞의 내용이 뒤의 내용에 대해 필수적인 조건임을 나타내는 연결 어미.",
+      "def_en": "A connective ending showing the first clause is an essential condition for the second — 'only if you…, can you…'.",
+      "ex": [
+        {
+          "ko": "이 건물은 비밀번호를 알아야지 들어갈 수 있어요.",
+          "en": "You can only enter this building if you know the passcode."
+        },
+        {
+          "ko": "한국에서는 열여덟 살이 넘어야지 운전면허증을 딸 수 있어요.",
+          "en": "In Korea you can only get a driver's licence once you're over eighteen."
+        },
+        {
+          "ko": "중요한 일정은 메모를 해야지 잊어버리지 않아요.",
+          "en": "You have to write down important schedules, or you'll forget them."
+        }
+      ],
+      "info_ko": "동사, 형용사, '이다'와 결합한다.",
+      "info_en": "Combines with verbs, adjectives, and 이다. (Closely related to -어야 from Lesson 3.)",
+      "table": {
+        "head": [
+          "품사",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 (ㅏ, ㅗ)",
+            "오다",
+            "와야지"
+          ],
+          [
+            "동사 (그 외)",
+            "먹다",
+            "먹어야지"
+          ],
+          [
+            "동사 (하다)",
+            "공부하다",
+            "공부해야지"
+          ],
+          [
+            "형용사 (ㅏ, ㅗ)",
+            "작다",
+            "작아야지"
+          ],
+          [
+            "형용사 (그 외)",
+            "길다",
+            "길어야지"
+          ],
+          [
+            "형용사 (하다)",
+            "조용하다",
+            "조용해야지"
+          ],
+          [
+            "(명사)이다 · 받침 O",
+            "학생",
+            "학생이어야지"
+          ],
+          [
+            "(명사)이다 · 받침 X",
+            "의사",
+            "의사여야지"
+          ]
+        ]
+      }
+    }
+  ]
+}
