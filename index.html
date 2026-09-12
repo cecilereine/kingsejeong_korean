@@ -7,7 +7,7 @@
 <!-- Cache busting: whenever styles.css, app.js or quiz.js changes, bump EVERY ?v=
      below to the same new number. GitHub Pages sends cache-control: max-age=600,
      so without this a browser can pair new HTML with a stale script or stylesheet. -->
-<link rel="stylesheet" href="styles.css?v=6">
+<link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
 <div class="wrap">
@@ -40,11 +40,22 @@
       <button class="fc-btn" id="fcStart">🎴 Flashcards</button>
       <button class="qz-btn" id="qzStart">✏️ Quiz</button>
     </div>
-    <div class="hint">Tip: click any vocabulary card to flip it and hide the answer.</div>
     <noscript><div class="hint" style="color:#b45; font-weight:600">Note: search & flashcards need a full browser (Chrome/Safari). The word &amp; grammar list below works everywhere.</div></noscript>
   </div>
 
+  <!-- Deliberately outside the sticky .controls: views change rarely, and on phones the
+       sticky bar is already tall with the search, lesson tabs and buttons. -->
+  <div class="viewbar">
+    <div class="view-switch" id="viewSwitch" role="group" aria-label="View">
+      <button type="button" class="on" data-view="all" aria-pressed="true">전체 · All</button>
+      <button type="button" data-view="grammar" aria-pressed="false">문법 목록 · Grammar list</button>
+    </div>
+    <button type="button" class="expand-all hidden" id="expandAll">모두 펼치기 · Expand all</button>
+    <div class="hint" id="hint">Tip: click any vocabulary card to flip it and hide the answer.</div>
+  </div>
+
   <div id="content"></div>
+  <div id="grammarList" class="hidden"></div>
 
   <footer>Source: 세종학당 한국어 3A (King Sejong Institute)</footer>
 </div>
@@ -122,7 +133,7 @@
   </div>
 </div>
 
-<script src="app.js?v=6"></script>
-<script src="quiz.js?v=6"></script>
+<script src="app.js?v=7"></script>
+<script src="quiz.js?v=7"></script>
 </body>
 </html>

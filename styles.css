@@ -166,6 +166,51 @@
   .fc-btn:hover{filter:brightness(1.05)}
   .hint{font-size:12px;color:var(--muted);margin-top:8px;padding-left:4px}
 
+  /* ---------- view switch + grammar list ---------- */
+  .viewbar{display:flex;align-items:center;flex-wrap:wrap;gap:8px 10px;margin-top:2px}
+  .viewbar .hint{margin-top:0}
+  .view-switch{
+    display:inline-flex;gap:2px;padding:3px;
+    background:#fff;border:1.5px solid var(--line);border-radius:20px;
+  }
+  .view-switch button{
+    border:none;background:none;color:var(--muted);font:inherit;font-size:13px;font-weight:600;
+    padding:6px 14px;border-radius:16px;cursor:pointer;white-space:nowrap;transition:.15s;
+  }
+  .view-switch button:hover{color:var(--magenta-deep)}
+  .view-switch button.on{background:var(--magenta-deep);color:#fff}
+  .expand-all{
+    border:1.5px solid var(--line);background:#fff;color:var(--muted);font:inherit;
+    font-size:12px;font-weight:600;padding:6px 12px;border-radius:16px;cursor:pointer;white-space:nowrap;
+  }
+  .expand-all:hover{border-color:var(--magenta);color:var(--magenta-deep)}
+
+  .gpoint-list{display:flex;flex-direction:column;gap:8px}
+  .gpoint{
+    background:var(--card);border:1px solid var(--line);border-left:5px solid var(--apricot-mid);
+    border-radius:12px;box-shadow:var(--shadow);
+  }
+  .gpoint.extra{border-left-color:var(--magenta)}
+  .gpoint-head{
+    display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 12px;
+    padding:12px 14px;cursor:pointer;list-style:none;border-radius:12px;
+  }
+  .gpoint-head::-webkit-details-marker{display:none}
+  .gpoint-head::before{
+    content:"▸";display:inline-block;color:var(--muted);font-size:12px;transition:transform .15s;
+  }
+  .gpoint[open] > .gpoint-head::before{transform:rotate(90deg)}
+  .gpoint-head:hover .gpoint-form{text-decoration:underline;text-underline-offset:3px}
+  .gpoint-head:focus-visible{outline:2px solid var(--magenta);outline-offset:-2px}
+  .gpoint-form{font-size:17px;font-weight:800;color:var(--apricot-deep)}
+  .gpoint.extra .gpoint-form{color:var(--magenta-deep)}
+  .gpoint-tag{flex:1 1 200px;font-size:14px;color:var(--muted)}
+  .gpoint-badge{
+    font-size:11px;font-weight:700;color:var(--magenta-deep);background:var(--magenta-soft);
+    padding:2px 8px;border-radius:10px;white-space:nowrap;
+  }
+  .gpoint-body{padding:0 16px 6px;border-top:1px dashed var(--line)}
+
   /* ---------- typed-answer quiz ---------- */
   .qz-btn{
     border:none;background:var(--apricot);color:var(--apricot-ink);font-weight:700;font-size:14px;

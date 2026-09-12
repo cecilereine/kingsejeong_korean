@@ -21,7 +21,8 @@ const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => HTML_ENTITIES
 const escapeRegExp = text => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 /* ---------- rendering ---------- */
-const content = $('#content');
+const content     = $('#content');       // All view: vocabulary + full grammar cards
+const grammarList = $('#grammarList');   // Grammar list view: grammar points only
 
 /* The searchable haystack for a card, lowercased and stored in data-search. */
 const searchText = (...parts) => parts.join(' ').toLowerCase();
@@ -60,7 +61,14 @@ function renderTable(table, isResultCell) {
   return `<div class="table-wrap"><table class="conj"><tr>${head}</tr>${rows}</table></div>`;
 }
 
-function renderGrammarCard(entry) {
+const grammarSearchText = entry => searchText(
+  entry.form, entry.tag, entry.def_ko, entry.def_en,
+  entry.ex.map(example => `${example.ko} ${example.en}`).join(' ')
+);
+
+/* Everything below a grammar point's heading — definition, examples, tables.
+   Shared by the full card in the All view and the expandable row in the grammar list. */
+function renderGrammarDetails(entry) {
   const examples = entry.ex.map(example => `
     <li>
       ${example.dia ? `<span class="dia">${esc(example.dia)}</span> ` : ''}${esc(example.ko)}
@@ -72,14 +80,6 @@ function renderGrammarCard(entry) {
     : '';
 
   return `
-    <div class="gcard ${entry.extra ? 'extra' : ''}"
-         data-search="${esc(searchText(
-           entry.form, entry.tag, entry.def_ko, entry.def_en,
-           entry.ex.map(example => `${example.ko} ${example.en}`).join(' ')
-         ))}">
-      <span class="form">${esc(entry.form)}</span>
-      <div class="tagline">${esc(entry.tag)}</div>
-
       <div class="lbl def">정의 · Definition</div>
       <div class="def-txt">
         <span class="ko">${esc(entry.def_ko)}</span>
@@ -91,18 +91,48 @@ function renderGrammarCard(entry) {
 
       <div class="lbl">정보 · Form <span class="lbl-note">— ${esc(entry.info_en)}</span></div>
       ${renderTable(entry.table, LAST_COLUMN)}
-      ${secondTable}
+      ${secondTable}`;
+}
+
+function renderGrammarCard(entry) {
+  return `
+    <div class="gcard ${entry.extra ? 'extra' : ''}" data-search="${esc(grammarSearchText(entry))}">
+      <span class="form">${esc(entry.form)}</span>
+      <div class="tagline">${esc(entry.tag)}</div>
+      ${renderGrammarDetails(entry)}
     </div>`;
+}
+
+/* Tags on extra grammar end in "· 부가 문법 (Additional grammar)". The list shows
+   that as a badge instead, so it's trimmed from the one-line summary. */
+const shortTag = entry => (entry.extra ? entry.tag.replace(/\s*·\s*부가 문법.*$/, '') : entry.tag);
+
+/* One row in the grammar list: form and gloss up front, full details on expand. */
+function renderGrammarPoint(entry) {
+  return `
+    <details class="gpoint ${entry.extra ? 'extra' : ''}" data-search="${esc(grammarSearchText(entry))}">
+      <summary class="gpoint-head">
+        <span class="gpoint-form">${esc(entry.form)}</span>
+        <span class="gpoint-tag en">${esc(shortTag(entry))}</span>
+        ${entry.extra ? '<span class="gpoint-badge">부가 · Extra</span>' : ''}
+      </summary>
+      <div class="gpoint-body">${renderGrammarDetails(entry)}</div>
+    </details>`;
+}
+
+function renderLessonHead(lesson) {
+  return `
+      <div class="lesson-head">
+        <span class="num">${esc(lesson.num)}</span>
+        <h2>${esc(lesson.title)}</h2>
+        <span class="en">${esc(lesson.en)}</span>
+      </div>`;
 }
 
 function renderLesson(lesson) {
   return `
     <section class="lesson" data-lesson="${esc(lesson.lesson)}">
-      <div class="lesson-head">
-        <span class="num">${esc(lesson.num)}</span>
-        <h2>${esc(lesson.title)}</h2>
-        <span class="en">${esc(lesson.en)}</span>
-      </div>
+      ${renderLessonHead(lesson)}
 
       <div class="block-title"><span class="dot v"></span>어휘 · Vocabulary</div>
       ${lesson.vocab.map(group => renderVocabGroup(group, lesson)).join('')}
@@ -112,10 +142,26 @@ function renderLesson(lesson) {
     </section>`;
 }
 
+const NO_RESULT = '<div class="noresult hidden">No matches found. Try another word.</div>';
+
+/* The grammar list view: every lesson's grammar points, without the vocabulary.
+   It reuses the section.lesson[data-lesson] structure of the All view, so the
+   lesson tabs and search filter it through the same code path. */
+function renderGrammarList() {
+  grammarList.innerHTML =
+    LESSONS
+      .filter(lesson => lesson.grammar?.length)
+      .map(lesson => `
+        <section class="lesson" data-lesson="${esc(lesson.lesson)}">
+          ${renderLessonHead(lesson)}
+          <div class="gpoint-list">${lesson.grammar.map(renderGrammarPoint).join('')}</div>
+        </section>`)
+      .join('') + NO_RESULT;
+}
+
 function render() {
-  content.innerHTML =
-    LESSONS.map(renderLesson).join('') +
-    '<div class="noresult hidden" id="noresult">No matches found. Try another word.</div>';
+  content.innerHTML = LESSONS.map(renderLesson).join('') + NO_RESULT;
+  renderGrammarList();
 }
 
 /* This script is loaded as app.js?v=N. Reusing that same query on the lesson
@@ -140,17 +186,43 @@ async function loadLessons() {
   }
 }
 
-/* ---------- search & lesson filtering ---------- */
-const search   = $('#search');
-const tabs     = $('#tabs');
-const enToggle = $('#enToggle');
+/* ---------- search, lesson filtering & view ---------- */
+const search       = $('#search');
+const tabs         = $('#tabs');
+const enToggle     = $('#enToggle');
+const hint         = $('#hint');
+const expandAllBtn = $('#expandAll');
 let activeLesson = 'all';
+let currentView  = 'all';      // 'all' = vocabulary + grammar, 'grammar' = grammar list only
+
+const HINTS = {
+  all:     'Tip: click any vocabulary card to flip it and hide the answer.',
+  grammar: 'Tip: tap a grammar point to open its definition, examples and forms.',
+};
+
+/* Search and the lesson tabs act only on the view that's showing. */
+const viewRoot = () => (currentView === 'grammar' ? grammarList : content);
+
+function setView(nextView) {
+  currentView = nextView;
+  content.classList.toggle('hidden', currentView !== 'all');
+  grammarList.classList.toggle('hidden', currentView !== 'grammar');
+  $$('#viewSwitch button').forEach(button => {
+    const on = button.dataset.view === currentView;
+    button.classList.toggle('on', on);
+    button.setAttribute('aria-pressed', String(on));
+  });
+  hint.textContent = HINTS[currentView];
+  expandAllBtn.classList.toggle('hidden', currentView !== 'grammar');
+  applyFilters();
+}
 
 function applyFilters() {
   const query = search.value.trim().toLowerCase();
+  const root = viewRoot();
   let anyVisible = false;
 
-  $$('section.lesson').forEach(section => {
+  $$('section.lesson', root).forEach(section => {
     if (activeLesson !== 'all' && section.dataset.lesson !== activeLesson) {
       section.classList.add('hidden');
       return;
@@ -175,17 +247,30 @@ function applyFilters() {
     if (sectionHasMatch) anyVisible = true;
   });
 
-  $('#noresult')?.classList.toggle('hidden', anyVisible);
-  highlight(query);
+  $('.noresult', root)?.classList.toggle('hidden', anyVisible);
+  highlight(query, root);
+  syncExpandAll();
 }
 
-function highlight(query) {
-  // Unwrap previous highlights before re-marking.
+function highlight(query, root) {
+  // Unwrap previous highlights everywhere — the hidden view may still hold stale ones.
   $$('mark').forEach(mark => mark.replaceWith(document.createTextNode(mark.textContent)));
   if (!query) return;
 
   const matcher = new RegExp(`(${escapeRegExp(query)})`, 'gi');
-  $$('.vcard:not(.hidden), .gcard:not(.hidden)').forEach(card => markMatches(card, matcher));
+  $$('.vcard:not(.hidden), .gcard:not(.hidden), .gpoint:not(.hidden)', root)
+    .forEach(card => markMatches(card, matcher));
+}
+
+/* Grammar rows on screen: not filtered out by search, and not in a hidden lesson. */
+const visibleGrammarPoints = () => $$('.gpoint', grammarList).filter(point =>
+  !point.classList.contains('hidden') && !point.closest('section.lesson').classList.contains('hidden'));
+
+/* The expand-all button offers whichever action applies to the rows on screen. */
+function syncExpandAll() {
+  const points = visibleGrammarPoints();
+  const allOpen = points.length > 0 && points.every(point => point.open);
+  expandAllBtn.textContent = allOpen ? '모두 접기 · Collapse all' : '모두 펼치기 · Expand all';
 }
 
 function markMatches(node, matcher) {
@@ -406,6 +491,22 @@ enToggle.addEventListener('change', () => {
 content.addEventListener('click', event => {
   event.target.closest('.vcard')?.classList.toggle('flip');
 });
+
+// View switch: the full lesson view, or grammar points only.
+$('#viewSwitch').addEventListener('click', event => {
+  const button = event.target.closest('button[data-view]');
+  if (button) setView(button.dataset.view);
+});
+
+expandAllBtn.addEventListener('click', () => {
+  const points = visibleGrammarPoints();
+  const open = points.some(point => !point.open);
+  points.forEach(point => { point.open = open; });
+  syncExpandAll();
+});
+
+// `toggle` doesn't bubble, so listen in the capture phase to hear every row.
+grammarList.addEventListener('toggle', syncExpandAll, true);
 
 $('#fcStart').addEventListener('click', () => setScope(activeLesson));
 $('#fcScope').addEventListener('click', event => {
