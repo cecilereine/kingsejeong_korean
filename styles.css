@@ -157,6 +157,12 @@
   table.conj th,table.conj td{border:1px solid var(--line);padding:7px 9px;text-align:center}
   table.conj th{background:var(--magenta-soft);font-weight:700;color:var(--magenta-deep)}
   table.conj td.res{color:var(--ink);font-weight:700}
+  /* matrix tables: ending types across, parts of speech down, "base → result" pairs in cells */
+  table.conj.matrix td{padding:8px 14px}
+  table.conj.matrix th[scope="row"]{white-space:nowrap}
+  table.conj .pair{display:block;white-space:nowrap;line-height:1.8;color:var(--muted)}
+  table.conj .pair .arrow{margin:0 2px}
+  table.conj .pair b{color:var(--ink);font-weight:700}
 
   .fc-btn{
     border:none;background:var(--magenta-deep);color:#fff;font-weight:700;font-size:14px;

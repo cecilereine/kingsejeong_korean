@@ -49,16 +49,30 @@ function renderVocabGroup(group, lesson) {
 const LAST_COLUMN  = (index, row) => index === row.length - 1;
 const NO_EMPHASIS  = () => false;
 
+/* A cell is plain text, or — in a matrix table — a list of [base, result] pairs,
+   shown one per line as "base → result" with the result emphasised in place.
+   e.g. a matrix row: ["동사", [["받다", "받아야지"], ["오다", "와야지"]], …] */
+const isPairList = cell => Array.isArray(cell);
+
+const renderPair = ([base, result]) =>
+  `<span class="pair">${esc(base)} <span class="arrow">→</span> <b>${esc(result)}</b></span>`;
+
+const renderCell = cell => (isPairList(cell) ? cell.map(renderPair).join('') : esc(cell));
+
 function renderTable(table, isResultCell) {
+  // A matrix emphasises each result inside its cell, and its first column labels the row.
+  const isMatrix = table.rows.some(row => row.some(isPairList));
+  const emphasise = isMatrix ? NO_EMPHASIS : isResultCell;
+
   const head = table.head.map(heading => `<th>${esc(heading)}</th>`).join('');
   const rows = table.rows.map(row => {
-    const cells = row
-      .map((cell, index) => `<td class="${isResultCell(index, row) ? 'res' : ''}">${esc(cell)}</td>`)
-      .join('');
+    const cells = row.map((cell, index) => (isMatrix && index === 0
+      ? `<th scope="row">${esc(cell)}</th>`
+      : `<td class="${emphasise(index, row) ? 'res' : ''}">${renderCell(cell)}</td>`)).join('');
     return `<tr>${cells}</tr>`;
   }).join('');
 
-  return `<div class="table-wrap"><table class="conj"><tr>${head}</tr>${rows}</table></div>`;
+  return `<div class="table-wrap"><table class="conj${isMatrix ? ' matrix' : ''}"><tr>${head}</tr>${rows}</table></div>`;
 }
 
 const grammarSearchText = entry => searchText(

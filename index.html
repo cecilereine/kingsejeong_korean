@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>세종학당 한국어 3A · Grammar & Vocabulary Lookup</title>
-<!-- Cache busting: whenever styles.css, app.js or quiz.js changes, bump EVERY ?v=
-     below to the same new number. GitHub Pages sends cache-control: max-age=600,
-     so without this a browser can pair new HTML with a stale script or stylesheet. -->
-<link rel="stylesheet" href="styles.css?v=7">
+<!-- Cache busting: whenever styles.css, app.js, quiz.js OR any lessons/*.json changes,
+     bump EVERY ?v= below to the same new number (app.js reuses it for the lesson files).
+     GitHub Pages sends cache-control: max-age=600, so without this a browser can pair
+     new HTML with a stale script, stylesheet, or lesson data. -->
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 <div class="wrap">
@@ -133,7 +134,7 @@
   </div>
 </div>
 
-<script src="app.js?v=7"></script>
-<script src="quiz.js?v=7"></script>
+<script src="app.js?v=9"></script>
+<script src="quiz.js?v=9"></script>
 </body>
 </html>
