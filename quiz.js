@@ -264,23 +264,53 @@ qDirBtn.addEventListener('click', () => {
   startQuiz();
 });
 
-/* Enter checks, then Enter again moves on. Handled in one place and stopped from
-   bubbling — letting the same keypress reach the document handler too would check
-   and advance at once, hiding the feedback. */
+/* Enter checks, then Enter again moves on — one physical press, one action.
+   Two things used to turn a single press into "check AND skip past the feedback":
+   - Typing Korean. Enter pressed while a syllable is still being composed arrives
+     flagged isComposing, and Chrome then sends a second, ordinary Enter keydown for
+     the same press. So a composing Enter waits for the IME to commit the syllable
+     (compositionend) and acts then — which also guarantees the last syllable is in
+     the answer.
+   - Holding the key, which repeats keydown.
+   So after acting, Enter stays disarmed until the key is released. */
+let enterArmed = true;             // false from an Enter that acted until its keyup
+let enterWhileComposing = false;   // Enter pressed mid-syllable; act once it's committed
+
+function onEnter() {
+  if (!enterArmed) return;
+  enterArmed = false;
+  if (answered) nextQuestion(); else checkAnswer();
+}
+
 qInput.addEventListener('keydown', event => {
   if (event.key !== 'Enter') return;
-  event.preventDefault();
   event.stopPropagation();
-  if (answered) nextQuestion(); else checkAnswer();
+  if (event.isComposing) { enterWhileComposing = true; return; }   // let the IME finish first
+  event.preventDefault();
+  onEnter();
+});
+
+qInput.addEventListener('compositionend', () => {
+  if (!enterWhileComposing) return;
+  enterWhileComposing = false;
+  onEnter();
+});
+
+// Listened for on document: by the time the key comes up the input may be hidden.
+document.addEventListener('keyup', event => {
+  if (event.key !== 'Enter') return;
+  enterArmed = true;
+  enterWhileComposing = false;
 });
 
 document.addEventListener('keydown', event => {
   if (!overlay.classList.contains('on')) return;
   if (event.key === 'Escape') { overlay.classList.remove('on'); return; }
-  // Fallback for when focus has left the input; the input handles its own Enter.
-  if (event.key === 'Enter' && event.target !== qInput) {
+  // Fallback for when focus has left the input. A focused button already turns
+  // Enter into its own click, so acting here too would do two things at once.
+  if (event.key === 'Enter' && event.target !== qInput && !event.target.closest('button')) {
     event.preventDefault();
-    if (answered) nextQuestion(); else checkAnswer();
+    onEnter();
   }
 });
 
