@@ -1,0 +1,353 @@
+{
+  "num": "8과",
+  "lesson": "8",
+  "title": "궁금한 것은 인터넷 게시판에 댓글로 남겨 주세요",
+  "en": "Please leave any questions as a comment on the online board",
+  "vocab": [
+    {
+      "theme": "인터넷 · The Internet",
+      "items": [
+        {
+          "kw": "다운로드(하다)",
+          "mean": "to download",
+          "ex": "온라인 수업 교재는 자료실에서 다운로드해 주세요.",
+          "exen": "Please download the online class materials from the resource room."
+        },
+        {
+          "kw": "댓글",
+          "mean": "comment, reply (on a post)",
+          "ex": "궁금한 것은 인터넷 게시판에 댓글로 남겨 주세요.",
+          "exen": "Please leave anything you're curious about as a comment on the online board."
+        },
+        {
+          "kw": "등록(하다)",
+          "mean": "to register, sign up",
+          "ex": "인터넷 카페에서 활동하려면 먼저 회원 등록을 해야 합니다.",
+          "exen": "To be active in an online café, you first have to register as a member."
+        },
+        {
+          "kw": "메시지",
+          "mean": "message",
+          "ex": "내가 지금 전화를 못 받으니까 휴대 전화로 메시지를 보내 줘.",
+          "exen": "I can't take calls right now, so send me a message on my phone."
+        },
+        {
+          "kw": "발전(하다)",
+          "mean": "to develop, advance",
+          "ex": "과학의 발전으로 사람들의 생활이 편리해졌어요.",
+          "exen": "Thanks to the advance of science, people's lives have become convenient."
+        },
+        {
+          "kw": "알리다",
+          "mean": "to inform, let (someone) know",
+          "ex": "선생님이 학생들에게 시험 일정을 알려 주었다.",
+          "exen": "The teacher informed the students of the exam schedule."
+        },
+        {
+          "kw": "업로드(하다)",
+          "mean": "to upload",
+          "ex": "이번 행사 사진은 홈페이지에 업로드했으니 확인해 보세요.",
+          "exen": "I uploaded the photos from this event to the homepage, so please take a look."
+        },
+        {
+          "kw": "에스엔에스(SNS)",
+          "mean": "social media, SNS",
+          "ex": "사람들은 멀리 떨어져 있는 사람과 에스엔에스를 통해서 소식을 주고받는다.",
+          "exen": "People exchange news with those far away through social media."
+        },
+        {
+          "kw": "온라인",
+          "mean": "online",
+          "ex": "저희 회사의 제품은 온라인으로도 주문하실 수 있습니다.",
+          "exen": "You can also order our company's products online."
+        },
+        {
+          "kw": "온라인 강의",
+          "mean": "online lecture, online class",
+          "ex": "요즘은 요가 같은 운동도 온라인 강의로 배울 수 있게 되었다.",
+          "exen": "These days you can even learn exercise like yoga through online lectures."
+        },
+        {
+          "kw": "올리다",
+          "mean": "to post, put up (upload)",
+          "ex": "신입 회원 모집 글은 대한 씨가 홈페이지에 올려 주세요.",
+          "exen": "Daehan, please post the new-member recruitment notice on the homepage."
+        },
+        {
+          "kw": "첨부 파일",
+          "mean": "attached file, attachment",
+          "ex": "자세한 내용은 이메일의 첨부 파일을 열어서 확인해 주시기 바랍니다.",
+          "exen": "For details, please open the attached file in the email."
+        }
+      ]
+    },
+    {
+      "theme": "컴퓨터 · Computer",
+      "items": [
+        {
+          "kw": "기록(하다)",
+          "mean": "to record, write down",
+          "ex": "오늘 회의 내용을 기록해서 파일로 저장했어요.",
+          "exen": "I wrote down today's meeting content and saved it as a file."
+        },
+        {
+          "kw": "녹화(하다)",
+          "mean": "to record (video)",
+          "ex": "리사는 제주도를 여행하는 모습을 녹화해서 여행 동영상을 만들었다.",
+          "exen": "Lisa recorded her Jeju trip and made a travel video."
+        },
+        {
+          "kw": "삭제(하다)",
+          "mean": "to delete",
+          "ex": "필요 없는 파일들은 컴퓨터에서 삭제하는 것이 좋다.",
+          "exen": "It's good to delete unnecessary files from your computer."
+        },
+        {
+          "kw": "영상",
+          "mean": "video, footage",
+          "ex": "리사는 자신의 일상생활을 영상으로 찍어 남기는 것을 좋아한다.",
+          "exen": "Lisa likes filming and keeping her daily life as video."
+        },
+        {
+          "kw": "저장(하다)",
+          "mean": "to save, store",
+          "ex": "아이가 어릴 때 찍은 사진들을 컴퓨터에 저장했어요.",
+          "exen": "I saved the photos taken when my child was little on the computer."
+        },
+        {
+          "kw": "피시(PC)방",
+          "mean": "PC bang, internet café",
+          "ex": "어제는 친구들과 함께 피시방에서 게임을 했어요.",
+          "exen": "Yesterday I played games at a PC bang with my friends."
+        },
+        {
+          "kw": "고장(이) 나다",
+          "mean": "to break down, stop working",
+          "ex": "어제부터 컴퓨터가 고장 나서 인터넷이 안 돼요.",
+          "exen": "My computer broke down yesterday, so the internet doesn't work."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-어야겠-",
+      "tag": "I'd better… / I'll have to… (intent or necessity)",
+      "def_ko": "1. 어떤 일에 대한 강한 의지를 나타내는 표현. 2. 어떤 일이 이루어져야 할 필요가 있음을 나타내는 표현.",
+      "def_en": "1. Shows the speaker's strong intention — 'I'm going to / I'd better'. 2. Shows that something needs to be done, often after noticing a situation.",
+      "ex": [
+        {
+          "ko": "내일이 오빠 생일이니까 오늘 미리 선물을 사야겠어요.",
+          "en": "Tomorrow is my brother's birthday, so I'd better buy a gift today. (intent)"
+        },
+        {
+          "ko": "친구가 빌려준 책을 빨리 읽고 돌려줘야겠어요.",
+          "en": "I'd better read the book my friend lent me and return it soon."
+        },
+        {
+          "ko": "앞으로 수업이 끝나면 도서관에 가서 공부해야겠어요.",
+          "en": "From now on, I'll have to go study at the library after class."
+        },
+        {
+          "ko": "민국 씨가 기침을 계속 하는 걸 보니 병원에 가야겠어요.",
+          "en": "Seeing Mingook keep coughing, he needs to go to the hospital. (necessity)"
+        },
+        {
+          "ko": "날씨가 추우니까 다들 나갈 때 두꺼운 옷을 입어야겠어요.",
+          "en": "It's cold, so everyone had better wear thick clothes when going out."
+        }
+      ],
+      "info_ko": "의지를 나타낼 때는 동사와, 필요를 나타낼 때는 동사·형용사·'이다'와 결합한다.",
+      "info_en": "For intention it attaches to verbs; for necessity it also attaches to adjectives and 이다.",
+      "table": {
+        "head": [
+          "품사",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 (ㅏ, ㅗ)",
+            "오다",
+            "와야겠어요"
+          ],
+          [
+            "동사 (그 외)",
+            "먹다",
+            "먹어야겠어요"
+          ],
+          [
+            "동사 (하다)",
+            "공부하다",
+            "공부해야겠어요"
+          ],
+          [
+            "형용사 (ㅏ, ㅗ)",
+            "작다",
+            "작아야겠어요"
+          ],
+          [
+            "형용사 (그 외)",
+            "길다",
+            "길어야겠어요"
+          ],
+          [
+            "형용사 (하다)",
+            "조용하다",
+            "조용해야겠어요"
+          ],
+          [
+            "(명사)이다 · 받침 O",
+            "학생",
+            "학생이어야겠어요"
+          ],
+          [
+            "(명사)이다 · 받침 X",
+            "의사",
+            "의사여야겠어요"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-(으)ㄹ 텐데",
+      "tag": "it must be / probably… so… (assumption + follow-up)",
+      "def_ko": "말하는 사람이 그렇다고 믿고 말하는 앞의 내용이 뒤에 말하는 내용에 대한 전제가 됨을 나타내는 표현.",
+      "def_en": "An expression where the speaker assumes something is the case, and that assumption becomes the premise for what follows — 'you must be…, so…'. Very common for offering help or being considerate.",
+      "ex": [
+        {
+          "ko": "짐이 많아서 무거울 텐데 제가 좀 들어 줄까요?",
+          "en": "You have a lot of luggage so it must be heavy — shall I carry some?"
+        },
+        {
+          "ko": "운동하느라 목이 마를 텐데 물 좀 드세요.",
+          "en": "You must be thirsty from exercising — please have some water."
+        },
+        {
+          "ko": "오시느라 힘드셨을 텐데 얼른 들어와서 앉으세요.",
+          "en": "The trip here must have been tiring — come in and sit down."
+        }
+      ],
+      "info_ko": "동사, 형용사, '이다'와 결합한다. 과거는 '-았/었을 텐데'.",
+      "info_en": "Combines with verbs, adjectives, and 이다. Past tense uses -았/었을 텐데.",
+      "table": {
+        "head": [
+          "품사",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 · 받침 O",
+            "먹다",
+            "먹을 텐데"
+          ],
+          [
+            "동사 · 받침 X",
+            "오다",
+            "올 텐데"
+          ],
+          [
+            "동사 · 받침 'ㄹ'",
+            "살다",
+            "살 텐데"
+          ],
+          [
+            "형용사 · 받침 O",
+            "작다",
+            "작을 텐데"
+          ],
+          [
+            "형용사 · 받침 X",
+            "크다",
+            "클 텐데"
+          ],
+          [
+            "형용사 · 받침 'ㄹ'",
+            "길다",
+            "길 텐데"
+          ],
+          [
+            "(명사)이다 · 받침 O",
+            "학생",
+            "학생일 텐데"
+          ],
+          [
+            "(명사)이다 · 받침 X",
+            "의사",
+            "의사일 텐데"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "요",
+      "tag": "politeness particle on short answers  ·  부가 문법 (Additional grammar)",
+      "extra": true,
+      "def_ko": "상대방에게 높임의 뜻을 나타내는 조사.",
+      "def_en": "A particle attached to words other than verbs — nouns, particles, adverbs — to keep a short reply or fragment polite. It lets you answer in one word without sounding blunt.",
+      "ex": [
+        {
+          "dia": "가:",
+          "ko": "점심에 뭐 먹었어요?",
+          "en": "What did you have for lunch?"
+        },
+        {
+          "dia": "나:",
+          "ko": "김밥요. 시간이 없어서 간단하게 먹었어요.",
+          "en": "Gimbap. I had no time, so I ate something simple."
+        },
+        {
+          "dia": "가:",
+          "ko": "한국에서 가 보고 싶은 여행지가 있어요?",
+          "en": "Is there a place in Korea you'd like to visit?"
+        },
+        {
+          "dia": "나:",
+          "ko": "제주도요. 한국에서 제일 유명한 관광지잖아요.",
+          "en": "Jeju Island. It's the most famous tourist spot in Korea, you know."
+        },
+        {
+          "ko": "백화점에서요. 오늘부터 세일을 해요.",
+          "en": "At the department store. The sale starts today."
+        }
+      ],
+      "info_ko": "명사, 조사, 어미, 부사 등에 붙는다.",
+      "info_en": "Attaches to nouns, particles, adverbs, and word endings — not only to verbs.",
+      "table": {
+        "head": [
+          "품사",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "명사",
+            "학생",
+            "학생요"
+          ],
+          [
+            "명사",
+            "의사",
+            "의사요"
+          ],
+          [
+            "부사",
+            "빨리",
+            "빨리요"
+          ],
+          [
+            "부사",
+            "갑자기",
+            "갑자기요"
+          ],
+          [
+            "조사",
+            "저한테",
+            "저한테요"
+          ]
+        ]
+      }
+    }
+  ]
+}
