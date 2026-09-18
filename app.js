@@ -1,14 +1,24 @@
 /* =============================================================
-   세종학당 한국어 3A — grammar & vocabulary lookup
+   세종학당 한국어 — grammar & vocabulary lookup
 
-   Data shape (lessons/lessonN.json, listed in lessons/manifest.json):
-     lesson.lesson  → tab id, e.g. "1"     (matched against the tab buttons)
+   Courses are listed in lessons/courses.json, and each course's lessons live in
+   lessons/<course id>/ with that course's own manifest.json:
+     course → { id, label, level, title, source, searchExamples, progressKey }
+   The address picks the page: no #hash shows the landing page for choosing a course,
+   and #<course id> (e.g. #korean2) opens that course.
+
+   Lesson data shape (lessons/<course id>/lessonN.json):
+     lesson.lesson  → tab id, e.g. "1"     (matched against the lesson buttons)
      lesson.num     → display label, e.g. "1과"
-     lesson.vocab   → [{ theme, items: [{ kw, mean, ex, exen }] }]
-     lesson.grammar → [{ form, tag, def_ko, def_en, info_en, ex, table, table2? }]
+     lesson.topic?  → optional topic badge, e.g. "Weather · 날씨"
+     lesson.vocab   → [{ theme, quiz?, items: [{ kw, mean, ex?, exen? }] }]
+                      quiz: false keeps a group (e.g. whole phrases) out of the typed quiz
+     lesson.grammar → [{ form, tag, def_ko, def_en, info_en, ex, table, table2?, extra? }]
    ============================================================= */
 
-let LESSONS = [];
+let COURSES = [];
+let course  = null;        // the course on screen
+let LESSONS = [];          // that course's lessons
 
 const $  = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -24,10 +34,14 @@ const escapeRegExp = text => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const content     = $('#content');       // All view: vocabulary + full grammar cards
 const grammarList = $('#grammarList');   // Grammar list view: grammar points only
 
-/* The searchable haystack for a card, lowercased and stored in data-search. */
-const searchText = (...parts) => parts.join(' ').toLowerCase();
+/* The searchable haystack for a card, lowercased and stored in data-search.
+   Missing optional fields are skipped, so they can't match as the word "undefined". */
+const searchText = (...parts) => parts.filter(Boolean).join(' ').toLowerCase();
 
 function renderVocabCard(item, lesson) {
+  const example = item.ex
+    ? `<div class="ex">${esc(item.ex)}<span class="exen">${esc(item.exen)}</span></div>`
+    : '';
   return `
     <div class="vcard"
          data-id="${esc(`${lesson.num}|${item.kw}`)}"
@@ -35,7 +49,7 @@ function renderVocabCard(item, lesson) {
       <span class="learned-badge" title="Learned">✓</span>
       <div class="kw">${esc(item.kw)}</div>
       <div class="mean">${esc(item.mean)}</div>
-      <div class="ex">${esc(item.ex)}<span class="exen">${esc(item.exen)}</span></div>
+      ${example}
     </div>`;
 }
 
@@ -140,6 +154,7 @@ function renderLessonHead(lesson) {
         <span class="num">${esc(lesson.num)}</span>
         <h2>${esc(lesson.title)}</h2>
         <span class="en">${esc(lesson.en)}</span>
+        ${lesson.topic ? `<span class="topic">${esc(lesson.topic)}</span>` : ''}
       </div>`;
 }
 
@@ -178,26 +193,25 @@ function render() {
   renderGrammarList();
 }
 
-/* This script is loaded as app.js?v=N. Reusing that same query on the lesson
-   fetches means one version bump in index.html also busts the cached JSON —
+/* ---------- loading ---------- */
+
+/* This script is loaded as app.js?v=N. Reusing that same query on every data
+   fetch means one version bump in index.html also busts the cached JSON —
    otherwise newly added words can stay hidden behind a cached lesson file. */
 const ASSET_VERSION = new URL(document.currentScript.src).search;
 
-async function loadLessons() {
-  try {
-    const manifest = await fetch(`lessons/manifest.json${ASSET_VERSION}`).then(response => response.json());
-    LESSONS = await Promise.all(
-      manifest.map(file => fetch(`lessons/${file}${ASSET_VERSION}`).then(response => response.json()))
-    );
-    render();
-    refreshBadges();
-    document.dispatchEvent(new CustomEvent('lessons:loaded'));
-  } catch (error) {
-    console.error('Lesson data failed to load:', error);
-    content.innerHTML =
-      `<p class="load-error">Couldn't load the lesson files. Open this page from a web
-       server (like GitHub Pages) instead of double-clicking the file.</p>`;
-  }
+const fetchJSON = path => fetch(`${path}${ASSET_VERSION}`).then(response => {
+  if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+  return response.json();
+});
+
+const LOAD_ERROR =
+  `<p class="load-error">Couldn't load the lesson files. Open this page from a web
+   server (like GitHub Pages) instead of double-clicking the file.</p>`;
+
+async function loadLessons(courseId) {
+  const manifest = await fetchJSON(`lessons/${courseId}/manifest.json`);
+  return Promise.all(manifest.map(file => fetchJSON(`lessons/${courseId}/${file}`)));
 }
 
 /* ---------- search, lesson filtering & view ---------- */
@@ -324,17 +338,18 @@ let showBack = false;
 let scope = 'all';
 let dir = 'ko';                 // 'ko' = Korean side first, 'en' = English side first
 
-/* ----- learned progress, persisted in the browser ----- */
-const LS_KEY = 'ksi3a_learned';
-let learned = loadLearned();
+/* ----- learned progress, persisted in the browser separately for each course -----
+   Lesson numbers repeat across courses (both have a 1과), so the course's own
+   progressKey keeps one course's learned words from marking the other's. */
+let learned = new Set();
 
 function loadLearned() {
-  try { return new Set(JSON.parse(localStorage.getItem(LS_KEY) || '[]')); }
+  try { return new Set(JSON.parse(localStorage.getItem(course.progressKey) || '[]')); }
   catch { return new Set(); }
 }
 
 function saveLearned() {
-  try { localStorage.setItem(LS_KEY, JSON.stringify([...learned])); }
+  try { localStorage.setItem(course.progressKey, JSON.stringify([...learned])); }
   catch { /* private mode or quota exceeded — progress just won't persist */ }
 }
 
@@ -351,7 +366,7 @@ function cardsInScope(lessonScope) {
   return LESSONS
     .filter(lesson => lessonScope === 'all' || lesson.lesson === lessonScope)
     .flatMap(lesson => lesson.vocab.flatMap(group =>
-      group.items.map(item => ({ ...item, lesson: lesson.num, theme: group.theme }))
+      group.items.map(item => ({ ...item, lesson: lesson.num, theme: group.theme, quiz: group.quiz !== false }))
     ));
 }
 
@@ -374,6 +389,7 @@ function startReview() {
   idx = 0;
   showBack = false;
   overlay.classList.add('on');
+  $('#fcScope button.on')?.scrollIntoView({ block: 'nearest', inline: 'center' });
   renderCard();
 }
 
@@ -387,8 +403,9 @@ function cardFaces(card) {
   const korean  = `<div class="side-label">Korean</div><div class="big">${esc(card.kw)}</div>`;
   const meaning = `<div class="side-label">Meaning</div><div class="mean2">${esc(card.mean)}</div>`;
   const english = `<div class="side-label">English</div><div class="mean2">${esc(card.mean)}</div>`;
-  const example = spaced =>
-    `<div class="ex2${spaced ? ' spaced' : ''}">${esc(card.ex)}<span class="en2">${esc(card.exen)}</span></div>`;
+  const example = spaced => (card.ex
+    ? `<div class="ex2${spaced ? ' spaced' : ''}">${esc(card.ex)}<span class="en2">${esc(card.exen)}</span></div>`
+    : '');
 
   return dir === 'ko'
     ? { front: korean,  back: meaning + example(false) }
@@ -486,11 +503,179 @@ function setScope(nextScope) {
   startReview();
 }
 
+/* ---------- courses ---------- */
+const COURSE_KEY   = 'ksi_course';        // the course last viewed in this browser
+const courseSwitch = $('#courseSwitch');
+let loadToken = 0;                        // lets a newer switch win over a slower, older load
+
+const rememberedCourse = () => { try { return localStorage.getItem(COURSE_KEY); } catch { return null; } };
+
+/* The course named in the address, if any: …/#korean2 → "korean2". */
+const hashCourseId = () => { try { return decodeURIComponent(location.hash.slice(1)); } catch { return ''; } };
+
+const LANDING_TITLE = document.title;
+
+/* How many words a course has marked learned in this browser, for its landing card. */
+function learnedCountFor(c) {
+  try { return JSON.parse(localStorage.getItem(c.progressKey) || '[]').length; } catch { return 0; }
+}
+
+/* The landing page: one card per course, each in that course's own colours
+   (data-theme on the card picks its palette in styles.css). */
+function renderLanding() {
+  const last = rememberedCourse();
+  const cards = $('#courseCards');
+  cards.innerHTML = COURSES.map(c => `
+    <a class="course-card" href="#${esc(c.id)}" data-theme="${esc(c.id)}">
+      <div class="course-card-top">
+        <span class="course-card-level">${esc(c.level)}</span>
+        <h2 class="course-card-title">${esc(c.title)}</h2>
+      </div>
+      <div class="course-card-body">
+        ${c.id === last ? '<span class="course-card-last">최근 공부 · Last studied</span>' : ''}
+        <p class="course-card-book">${esc(c.source)}</p>
+        <p class="course-card-stats"></p>
+        <span class="course-card-go">시작하기 · Start →</span>
+      </div>
+    </a>`).join('');
+
+  // Lesson counts come from each course's manifest; learned counts from this browser.
+  const stats = $$('.course-card-stats', cards);
+  COURSES.forEach((c, i) => {
+    const learnedCount = learnedCountFor(c);
+    const learnedText = learnedCount ? `✓ ${learnedCount} learned` : '';
+    fetchJSON(`lessons/${c.id}/manifest.json`)
+      .then(manifest => {
+        stats[i].textContent = [`총 ${manifest.length}과 · ${manifest.length} lessons`, learnedText].filter(Boolean).join(' · ');
+      })
+      .catch(() => { stats[i].textContent = learnedText; });
+  });
+}
+
+function showLanding() {
+  $$('.overlay').forEach(panel => panel.classList.remove('on'));
+  document.documentElement.dataset.page = 'landing';
+  delete document.documentElement.dataset.theme;
+  document.title = LANDING_TITLE;
+  // A bare "#" (from the 🏠 link) leaves location.hash empty, so check the address itself.
+  if (location.href.includes('#')) history.replaceState(null, '', location.pathname + location.search);
+  renderLanding();
+  window.scrollTo(0, 0);
+}
+
+/* The address decides the page: #<course id> opens that course, anything else the landing page. */
+function route() {
+  const id = hashCourseId();
+  if (!COURSES.some(c => c.id === id)) { showLanding(); return; }
+  document.documentElement.dataset.page = 'course';
+  if (id === course?.id && LESSONS.length) { showCourseDetails(); window.scrollTo(0, 0); return; }  // already loaded
+  setCourse(id);
+}
+
+/* The switch in a course's header: 🏠 back to the landing page, then one button per course. */
+function renderCourseSwitch() {
+  courseSwitch.innerHTML =
+    '<a class="switch-home" href="#" title="모든 과정 · All courses" aria-label="All courses">🏠</a>' +
+    COURSES.map(c =>
+      `<button type="button" data-course="${esc(c.id)}" aria-pressed="false">${esc(c.label)}</button>`).join('');
+}
+
+/* Everything on the page that names the course, including its colour theme:
+   styles.css keys each course's palette off data-theme on <html>. */
+function showCourseDetails() {
+  document.documentElement.dataset.theme = course.id;
+  $$('button', courseSwitch).forEach(button => {
+    const on = button.dataset.course === course.id;
+    button.classList.toggle('on', on);
+    button.setAttribute('aria-pressed', String(on));
+  });
+  $('#courseTitle').textContent = course.title;
+  $('#courseSource').textContent = `Source: ${course.source}`;
+  document.title = `${course.title} · Grammar & Vocabulary Lookup`;
+  search.placeholder = `🔍  Search Korean or English… (예: ${course.searchExamples})`;
+}
+
+/* The lesson tabs and the flashcard/quiz lesson pickers come from the course's lessons. */
+function renderLessonButtons() {
+  const lessons = LESSONS.map(lesson => ({ id: esc(lesson.lesson), label: esc(lesson.num) }));
+  tabs.innerHTML = '<button class="tab active" data-lesson="all">All</button>' +
+    lessons.map(l => `<button class="tab" data-lesson="${l.id}">${l.label}</button>`).join('');
+  const scopes = '<button data-scope="all" class="on">All</button>' +
+    lessons.map(l => `<button data-scope="${l.id}">${l.label}</button>`).join('');
+  $('#fcScope').innerHTML = scopes;
+  $('#qzScope').innerHTML = scopes;
+  tabs.scrollLeft = 0;
+}
+
+async function setCourse(id) {
+  const token = ++loadToken;
+  course = COURSES.find(c => c.id === id);
+  $$('.overlay').forEach(panel => panel.classList.remove('on'));   // flashcards and quiz belong to one course
+  activeLesson = 'all';
+  learned = loadLearned();
+  showCourseDetails();
+  try { localStorage.setItem(COURSE_KEY, course.id); } catch { /* just not remembered */ }
+  if (location.hash.slice(1) !== course.id) history.replaceState(null, '', `#${course.id}`);
+
+  try {
+    const lessons = await loadLessons(course.id);
+    if (token !== loadToken) return;
+    LESSONS = lessons;
+    render();
+    renderLessonButtons();
+    refreshBadges();
+    applyFilters();
+    document.dispatchEvent(new CustomEvent('lessons:loaded'));
+  } catch (error) {
+    if (token !== loadToken) return;
+    console.error('Lesson data failed to load:', error);
+    content.innerHTML = LOAD_ERROR;
+  }
+}
+
+async function init() {
+  try {
+    COURSES = await fetchJSON('lessons/courses.json');
+  } catch (error) {
+    console.error('Course list failed to load:', error);
+    content.innerHTML = LOAD_ERROR;
+    $('#courseCards').innerHTML = LOAD_ERROR;
+    return;
+  }
+  renderCourseSwitch();
+  route();
+}
+
+/* Lesson strips scroll sideways when a course has more lessons than fit. A mouse
+   wheel only scrolls up and down, so turn it sideways while the strip can still
+   move that way; once it can't, the page scrolls as normal. */
+function scrollSidewaysOnWheel(strip) {
+  strip.addEventListener('wheel', event => {
+    if (Math.abs(event.deltaX) >= Math.abs(event.deltaY)) return;   // trackpads already scroll sideways
+    const max = strip.scrollWidth - strip.clientWidth;
+    const canMove = event.deltaY > 0 ? strip.scrollLeft < max : strip.scrollLeft > 0;
+    if (max <= 0 || !canMove) return;
+    strip.scrollLeft += event.deltaY;
+    event.preventDefault();
+  }, { passive: false });
+}
+
 /* ---------- event wiring ---------- */
+courseSwitch.addEventListener('click', event => {
+  const button = event.target.closest('button[data-course]');
+  if (button && button.dataset.course !== course?.id) setCourse(button.dataset.course);
+});
+
+// Landing cards, the 🏠 link, the back button and any …/#korean2 link all go through the address.
+window.addEventListener('hashchange', route);
+
+[tabs, $('#fcScope'), $('#qzScope')].forEach(scrollSidewaysOnWheel);
+
 tabs.addEventListener('click', event => {
   if (!event.target.classList.contains('tab')) return;
   $$('.tab', tabs).forEach(tab => tab.classList.remove('active'));
   event.target.classList.add('active');
+  event.target.scrollIntoView({ block: 'nearest', inline: 'nearest' });
   activeLesson = event.target.dataset.lesson;
   applyFilters();
 });
@@ -573,13 +758,14 @@ document.addEventListener('keydown', event => {
    quiz.js is a separate classic script loaded after this one. Everything it may
    use is listed here explicitly, so the coupling between the two files is a
    single documented surface rather than a set of incidental globals.
-   `lessons:loaded` fires on document once the lesson JSON has rendered. */
+   `lessons:loaded` fires on document once a course's lesson JSON has rendered. */
 window.KSI = {
   esc,
   $, $$,
-  cardsInScope,               // (scope) => flattened vocabulary cards, learned or not
+  cardsInScope,               // (scope) => flattened vocabulary cards of the current course;
+                              //            each carries quiz: false if its group opts out
   activeLesson: () => activeLesson,
   isLearned,
 };
 
-loadLessons();
+init();

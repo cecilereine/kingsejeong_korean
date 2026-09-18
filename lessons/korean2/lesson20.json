@@ -1,0 +1,170 @@
+{
+  "lesson": "20",
+  "num": "20과",
+  "title": "이번 일요일은 좀 어려울 것 같아요",
+  "en": "This Sunday seems a bit difficult",
+  "topic": "Appointments · 약속",
+  "vocab": [
+    {
+      "theme": "약속 · Appointments",
+      "items": [
+        {
+          "kw": "계획",
+          "mean": "plan"
+        },
+        {
+          "kw": "초대권",
+          "mean": "invitation ticket"
+        },
+        {
+          "kw": "연극 공연",
+          "mean": "play (theater performance)"
+        },
+        {
+          "kw": "거절하다",
+          "mean": "to decline / refuse"
+        },
+        {
+          "kw": "구경하다",
+          "mean": "to look around / sightsee"
+        },
+        {
+          "kw": "부탁하다",
+          "mean": "to ask a favor / request"
+        }
+      ]
+    },
+    {
+      "theme": "표현 · Expressions",
+      "quiz": false,
+      "items": [
+        {
+          "kw": "시간이 있다 / 없다",
+          "mean": "to have / not have time"
+        },
+        {
+          "kw": "시험이 있다",
+          "mean": "to have a test"
+        },
+        {
+          "kw": "일이 생기다",
+          "mean": "something comes up"
+        },
+        {
+          "kw": "(약속, 계획)이 있다 / 없다",
+          "mean": "to have / not have (an appointment, a plan)"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-을 (future)",
+      "tag": "upcoming/prospective modifier",
+      "def_ko": "앞으로 일어날 상황이나 예정을 나타냅니다.",
+      "def_en": "Modifier marking something upcoming or planned (future/prospective).",
+      "info_en": "동사 + -을/-ㄹ",
+      "ex": [
+        {
+          "ko": "이번 주말에 볼 영화를 예매했어요.",
+          "en": "I booked a movie (that I) will watch this weekend."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹을"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "만나다",
+                "만날"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "살다",
+                "살"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-을 것 같다",
+      "tag": "guess / speculation",
+      "def_ko": "어떤 일에 대해 추측을 할 때 씁니다.",
+      "def_en": "Used to make a guess or speculation (\"it seems / probably will\").",
+      "info_en": "동사, 형용사 + -을/-ㄹ 것 같다",
+      "ex": [
+        {
+          "ko": "음식이 많아서 남을 것 같아요.",
+          "en": "There's so much food it will probably be left over."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹을 것 같다"
+              ],
+              [
+                "작다",
+                "작을 것 같다"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "갈 것 같다"
+              ],
+              [
+                "크다",
+                "클 것 같다"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "살다",
+                "살 것 같다"
+              ],
+              [
+                "멀다",
+                "멀 것 같다"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

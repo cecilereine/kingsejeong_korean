@@ -1,0 +1,160 @@
+{
+  "lesson": "7",
+  "num": "7과",
+  "title": "찬 음식을 너무 많이 먹지 마세요",
+  "en": "Don't eat too much cold food",
+  "topic": "Health · 건강",
+  "vocab": [
+    {
+      "theme": "병원 · Hospital",
+      "items": [
+        {
+          "kw": "내과",
+          "mean": "internal medicine (clinic)"
+        },
+        {
+          "kw": "치과",
+          "mean": "dental clinic"
+        }
+      ]
+    },
+    {
+      "theme": "증상 · Symptoms",
+      "items": [
+        {
+          "kw": "기침",
+          "mean": "cough"
+        },
+        {
+          "kw": "두통",
+          "mean": "headache"
+        },
+        {
+          "kw": "배탈",
+          "mean": "upset stomach"
+        },
+        {
+          "kw": "재채기",
+          "mean": "sneeze"
+        },
+        {
+          "kw": "콧물",
+          "mean": "runny nose"
+        },
+        {
+          "kw": "열",
+          "mean": "fever"
+        }
+      ]
+    },
+    {
+      "theme": "치료 · Treatment",
+      "items": [
+        {
+          "kw": "치료",
+          "mean": "treatment"
+        },
+        {
+          "kw": "감기약",
+          "mean": "cold medicine"
+        },
+        {
+          "kw": "소화제",
+          "mean": "digestive medicine"
+        },
+        {
+          "kw": "수술",
+          "mean": "surgery / operation"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-게",
+      "tag": "purpose or result (so that / -ly)",
+      "def_ko": "어떤 행동의 목적이나 결과를 나타냅니다.",
+      "def_en": "Indicates the purpose or result of an action (\"so that / in order to / -ly\").",
+      "info_en": "동사, 형용사 + -게",
+      "ex": [
+        {
+          "ko": "바람이 들어오지 않게 창문을 닫으세요.",
+          "en": "Close the window so the wind doesn't come in."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "작다",
+                "작게"
+              ],
+              [
+                "먹다",
+                "먹게"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "크다",
+                "크게"
+              ],
+              [
+                "가다",
+                "가게"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-지 말다",
+      "tag": "prohibition (don't do)",
+      "def_ko": "어떤 행위의 금지를 나타냅니다.",
+      "def_en": "Indicates prohibition of an action (\"don't do\").",
+      "info_en": "동사 + -지 말다",
+      "ex": [
+        {
+          "ko": "사진을 찍지 마세요.",
+          "en": "Don't take photos."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹지 말다"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "하다",
+                "하지 말다"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

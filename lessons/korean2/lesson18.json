@@ -1,0 +1,222 @@
+{
+  "lesson": "18",
+  "num": "18과",
+  "title": "대한 씨 딸이 태어난 지 벌써 1년이 됐어요?",
+  "en": "Has it already been a year since Daehan's daughter was born?",
+  "topic": "Gatherings · 모임",
+  "vocab": [
+    {
+      "theme": "모임 · Gatherings",
+      "items": [
+        {
+          "kw": "생일",
+          "mean": "birthday"
+        },
+        {
+          "kw": "파티",
+          "mean": "party"
+        },
+        {
+          "kw": "가족 모임",
+          "mean": "family gathering"
+        },
+        {
+          "kw": "집들이",
+          "mean": "housewarming"
+        },
+        {
+          "kw": "모이다",
+          "mean": "to gather"
+        },
+        {
+          "kw": "초대하다",
+          "mean": "to invite"
+        }
+      ]
+    },
+    {
+      "theme": "감정 · Emotions",
+      "items": [
+        {
+          "kw": "기쁘다",
+          "mean": "glad"
+        },
+        {
+          "kw": "행복하다",
+          "mean": "happy"
+        },
+        {
+          "kw": "슬프다",
+          "mean": "sad"
+        },
+        {
+          "kw": "외롭다",
+          "mean": "lonely"
+        },
+        {
+          "kw": "섭섭하다",
+          "mean": "sad to see (someone) go, disappointed"
+        }
+      ]
+    },
+    {
+      "theme": "표현 · Expressions",
+      "quiz": false,
+      "items": [
+        {
+          "kw": "초대장을 쓰다",
+          "mean": "to write an invitation"
+        },
+        {
+          "kw": "초대를 받다",
+          "mean": "to be invited"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-은 지",
+      "tag": "time passed since an action",
+      "def_ko": "어떤 일을 한 후 시간이 얼마 동안 지났다는 것을 나타냅니다.",
+      "def_en": "Indicates how much time has passed since an action (\"since / it's been…\").",
+      "info_en": "동사 + -은/-ㄴ 지",
+      "ex": [
+        {
+          "ko": "한국에 온 지 6개월이 됐어요.",
+          "en": "It's been 6 months since I came to Korea."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹은 지"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "간 지"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "살다",
+                "산 지"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-어 있다",
+      "tag": "a state that continues after an action",
+      "def_ko": "어떤 행동이 끝난 후에 그 상태가 계속되는 것을 나타냅니다.",
+      "def_en": "Indicates that the resulting state continues after an action is completed.",
+      "info_en": "동사 + -어/-아 있다",
+      "ex": [
+        {
+          "ko": "친구들이 저기에 다 모여 있어요.",
+          "en": "My friends are all gathered over there."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "ㅏ,ㅗ X",
+            [
+              [
+                "준비되다",
+                "준비되어 있다"
+              ]
+            ]
+          ],
+          [
+            "ㅏ,ㅗ O",
+            [
+              [
+                "가다",
+                "가 있다"
+              ]
+            ]
+          ],
+          [
+            "-하다",
+            [
+              [
+                "도착하다",
+                "도착해 있다"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-는군(요)",
+      "tag": "exclamation / realization",
+      "def_ko": "이미 존재하는 사실이나 새롭게 알게 된 사실에 대한 감탄을 표현합니다.",
+      "def_en": "Expresses admiration or realization about a fact you notice (\"oh, I see…!\").",
+      "info_en": "동사 + -는군,  형용사 + -군",
+      "ex": [
+        {
+          "ko": "아이가 벌써 말을 하는군요.",
+          "en": "Oh, the child already talks!"
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사",
+            [
+              [
+                "가다",
+                "가는군"
+              ],
+              [
+                "읽다",
+                "읽는군"
+              ]
+            ]
+          ],
+          [
+            "형용사",
+            [
+              [
+                "크다",
+                "크군"
+              ],
+              [
+                "작다",
+                "작군"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

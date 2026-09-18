@@ -1,0 +1,195 @@
+{
+  "lesson": "15",
+  "num": "15과",
+  "title": "치킨 두 마리를 주문하려고 해요",
+  "en": "I'm going to order two (whole) chickens",
+  "topic": "Delivery · 배달",
+  "vocab": [
+    {
+      "theme": "배달 음식 주문 · Ordering delivery food",
+      "items": [
+        {
+          "kw": "짜장면",
+          "mean": "jjajangmyeon"
+        },
+        {
+          "kw": "짬뽕",
+          "mean": "jjamppong"
+        },
+        {
+          "kw": "치킨",
+          "mean": "(fried) chicken"
+        },
+        {
+          "kw": "피자",
+          "mean": "pizza"
+        },
+        {
+          "kw": "배달",
+          "mean": "delivery"
+        },
+        {
+          "kw": "현금",
+          "mean": "cash"
+        },
+        {
+          "kw": "카드",
+          "mean": "card"
+        }
+      ]
+    },
+    {
+      "theme": "수량 명사 · Quantity nouns (counters)",
+      "items": [
+        {
+          "kw": "개",
+          "mean": "piece, unit"
+        },
+        {
+          "kw": "명",
+          "mean": "(counter for) people"
+        },
+        {
+          "kw": "마리",
+          "mean": "(counter for) animals"
+        },
+        {
+          "kw": "그릇",
+          "mean": "bowl"
+        }
+      ]
+    },
+    {
+      "theme": "표현 · Expressions",
+      "quiz": false,
+      "items": [
+        {
+          "kw": "(음식)을 시키다",
+          "mean": "to order (food)"
+        },
+        {
+          "kw": "(시간)이 얼마나 걸려요?",
+          "mean": "how long does it take?"
+        },
+        {
+          "kw": "길이 막히다 / 차가 밀리다",
+          "mean": "the road is jammed / traffic is backed up"
+        },
+        {
+          "kw": "(카드)로 계산하다",
+          "mean": "to pay by (card)"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "에다가",
+      "tag": "adding one thing on top of another",
+      "def_ko": "어떤 것에 다른 것이 더해지는 것을 나타냅니다.",
+      "def_en": "Indicates adding one thing on top of another (\"in addition to / on\").",
+      "info_en": "명사 + 에다가  (Noun + 에다가)",
+      "ex": [
+        {
+          "ko": "짜장면에다가 짬뽕 하나를 시켜 주세요.",
+          "en": "Please order a jjamppong in addition to the jjajangmyeon."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "책",
+                "책에다가"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "한국어",
+                "한국어에다가"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "휴일",
+                "휴일에다가"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-으면",
+      "tag": "condition / assumption",
+      "def_ko": "어떤 일에 대한 조건이나 가정을 나타냅니다.",
+      "def_en": "Indicates a condition or assumption (\"if / when\").",
+      "info_en": "동사, 형용사 + -으면/-면",
+      "ex": [
+        {
+          "ko": "수업이 끝나면 바로 갈 거야.",
+          "en": "I'll go as soon as class ends."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹으면"
+              ],
+              [
+                "작다",
+                "작으면"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "가면"
+              ],
+              [
+                "크다",
+                "크면"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "살다",
+                "살면"
+              ],
+              [
+                "멀다",
+                "멀면"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

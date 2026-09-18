@@ -1,0 +1,176 @@
+{
+  "lesson": "19",
+  "num": "19과",
+  "title": "저도 학교 근처로 이사할까 봐요",
+  "en": "I'm thinking of moving near the school too",
+  "topic": "House · 집",
+  "vocab": [
+    {
+      "theme": "집의 형태 · Types of houses",
+      "items": [
+        {
+          "kw": "아파트",
+          "mean": "apartment"
+        },
+        {
+          "kw": "원룸",
+          "mean": "studio apartment"
+        },
+        {
+          "kw": "하숙집",
+          "mean": "boarding house"
+        }
+      ]
+    },
+    {
+      "theme": "집의 구조 · Structure of a house",
+      "items": [
+        {
+          "kw": "방",
+          "mean": "room"
+        },
+        {
+          "kw": "화장실",
+          "mean": "bathroom"
+        },
+        {
+          "kw": "거실",
+          "mean": "living room"
+        },
+        {
+          "kw": "부엌",
+          "mean": "kitchen"
+        }
+      ]
+    },
+    {
+      "theme": "표현 · Expressions",
+      "quiz": false,
+      "items": [
+        {
+          "kw": "방이 넓다 / 좁다",
+          "mean": "the room is spacious / cramped"
+        },
+        {
+          "kw": "거리가 가깝다 / 멀다",
+          "mean": "the distance is near / far"
+        },
+        {
+          "kw": "살기 편하다 / 불편하다",
+          "mean": "convenient / inconvenient to live in"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-거나 / 이나",
+      "tag": "choosing one among options (or)",
+      "def_ko": "-거나: 동사·형용사에 붙어 둘 이상 중 하나를 선택함을 나타냅니다. 이나: 명사에 붙어 둘 이상 중 하나를 선택함을 나타냅니다.",
+      "def_en": "-거나 (with verbs/adjectives) and 이나 (with nouns) both mean choosing one among two or more (\"or\").",
+      "info_en": "동사·형용사·이다/아니다 + -거나  /  명사 + 이나/나",
+      "ex": [
+        {
+          "ko": "제주도로 가거나 경주로 가세요.",
+          "en": "Go to Jeju or Gyeongju."
+        },
+        {
+          "ko": "버스나 지하철을 타요.",
+          "en": "Take a bus or a subway."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "-거나 · 받침 O",
+            [
+              [
+                "앉다",
+                "앉거나"
+              ]
+            ]
+          ],
+          [
+            "-거나 · 받침 X",
+            [
+              [
+                "가다",
+                "가거나"
+              ]
+            ]
+          ],
+          [
+            "이나 · 받침 O",
+            [
+              [
+                "지하철",
+                "지하철이나"
+              ]
+            ]
+          ],
+          [
+            "이나 · 받침 X",
+            [
+              [
+                "버스",
+                "버스나"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-을까 보다",
+      "tag": "tentative intention (thinking of)",
+      "def_ko": "어떤 행동을 하기로 확실히 결정한 것은 아니지만 그렇게 하려는 생각이 있음을 나타냅니다.",
+      "def_en": "Indicates a loose intention to do something that isn't firmly decided (\"I'm thinking of\").",
+      "info_en": "동사 + -을까/-ㄹ까 보다",
+      "ex": [
+        {
+          "ko": "오늘 카페에 가서 공부를 할까 봐요.",
+          "en": "I'm thinking of going to a cafe to study today."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹을까 보다"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "갈까 보다"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "살다",
+                "살까 보다"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

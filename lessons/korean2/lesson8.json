@@ -1,0 +1,165 @@
+{
+  "lesson": "8",
+  "num": "8과",
+  "title": "오늘 저녁에 뭐 할래요?",
+  "en": "What do you want to do this evening?",
+  "topic": "Movies · 영화",
+  "vocab": [
+    {
+      "theme": "영화 예매 · Booking a movie",
+      "items": [
+        {
+          "kw": "예매",
+          "mean": "advance booking"
+        },
+        {
+          "kw": "시간표",
+          "mean": "schedule"
+        },
+        {
+          "kw": "자리",
+          "mean": "seat"
+        },
+        {
+          "kw": "평일",
+          "mean": "weekday"
+        },
+        {
+          "kw": "휴일",
+          "mean": "holiday"
+        },
+        {
+          "kw": "무료",
+          "mean": "free"
+        },
+        {
+          "kw": "팔리다",
+          "mean": "to be sold"
+        },
+        {
+          "kw": "남다",
+          "mean": "to be left / remain"
+        }
+      ]
+    },
+    {
+      "theme": "감정 표현 · Emotions",
+      "items": [
+        {
+          "kw": "무섭다",
+          "mean": "scary"
+        },
+        {
+          "kw": "지루하다",
+          "mean": "boring"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-을래",
+      "tag": "asking someone's intention (casual)",
+      "def_ko": "어떤 일이나 선택에 대해 듣는 사람의 의사나 의향을 물음을 나타냅니다. 주로 비격식적인 구어에서 사용합니다.",
+      "def_en": "Asks the listener's intention or preference about a matter or choice. Mainly used in informal speech (\"want to…?\").",
+      "info_en": "동사 + -을래/-ㄹ래",
+      "ex": [
+        {
+          "ko": "오늘 영화 볼래?",
+          "en": "Want to watch a movie today?"
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹을래"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "갈래"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "만들다",
+                "만들래"
+              ]
+            ]
+          ],
+          [
+            "불규칙",
+            [
+              [
+                "돕다",
+                "도울래"
+              ],
+              [
+                "걷다",
+                "걸을래"
+              ],
+              [
+                "짓다",
+                "지을래"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "밖에",
+      "tag": "only (used with a negative)",
+      "def_ko": "다른 선택 가능성이 없거나 그것이 유일한 선택임을 나타냅니다. 반드시 뒤에 부정을 나타내는 말과 함께 씁니다.",
+      "def_en": "Indicates there is no other option / it's the only one (\"only\"). Must be followed by a negative expression.",
+      "info_en": "명사 + 밖에  (+ negative)",
+      "ex": [
+        {
+          "ko": "조금밖에 안 남았어요.",
+          "en": "There's only a little left."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "주말",
+                "주말밖에"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "하나",
+                "하나밖에"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

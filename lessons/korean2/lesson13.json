@@ -1,0 +1,154 @@
+{
+  "lesson": "13",
+  "num": "13과",
+  "title": "집안일을 나눠서 하는 게 어때?",
+  "en": "How about we split up the housework?",
+  "topic": "Home Life · 가정생활",
+  "vocab": [
+    {
+      "theme": "집안일 · Housework",
+      "items": [
+        {
+          "kw": "빨래",
+          "mean": "laundry"
+        },
+        {
+          "kw": "요리",
+          "mean": "cooking"
+        },
+        {
+          "kw": "설거지",
+          "mean": "washing dishes"
+        },
+        {
+          "kw": "세탁기",
+          "mean": "washing machine"
+        },
+        {
+          "kw": "청소하다",
+          "mean": "to clean"
+        },
+        {
+          "kw": "정리하다",
+          "mean": "to organize / tidy up"
+        }
+      ]
+    },
+    {
+      "theme": "표현 · Expressions",
+      "quiz": false,
+      "items": [
+        {
+          "kw": "(창문)을 닦다",
+          "mean": "to wipe / clean (a window)"
+        },
+        {
+          "kw": "(세탁기)를 돌리다",
+          "mean": "to run (the washing machine)"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-는 동안에",
+      "tag": "while an action continues",
+      "def_ko": "어떤 동작이 계속되는 시간을 나타냅니다.",
+      "def_en": "Indicates the length of time during which an action continues (\"while / during\").",
+      "info_en": "동사 + -는 동안에  (Verb + -는 동안에)",
+      "ex": [
+        {
+          "ko": "내가 음식을 만드는 동안에 너는 청소를 해 줘.",
+          "en": "While I make the food, you do the cleaning."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹는 동안에"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "가는 동안에"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "살다",
+                "사는 동안에"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-으면서",
+      "tag": "two actions at the same time",
+      "def_ko": "두 가지 이상의 행동이 동시에 이루어짐을 나타냅니다.",
+      "def_en": "Indicates that two or more actions happen simultaneously (\"while doing\").",
+      "info_en": "동사, 형용사 + -으면서/-면서",
+      "ex": [
+        {
+          "ko": "저녁밥을 먹으면서 텔레비전을 볼 거예요.",
+          "en": "I'll watch TV while eating dinner."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹으면서"
+              ]
+            ]
+          ],
+          [
+            "받침 X / ㄹ",
+            [
+              [
+                "가다",
+                "가면서"
+              ],
+              [
+                "살다",
+                "살면서"
+              ]
+            ]
+          ],
+          [
+            "이다",
+            [
+              [
+                "학생",
+                "학생이면서"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

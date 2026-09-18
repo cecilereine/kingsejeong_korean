@@ -1,0 +1,175 @@
+{
+  "lesson": "3",
+  "num": "3과",
+  "title": "엄마 친구는 어떻게 생겼어요?",
+  "en": "What does mom's friend look like?",
+  "topic": "Appearance · 외모",
+  "vocab": [
+    {
+      "theme": "외모 · Appearance",
+      "items": [
+        {
+          "kw": "멋있다",
+          "mean": "cool / handsome"
+        },
+        {
+          "kw": "귀엽다",
+          "mean": "cute"
+        },
+        {
+          "kw": "얼굴",
+          "mean": "face"
+        }
+      ]
+    },
+    {
+      "theme": "색 · Color",
+      "items": [
+        {
+          "kw": "까만색",
+          "mean": "black"
+        },
+        {
+          "kw": "빨간색",
+          "mean": "red"
+        },
+        {
+          "kw": "하얀색",
+          "mean": "white"
+        },
+        {
+          "kw": "파란색",
+          "mean": "blue"
+        }
+      ]
+    },
+    {
+      "theme": "표현 · Expressions",
+      "quiz": false,
+      "items": [
+        {
+          "kw": "(사람)은 어떻게 생겼어요?",
+          "mean": "what does (someone) look like?"
+        },
+        {
+          "kw": "키가 크다 / 작다",
+          "mean": "tall / short"
+        },
+        {
+          "kw": "머리가 길다 / 짧다",
+          "mean": "have long / short hair"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-은 / -는",
+      "tag": "present modifier (adj / verb)",
+      "def_ko": "-은: 형용사에 붙어 명사를 꾸미고 현재의 상태를 나타냅니다. -는: 동사에 붙어 명사를 꾸미고 현재 일어나는 행동을 나타냅니다.",
+      "def_en": "-은 attaches to an adjective (current state); -는 attaches to a verb (action happening now), both modifying a noun.",
+      "info_en": "형용사 + -은/-ㄴ,  동사 + -는",
+      "ex": [
+        {
+          "ko": "머리가 짧은 사람이 제 누나예요.",
+          "en": "The person with short hair is my older sister."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "형용사 받침 O",
+            [
+              [
+                "작다",
+                "작은"
+              ]
+            ]
+          ],
+          [
+            "형용사 받침 X / ㄹ",
+            [
+              [
+                "크다",
+                "큰"
+              ],
+              [
+                "길다",
+                "긴"
+              ]
+            ]
+          ],
+          [
+            "동사",
+            [
+              [
+                "먹다",
+                "먹는"
+              ],
+              [
+                "살다",
+                "사는"
+              ]
+            ]
+          ],
+          [
+            "예외",
+            [
+              [
+                "있다",
+                "있는"
+              ],
+              [
+                "없다",
+                "없는"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "께",
+      "tag": "honorific \"to (someone)\"",
+      "def_ko": "높임의 대상이 되는 사람 명사에 붙어 어떤 행동의 영향을 받는 사람임을 나타냅니다.",
+      "def_en": "Honorific form of 에게/한테 — attaches to a respected person to mark them as the recipient of an action.",
+      "info_en": "명사 + 께  (Noun + 께)",
+      "ex": [
+        {
+          "ko": "부모님께 편지를 써요.",
+          "en": "I write a letter to my parents."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "선생님",
+                "선생님께"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "할아버지",
+                "할아버지께"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

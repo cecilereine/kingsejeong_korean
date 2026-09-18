@@ -1,0 +1,139 @@
+{
+  "lesson": "11",
+  "num": "11과",
+  "title": "약속 장소에 가다가 돌아왔어요",
+  "en": "I was on my way to the meeting place but came back",
+  "topic": "Public Services · 공공서비스",
+  "vocab": [
+    {
+      "theme": "잃어버리기 쉬운 물건 · Easy-to-lose items",
+      "items": [
+        {
+          "kw": "지갑",
+          "mean": "wallet"
+        },
+        {
+          "kw": "우산",
+          "mean": "umbrella"
+        },
+        {
+          "kw": "휴대 전화/휴대폰",
+          "mean": "cell phone"
+        },
+        {
+          "kw": "신분증",
+          "mean": "ID card"
+        }
+      ]
+    },
+    {
+      "theme": "동작 · Movements",
+      "items": [
+        {
+          "kw": "잃어버리다",
+          "mean": "to lose"
+        },
+        {
+          "kw": "찾다",
+          "mean": "to find"
+        },
+        {
+          "kw": "걸어오다",
+          "mean": "to walk (come on foot)"
+        },
+        {
+          "kw": "멈추다",
+          "mean": "to stop"
+        },
+        {
+          "kw": "가져오다",
+          "mean": "to bring"
+        },
+        {
+          "kw": "적다",
+          "mean": "to write down"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-다가",
+      "tag": "one action interrupted, changes to another",
+      "def_ko": "어떠한 행위나 상태가 중단되고 다른 행위나 상태로 바뀜을 나타냅니다.",
+      "def_en": "Indicates that an action or state stops and changes into a different action or state.",
+      "info_en": "동사, 형용사 + -다가  (Verb / Adjective + -다가)",
+      "ex": [
+        {
+          "ko": "어젯밤에 숙제를 하다가 잤어요.",
+          "en": "I was doing homework last night and (then) fell asleep."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹다가"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "가다가"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "에서부터",
+      "tag": "the place/time an action starts from",
+      "def_ko": "어떤 행위나 상태가 시작되는 장소나 시간을 나타냅니다.",
+      "def_en": "Indicates the place or time where/when an action or state starts.",
+      "info_en": "명사 + 에서부터  (Noun + 에서부터)",
+      "ex": [
+        {
+          "ko": "이 기차는 서울에서부터 출발해요.",
+          "en": "This train departs from Seoul."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "집",
+                "집에서부터"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "학교",
+                "학교에서부터"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

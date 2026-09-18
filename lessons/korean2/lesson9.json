@@ -1,0 +1,169 @@
+{
+  "lesson": "9",
+  "num": "9과",
+  "title": "주말마다 산에 가요",
+  "en": "I go to the mountains every weekend",
+  "topic": "Days Off · 휴일",
+  "vocab": [
+    {
+      "theme": "여가 · Leisure",
+      "items": [
+        {
+          "kw": "낚시",
+          "mean": "fishing"
+        },
+        {
+          "kw": "경기",
+          "mean": "game / match"
+        },
+        {
+          "kw": "소풍",
+          "mean": "picnic"
+        },
+        {
+          "kw": "부지런하다",
+          "mean": "diligent"
+        },
+        {
+          "kw": "귀찮다",
+          "mean": "to feel lazy / bothered"
+        }
+      ]
+    },
+    {
+      "theme": "빈도 · Frequency",
+      "items": [
+        {
+          "kw": "가끔",
+          "mean": "sometimes"
+        },
+        {
+          "kw": "늘",
+          "mean": "always"
+        },
+        {
+          "kw": "거의",
+          "mean": "almost"
+        },
+        {
+          "kw": "매주",
+          "mean": "every week"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-는데 ②",
+      "tag": "soft ending inviting a reaction",
+      "def_ko": "어떤 사실을 말하면서 듣는 사람의 반응을 기다리거나 그것에 대해 감탄할 때 사용합니다.",
+      "def_en": "Used to state a fact while waiting for the listener's reaction, or to express admiration.",
+      "info_en": "동사 + -는데,  형용사 + -은데/-ㄴ데",
+      "ex": [
+        {
+          "ko": "후안 씨가 운동을 잘하는데요.",
+          "en": "Wow, Juan is really good at sports."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사",
+            [
+              [
+                "먹다",
+                "먹는데"
+              ],
+              [
+                "가다",
+                "가는데"
+              ],
+              [
+                "만들다",
+                "만드는데"
+              ]
+            ]
+          ],
+          [
+            "형용사 받침 O",
+            [
+              [
+                "작다",
+                "작은데"
+              ]
+            ]
+          ],
+          [
+            "형용사 받침 X / ㄹ",
+            [
+              [
+                "크다",
+                "큰데"
+              ],
+              [
+                "멀다",
+                "먼데"
+              ]
+            ]
+          ],
+          [
+            "예외",
+            [
+              [
+                "재미있다",
+                "재미있는데"
+              ],
+              [
+                "맛없다",
+                "맛없는데"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "마다",
+      "tag": "every / each",
+      "def_ko": "하나도 빠짐없이 모두 비슷한 상황에 있거나 각 상황이 되풀이됨을 나타냅니다.",
+      "def_en": "Indicates that every case is similar, or that each situation repeats (\"every / each\").",
+      "info_en": "명사 + 마다  (Noun + 마다)",
+      "ex": [
+        {
+          "ko": "저는 주말마다 등산을 해요.",
+          "en": "I go hiking every weekend."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "아침",
+                "아침마다"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "자리",
+                "자리마다"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

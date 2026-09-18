@@ -1,0 +1,157 @@
+{
+  "lesson": "12",
+  "num": "12과",
+  "title": "사비나 씨는 어떤 사람을 좋아해요?",
+  "en": "What kind of person does Sabina like?",
+  "topic": "Interpersonal · 대인관계",
+  "vocab": [
+    {
+      "theme": "대인 관계 · Interpersonal relationships",
+      "items": [
+        {
+          "kw": "성격",
+          "mean": "personality"
+        },
+        {
+          "kw": "거짓말",
+          "mean": "a lie"
+        },
+        {
+          "kw": "돕다",
+          "mean": "to help"
+        },
+        {
+          "kw": "믿다",
+          "mean": "to believe / trust"
+        },
+        {
+          "kw": "화나다",
+          "mean": "to get angry"
+        }
+      ]
+    },
+    {
+      "theme": "성향 · Characters / dispositions",
+      "items": [
+        {
+          "kw": "착하다",
+          "mean": "nice, good-natured"
+        },
+        {
+          "kw": "친절하다",
+          "mean": "kind"
+        },
+        {
+          "kw": "부지런하다",
+          "mean": "diligent"
+        },
+        {
+          "kw": "똑똑하다",
+          "mean": "smart"
+        },
+        {
+          "kw": "게으르다",
+          "mean": "lazy"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-은 (past)",
+      "tag": "past-tense modifier on a verb",
+      "def_ko": "동사에 붙어서 명사를 꾸며 줍니다. '-은'이 붙으면 과거에 일어난 행동을 나타냅니다.",
+      "def_en": "Attached to a verb to modify a noun; marks an action that happened in the past.",
+      "info_en": "동사 + -은/-ㄴ  (Verb + -은/-ㄴ)",
+      "ex": [
+        {
+          "ko": "지난 주말에 본 영화 재미있었어요?",
+          "en": "Was the movie you watched last weekend fun?"
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹은"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "간"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "살다",
+                "산"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-어 주다",
+      "tag": "do an action for someone else",
+      "def_ko": "다른 사람을 위해서 어떤 행동을 하는 것을 나타냅니다. 도움을 부탁하거나 남을 위해 무엇을 하겠다고 할 때 씁니다.",
+      "def_en": "Indicates doing an action for someone else — used when asking for help or offering to do something for others.",
+      "info_en": "동사 + -어/-아 주다  (Verb + -어/-아 주다)",
+      "ex": [
+        {
+          "ko": "책이 무거우면 제가 좀 들어 줄게요.",
+          "en": "If the books are heavy, I'll carry them for you."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "ㅏ,ㅗ X",
+            [
+              [
+                "들다",
+                "들어 주다"
+              ]
+            ]
+          ],
+          [
+            "ㅏ,ㅗ O",
+            [
+              [
+                "닫다",
+                "닫아 주다"
+              ]
+            ]
+          ],
+          [
+            "-하다",
+            [
+              [
+                "말하다",
+                "말해 주다"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

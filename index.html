@@ -3,63 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>세종학당 한국어 3A · Grammar & Vocabulary Lookup</title>
+<title>세종학당 한국어 · Grammar & Vocabulary Lookup</title>
 <!-- Cache busting: whenever styles.css, app.js, quiz.js OR any lessons/*.json changes,
      bump EVERY ?v= below to the same new number (app.js reuses it for the lesson files).
      GitHub Pages sends cache-control: max-age=600, so without this a browser can pair
      new HTML with a stale script, stylesheet, or lesson data. -->
-<link rel="stylesheet" href="styles.css?v=10">
+<link rel="stylesheet" href="styles.css?v=13">
+<script>
+  /* Decide before the first paint whether this is the landing page (no #course in the
+     address) or a course, and which course's colours to use, so neither the wrong page
+     nor the wrong theme flashes on screen. app.js confirms both once it has loaded. */
+  try {
+    const id = decodeURIComponent(location.hash.slice(1));
+    document.documentElement.dataset.page = id ? 'course' : 'landing';
+    if (id) document.documentElement.dataset.theme = id;
+  } catch (error) { /* odd hash: app.js sorts it out */ }
+</script>
 </head>
 <body>
 <div class="wrap">
-  <header class="top">
-    <span class="lvl">INTERMEDIATE · 중급</span>
-    <h1>세종학당 한국어 3A</h1>
-    <p>Grammar &amp; Vocabulary Lookup · 문법과 어휘 찾아보기</p>
-    <p class="author">by <a href="https://cecilecabrera.com/" target="_blank" rel="noopener">Cecile Cabrera</a></p>
-  </header>
+  <!-- Landing page, shown when the address names no course. The course cards come from
+       lessons/courses.json, built by app.js. -->
+  <section id="landing" aria-labelledby="landingTitle">
+    <header class="landing-head">
+      <h1 id="landingTitle">세종학당 한국어</h1>
+      <p>Grammar &amp; Vocabulary Lookup · 문법과 어휘 찾아보기</p>
+      <p class="author">by <a href="https://cecilecabrera.com/" target="_blank" rel="noopener">Cecile Cabrera</a></p>
+      <p class="landing-pick">공부할 과정을 선택하세요 · Choose a course</p>
+    </header>
 
-  <aside class="kofi">
-    <p>이 사이트가 도움이 되었나요? · Free to use — if it helps your Korean, consider buying me a coffee.</p>
-    <a class="kofi-btn" href="https://ko-fi.com/cecilecabrera" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
-  </aside>
+    <div class="course-cards" id="courseCards"></div>
 
-  <div class="controls">
-    <input type="text" class="search" id="search" placeholder="🔍  Search Korean or English… (예: 동아리, welcome, -으려면)">
-    <div class="row">
-      <div class="tabs" id="tabs">
-        <button class="tab active" data-lesson="all">All</button>
-        <button class="tab" data-lesson="1">1과</button>
-        <button class="tab" data-lesson="2">2과</button>
-        <button class="tab" data-lesson="3">3과</button>
-        <button class="tab" data-lesson="4">4과</button>
-        <button class="tab" data-lesson="5">5과</button>
-        <button class="tab" data-lesson="6">6과</button>
-        <button class="tab" data-lesson="7">7과</button>
-        <button class="tab" data-lesson="8">8과</button>
+    <aside class="kofi">
+      <p>이 사이트가 도움이 되었나요? · Free to use — if it helps your Korean, consider buying me a coffee.</p>
+      <a class="kofi-btn" href="https://ko-fi.com/cecilecabrera" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
+    </aside>
+
+    <footer>Source: 세종학당 (King Sejong Institute)</footer>
+  </section>
+
+  <!-- A course, shown when the address names one (…/#korean2) -->
+  <div id="app">
+    <header class="top">
+      <!-- 🏠 back to the landing page, then one button per course; built by app.js -->
+      <div class="course-switch" id="courseSwitch" role="group" aria-label="Course"></div>
+      <h1 id="courseTitle">세종학당 한국어</h1>
+      <p>Grammar &amp; Vocabulary Lookup · 문법과 어휘 찾아보기</p>
+      <p class="author">by <a href="https://cecilecabrera.com/" target="_blank" rel="noopener">Cecile Cabrera</a></p>
+    </header>
+
+    <aside class="kofi">
+      <p>이 사이트가 도움이 되었나요? · Free to use — if it helps your Korean, consider buying me a coffee.</p>
+      <a class="kofi-btn" href="https://ko-fi.com/cecilecabrera" target="_blank" rel="noopener">☕ Support on Ko-fi</a>
+    </aside>
+
+    <div class="controls">
+      <input type="text" class="search" id="search" placeholder="🔍  Search Korean or English…">
+      <div class="row">
+        <!-- One tab per lesson in the chosen course, built by app.js from its manifest -->
+        <div class="tabs" id="tabs"></div>
+        <label class="toggle"><input type="checkbox" id="enToggle" checked> Show English</label>
+        <button class="fc-btn" id="fcStart">🎴 Flashcards</button>
+        <button class="qz-btn" id="qzStart">✏️ Quiz</button>
       </div>
-      <label class="toggle"><input type="checkbox" id="enToggle" checked> Show English</label>
-      <button class="fc-btn" id="fcStart">🎴 Flashcards</button>
-      <button class="qz-btn" id="qzStart">✏️ Quiz</button>
+      <noscript><div class="hint" style="color:#b45; font-weight:600">Note: search & flashcards need a full browser (Chrome/Safari). The word &amp; grammar list below works everywhere.</div></noscript>
     </div>
-    <noscript><div class="hint" style="color:#b45; font-weight:600">Note: search & flashcards need a full browser (Chrome/Safari). The word &amp; grammar list below works everywhere.</div></noscript>
-  </div>
 
-  <!-- Deliberately outside the sticky .controls: views change rarely, and on phones the
-       sticky bar is already tall with the search, lesson tabs and buttons. -->
-  <div class="viewbar">
-    <div class="view-switch" id="viewSwitch" role="group" aria-label="View">
-      <button type="button" class="on" data-view="all" aria-pressed="true">전체 · All</button>
-      <button type="button" data-view="grammar" aria-pressed="false">문법 목록 · Grammar list</button>
+    <!-- Deliberately outside the sticky .controls: views change rarely, and on phones the
+         sticky bar is already tall with the search, lesson tabs and buttons. -->
+    <div class="viewbar">
+      <div class="view-switch" id="viewSwitch" role="group" aria-label="View">
+        <button type="button" class="on" data-view="all" aria-pressed="true">전체 · All</button>
+        <button type="button" data-view="grammar" aria-pressed="false">문법 목록 · Grammar list</button>
+      </div>
+      <button type="button" class="expand-all hidden" id="expandAll">모두 펼치기 · Expand all</button>
+      <div class="hint" id="hint">Tip: click any vocabulary card to flip it and hide the answer.</div>
     </div>
-    <button type="button" class="expand-all hidden" id="expandAll">모두 펼치기 · Expand all</button>
-    <div class="hint" id="hint">Tip: click any vocabulary card to flip it and hide the answer.</div>
+
+    <div id="content"></div>
+    <div id="grammarList" class="hidden"></div>
+
+    <footer id="courseSource">Source: 세종학당 한국어 (King Sejong Institute)</footer>
   </div>
-
-  <div id="content"></div>
-  <div id="grammarList" class="hidden"></div>
-
-  <footer>Source: 세종학당 한국어 3A (King Sejong Institute)</footer>
 </div>
 
 <!-- Flashcard review overlay -->
@@ -69,17 +94,7 @@
       <span class="meta" id="fcMeta">Flashcards</span>
       <button class="fc-close" id="fcClose">&times;</button>
     </div>
-    <div class="fc-scope" id="fcScope">
-      <button data-scope="all" class="on">All</button>
-      <button data-scope="1">1과</button>
-      <button data-scope="2">2과</button>
-      <button data-scope="3">3과</button>
-      <button data-scope="4">4과</button>
-      <button data-scope="5">5과</button>
-      <button data-scope="6">6과</button>
-      <button data-scope="7">7과</button>
-      <button data-scope="8">8과</button>
-    </div>
+    <div class="fc-scope" id="fcScope"><!-- lesson buttons, built by app.js --></div>
     <div class="fc-progress"><span id="fcBar"></span></div>
     <div id="fcBody"></div>
     <div class="fc-mark" id="fcMark">
@@ -107,17 +122,7 @@
       <span class="meta" id="qzMeta">Quiz</span>
       <button class="fc-close" id="qzClose">&times;</button>
     </div>
-    <div class="fc-scope" id="qzScope">
-      <button data-scope="all" class="on">All</button>
-      <button data-scope="1">1과</button>
-      <button data-scope="2">2과</button>
-      <button data-scope="3">3과</button>
-      <button data-scope="4">4과</button>
-      <button data-scope="5">5과</button>
-      <button data-scope="6">6과</button>
-      <button data-scope="7">7과</button>
-      <button data-scope="8">8과</button>
-    </div>
+    <div class="fc-scope" id="qzScope"><!-- lesson buttons, built by app.js --></div>
     <div class="fc-progress"><span id="qzBar"></span></div>
 
     <div class="qz-prompt" id="qzPrompt"></div>
@@ -137,7 +142,7 @@
   </div>
 </div>
 
-<script src="app.js?v=10"></script>
-<script src="quiz.js?v=10"></script>
+<script src="app.js?v=13"></script>
+<script src="quiz.js?v=13"></script>
 </body>
 </html>

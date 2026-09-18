@@ -1,0 +1,200 @@
+{
+  "lesson": "17",
+  "num": "17과",
+  "title": "저는 시간이 있을 때 요리해요",
+  "en": "I cook when I have time",
+  "topic": "Hobbies · 취미",
+  "vocab": [
+    {
+      "theme": "취미 · Hobby",
+      "items": [
+        {
+          "kw": "스키",
+          "mean": "ski"
+        },
+        {
+          "kw": "스케이트",
+          "mean": "skate"
+        },
+        {
+          "kw": "테니스",
+          "mean": "tennis"
+        },
+        {
+          "kw": "배드민턴",
+          "mean": "badminton"
+        },
+        {
+          "kw": "피아노",
+          "mean": "piano"
+        },
+        {
+          "kw": "바이올린",
+          "mean": "violin"
+        },
+        {
+          "kw": "기타",
+          "mean": "guitar"
+        }
+      ]
+    },
+    {
+      "theme": "표현 · Expressions",
+      "quiz": false,
+      "items": [
+        {
+          "kw": "(스키, 스케이트)을/를 타다",
+          "mean": "to ride / do (skis, skates)"
+        },
+        {
+          "kw": "(테니스, 배드민턴, 피아노, 기타)을/를 치다",
+          "mean": "to play (tennis, badminton, piano, guitar)"
+        },
+        {
+          "kw": "(바이올린, 첼로)을/를 켜다",
+          "mean": "to play (the violin, cello)"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-을 때",
+      "tag": "when / while an action happens",
+      "def_ko": "어떤 행동이나 상황이 일어나는 시간, 또는 그것이 계속되는 동안을 나타냅니다.",
+      "def_en": "Indicates the time when an action/situation occurs, or its duration (\"when / while\").",
+      "info_en": "동사, 형용사 + -을/-ㄹ 때",
+      "ex": [
+        {
+          "ko": "시간이 있을 때 뭘 해요?",
+          "en": "What do you do when you have time?"
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹을 때"
+              ],
+              [
+                "좋다",
+                "좋을 때"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "갈 때"
+              ],
+              [
+                "조용하다",
+                "조용할 때"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "살다",
+                "살 때"
+              ],
+              [
+                "멀다",
+                "멀 때"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-게 되다",
+      "tag": "end up (by external circumstance)",
+      "def_ko": "외부의 영향으로 어떤 상황에 이르렀을 때 씁니다. 자기가 원해서가 아니라 상황이 그렇게 되었을 때 씁니다.",
+      "def_en": "Used when you end up in a situation due to outside influence, not by your own choice.",
+      "info_en": "동사 + -게 되다  (Verb + -게 되다)",
+      "ex": [
+        {
+          "ko": "한국 대학교에 입학해서 가게 됐어요.",
+          "en": "I ended up going because I got into a Korean university."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "알다",
+                "알게 되다"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "가게 되다"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "에게로",
+      "tag": "movement toward a person",
+      "def_ko": "어떤 대상 쪽으로 움직임이 향하는 것을 나타냅니다.",
+      "def_en": "Indicates movement directed toward a person or target (\"to / toward\").",
+      "info_en": "명사 + 에게로  (Noun + 에게로)",
+      "ex": [
+        {
+          "ko": "강아지가 지훈 씨에게로 갔어요.",
+          "en": "The puppy went toward Jihoon."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "선생님",
+                "선생님에게로"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "친구",
+                "친구에게로"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

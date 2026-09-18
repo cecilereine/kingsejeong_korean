@@ -1,0 +1,174 @@
+{
+  "lesson": "10",
+  "num": "10과",
+  "title": "밤 10시 이후로는 조용히 할 것",
+  "en": "Be quiet after 10 p.m.",
+  "topic": "School Life · 학교생활",
+  "vocab": [
+    {
+      "theme": "자기소개 · Self-introduction",
+      "items": [
+        {
+          "kw": "교환 학생",
+          "mean": "exchange student"
+        },
+        {
+          "kw": "대학원",
+          "mean": "graduate school"
+        },
+        {
+          "kw": "전공",
+          "mean": "major"
+        },
+        {
+          "kw": "학년",
+          "mean": "grade / school year"
+        },
+        {
+          "kw": "학기",
+          "mean": "semester"
+        }
+      ]
+    },
+    {
+      "theme": "수업 · Class",
+      "items": [
+        {
+          "kw": "출석하다",
+          "mean": "to attend"
+        },
+        {
+          "kw": "결석하다",
+          "mean": "to be absent"
+        },
+        {
+          "kw": "지각",
+          "mean": "tardiness (지각하다 = to be late)"
+        },
+        {
+          "kw": "성적",
+          "mean": "grade(s) / results"
+        }
+      ]
+    },
+    {
+      "theme": "기숙사 · Dormitory",
+      "items": [
+        {
+          "kw": "규칙",
+          "mean": "rule"
+        },
+        {
+          "kw": "안내문",
+          "mean": "notice / guide"
+        },
+        {
+          "kw": "게시판",
+          "mean": "bulletin board"
+        },
+        {
+          "kw": "모임",
+          "mean": "gathering"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-을 것",
+      "tag": "order / instruction (written)",
+      "def_ko": "명령이나 지시를 나타냅니다.",
+      "def_en": "Indicates an order or instruction, often in written notices (\"must / to do\").",
+      "info_en": "동사 + -을/-ㄹ 것",
+      "ex": [
+        {
+          "ko": "40쪽까지 풀어 올 것.",
+          "en": "Solve up to page 40. (instruction)"
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹을 것"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "하다",
+                "할 것"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "만들다",
+                "만들 것"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-을 수밖에 없다",
+      "tag": "no choice but to / inevitable",
+      "def_ko": "그것 외에 다른 방법이 없거나 당연한 결과임을 나타냅니다.",
+      "def_en": "Indicates there is no other option, or that something is a natural consequence (\"have no choice but to\").",
+      "info_en": "동사, 형용사 + -을/-ㄹ 수밖에 없다",
+      "ex": [
+        {
+          "ko": "기차표가 없어서 비행기를 탈 수밖에 없어요.",
+          "en": "There were no train tickets, so I have no choice but to take a plane."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹을 수밖에 없다"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "하다",
+                "할 수밖에 없다"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "놀다",
+                "놀 수밖에 없다"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

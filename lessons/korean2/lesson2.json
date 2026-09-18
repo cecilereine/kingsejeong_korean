@@ -1,0 +1,156 @@
+{
+  "lesson": "2",
+  "num": "2과",
+  "title": "동대문에 가 보세요",
+  "en": "Try going to Dongdaemun",
+  "topic": "Shopping · 쇼핑",
+  "vocab": [
+    {
+      "theme": "장소 · Places",
+      "items": [
+        {
+          "kw": "명동",
+          "mean": "Myeong-dong"
+        },
+        {
+          "kw": "동대문",
+          "mean": "Dongdaemun"
+        },
+        {
+          "kw": "강남",
+          "mean": "Gangnam"
+        },
+        {
+          "kw": "인사동",
+          "mean": "Insa-dong"
+        },
+        {
+          "kw": "카페",
+          "mean": "cafe"
+        },
+        {
+          "kw": "시장",
+          "mean": "market"
+        }
+      ]
+    },
+    {
+      "theme": "장소의 상태 · Condition of a place",
+      "items": [
+        {
+          "kw": "더럽다",
+          "mean": "dirty"
+        },
+        {
+          "kw": "깨끗하다",
+          "mean": "clean"
+        },
+        {
+          "kw": "복잡하다",
+          "mean": "crowded / complicated"
+        },
+        {
+          "kw": "시끄럽다",
+          "mean": "noisy"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "에게서 / 한테서",
+      "tag": "the source an action comes from",
+      "def_ko": "어떤 행위의 출발점이나 어떤 행위가 비롯되는 대상임을 나타냅니다. (에게서: 말·글 모두, 한테서: 주로 말)",
+      "def_en": "Indicates the starting point or source of an action (\"from\"). 에게서 is used in both writing and speech; 한테서 is mainly spoken.",
+      "info_en": "명사 + 에게서 / 한테서  (Noun + 에게서 / 한테서)",
+      "ex": [
+        {
+          "ko": "언니에게서 들었어요.",
+          "en": "I heard it from my older sister."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "학생",
+                "학생에게서 / 학생한테서"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "선배",
+                "선배에게서 / 선배한테서"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-어 보다",
+      "tag": "try doing something",
+      "def_ko": "과거에 경험하지 않은 어떤 행위를 한번 시도함을 나타냅니다.",
+      "def_en": "Indicates attempting an action you haven't experienced before (\"try -ing\").",
+      "info_en": "동사 + -어/-아 보다",
+      "ex": [
+        {
+          "ko": "강남에 가 보세요.",
+          "en": "Try going to Gangnam."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "ㅏ,ㅗ X",
+            [
+              [
+                "먹다",
+                "먹어 보다"
+              ],
+              [
+                "입다",
+                "입어 보다"
+              ]
+            ]
+          ],
+          [
+            "ㅏ,ㅗ O",
+            [
+              [
+                "가다",
+                "가 보다"
+              ],
+              [
+                "오다",
+                "와 보다"
+              ]
+            ]
+          ],
+          [
+            "-하다",
+            [
+              [
+                "공부하다",
+                "공부해 보다"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

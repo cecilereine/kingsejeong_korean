@@ -1,0 +1,182 @@
+{
+  "lesson": "4",
+  "num": "4과",
+  "title": "불고기를 해 먹는 게 어때요?",
+  "en": "How about making bulgogi to eat?",
+  "topic": "Grocery Shopping · 장보기",
+  "vocab": [
+    {
+      "theme": "쇼핑 · Shopping",
+      "items": [
+        {
+          "kw": "마트",
+          "mean": "mart"
+        },
+        {
+          "kw": "공짜",
+          "mean": "free"
+        },
+        {
+          "kw": "할인",
+          "mean": "discount"
+        }
+      ]
+    },
+    {
+      "theme": "양념 · Seasoning",
+      "items": [
+        {
+          "kw": "고추장",
+          "mean": "gochujang (chili paste)"
+        },
+        {
+          "kw": "된장",
+          "mean": "doenjang (soybean paste)"
+        },
+        {
+          "kw": "간장",
+          "mean": "soy sauce"
+        },
+        {
+          "kw": "설탕",
+          "mean": "sugar"
+        }
+      ]
+    },
+    {
+      "theme": "식재료 · Ingredients",
+      "items": [
+        {
+          "kw": "쌀",
+          "mean": "(uncooked) rice"
+        },
+        {
+          "kw": "밀가루",
+          "mean": "flour"
+        },
+        {
+          "kw": "소고기",
+          "mean": "beef"
+        },
+        {
+          "kw": "돼지고기",
+          "mean": "pork"
+        },
+        {
+          "kw": "닭고기",
+          "mean": "chicken"
+        },
+        {
+          "kw": "야채",
+          "mean": "vegetables"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-는데 ①",
+      "tag": "sets up background for what follows",
+      "def_ko": "뒤 절에 관한 배경이나 상황을 나타냅니다.",
+      "def_en": "Gives the background or situation for the following clause.",
+      "info_en": "동사 + -는데,  형용사 + -은데/-ㄴ데",
+      "ex": [
+        {
+          "ko": "어제 백화점에서 치마를 샀는데 어때요?",
+          "en": "I bought a skirt at the department store yesterday — how is it?"
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사",
+            [
+              [
+                "먹다",
+                "먹는데"
+              ],
+              [
+                "가다",
+                "가는데"
+              ]
+            ]
+          ],
+          [
+            "형용사 받침 O",
+            [
+              [
+                "작다",
+                "작은데"
+              ]
+            ]
+          ],
+          [
+            "형용사 받침 X / ㄹ",
+            [
+              [
+                "크다",
+                "큰데"
+              ],
+              [
+                "멀다",
+                "먼데"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-는 것",
+      "tag": "turns a verb into a noun",
+      "def_ko": "동사 뒤에 붙어 그것이 명사로 기능함을 나타냅니다.",
+      "def_en": "Attaches to a verb to make it function as a noun (\"the act of -ing\").",
+      "info_en": "동사 + -는 것",
+      "ex": [
+        {
+          "ko": "어디를 가는 것이 좋을까?",
+          "en": "Where would be good to go?"
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹는 것"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "하다",
+                "하는 것"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "놀다",
+                "노는 것"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

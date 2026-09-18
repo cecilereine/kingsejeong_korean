@@ -1,0 +1,20 @@
+[
+  {
+    "id": "korean2",
+    "label": "한국어 2 · 초급",
+    "level": "초급 · Beginner",
+    "title": "세종학당 한국어 2",
+    "source": "바로 배워 바로 쓰는 세종학당 한국어 2 (King Sejong Institute)",
+    "searchExamples": "날씨, weather, -겠-",
+    "progressKey": "ksi2_learned"
+  },
+  {
+    "id": "korean3",
+    "label": "한국어 3 · 중급",
+    "level": "중급 · Intermediate",
+    "title": "세종학당 한국어 3",
+    "source": "세종학당 한국어 3 (King Sejong Institute)",
+    "searchExamples": "동아리, welcome, -으려면",
+    "progressKey": "ksi3a_learned"
+  }
+]

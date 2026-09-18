@@ -47,19 +47,40 @@ function englishAnswers(meaning) {
   return [...answers];
 }
 
-/* A bracketed ending is optional and may offer alternatives:
+/* A slash outside brackets separates alternative words ("휴대 전화/휴대폰");
+   inside brackets it separates alternative endings (기대(하다/되다)), handled below. */
+function splitAlternatives(word) {
+  const parts = [];
+  let depth = 0;
+  let current = '';
+  for (const ch of word) {
+    if (ch === '(') depth++;
+    else if (ch === ')') depth = Math.max(0, depth - 1);
+    if (ch === '/' && depth === 0) { parts.push(current); current = ''; } else current += ch;
+  }
+  parts.push(current);
+  return parts.map(part => part.trim()).filter(Boolean);
+}
+
+/* A bracketed part is optional, and may offer alternative endings:
      가입(하다)      → 가입, 가입하다
      기대(하다/되다)  → 기대, 기대하다, 기대되다
-   The form as written is accepted too. */
+     (돈이) 아깝다   → 아깝다, 돈이 아깝다
+   The form as written is accepted too, and so is either word of "휴대 전화/휴대폰". */
 function koreanAnswers(word) {
   const answers = new Set(bothForms(word));
-  const stem = word.replace(/\([^)]*\)/g, '').trim();
-  bothForms(stem).forEach(form => answers.add(form));
+  for (const alternative of splitAlternatives(word)) {
+    bothForms(alternative).forEach(form => answers.add(form));
+    bothForms(alternative.replace(/[()]/g, '')).forEach(form => answers.add(form));
 
-  const endings = word.match(/\(([^)]*)\)/)?.[1] ?? '';
-  for (const ending of endings.split('/')) {
-    const suffix = ending.trim();
-    if (suffix) bothForms(stem + suffix).forEach(form => answers.add(form));
+    const stem = alternative.replace(/\([^)]*\)/g, '').trim();
+    bothForms(stem).forEach(form => answers.add(form));
+
+    const endings = alternative.match(/\(([^)]*)\)/)?.[1] ?? '';
+    for (const ending of endings.split('/')) {
+      const suffix = ending.trim();
+      if (suffix) bothForms(stem + suffix).forEach(form => answers.add(form));
+    }
   }
   return [...answers];
 }
@@ -100,11 +121,13 @@ const shuffle = items => {
 /* ---------- rendering ---------- */
 
 function startQuiz() {
-  questions = shuffle(cardsInScope(scope));
+  // Vocabulary groups marked quiz: false (whole phrases) stay out of the typed quiz.
+  questions = shuffle(cardsInScope(scope).filter(card => card.quiz));
   qIdx = 0;
   score = 0;
   results = [];
   overlay.classList.add('on');
+  $('#qzScope button.on')?.scrollIntoView({ block: 'nearest', inline: 'center' });
   renderQuestion();
 }
 
@@ -189,12 +212,14 @@ function renderSummary() {
     </div>`;
 }
 
-/* Shows the full written meaning plus the example sentence, so a wrong answer
-   still teaches something. */
+/* Shows the full written meaning, plus the example sentence when the word has one,
+   so a wrong answer still teaches something. */
 function revealAnswer(card) {
   const expected = direction === 'ko' ? card.mean : card.kw;
-  return `<div class="qz-expected">${esc(expected)}</div>
-          <div class="qz-example">${esc(card.ex)}<span class="qz-example-en">${esc(card.exen)}</span></div>`;
+  const example = card.ex
+    ? `<div class="qz-example">${esc(card.ex)}<span class="qz-example-en">${esc(card.exen)}</span></div>`
+    : '';
+  return `<div class="qz-expected">${esc(expected)}</div>${example}`;
 }
 
 function checkAnswer() {

@@ -1,0 +1,221 @@
+{
+  "lesson": "14",
+  "num": "14과",
+  "title": "한국에서 찜질방은 처음인데요",
+  "en": "It's my first time at a jjimjilbang in Korea",
+  "topic": "Amenities · 생활 편의시설",
+  "vocab": [
+    {
+      "theme": "편의 시설 · Amenities",
+      "items": [
+        {
+          "kw": "편의점",
+          "mean": "convenience store"
+        },
+        {
+          "kw": "찜질방",
+          "mean": "jjimjilbang (Korean sauna)"
+        },
+        {
+          "kw": "목욕탕",
+          "mean": "public bath"
+        },
+        {
+          "kw": "스포츠 센터",
+          "mean": "sports center"
+        },
+        {
+          "kw": "주차장",
+          "mean": "parking lot"
+        },
+        {
+          "kw": "엘리베이터",
+          "mean": "elevator"
+        }
+      ]
+    },
+    {
+      "theme": "편의 시설 이용 · Using amenities",
+      "items": [
+        {
+          "kw": "이용하다",
+          "mean": "to use"
+        },
+        {
+          "kw": "편리하다",
+          "mean": "convenient"
+        },
+        {
+          "kw": "불편하다",
+          "mean": "inconvenient / uncomfortable"
+        }
+      ]
+    },
+    {
+      "theme": "표현 · Expressions",
+      "quiz": false,
+      "items": [
+        {
+          "kw": "무료로 이용하다",
+          "mean": "to use for free"
+        },
+        {
+          "kw": "(엘리베이터)를 타다",
+          "mean": "to take the (elevator)"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-지?",
+      "tag": "confirming what the listener knows",
+      "def_ko": "듣는 사람이 어떤 사실을 알고 있다고 믿고 물어보거나, 이미 아는 것을 확인하듯 물어볼 때 씁니다.",
+      "def_en": "Used to ask/confirm something you believe the listener already knows (\"…right?\").",
+      "info_en": "동사, 형용사 + -지?",
+      "ex": [
+        {
+          "ko": "편의점은 밤에도 문을 열지요?",
+          "en": "Convenience stores are open at night too, right?"
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "닫다",
+                "닫지?"
+              ],
+              [
+                "덥다",
+                "덥지?"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "가지?"
+              ],
+              [
+                "예쁘다",
+                "예쁘지?"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-기 때문에",
+      "tag": "reason / cause",
+      "def_ko": "앞의 내용이 뒤 내용의 이유나 원인이 될 때 씁니다.",
+      "def_en": "Used when the preceding clause is the reason or cause of the following one (\"because\").",
+      "info_en": "동사, 형용사 + -기 때문에",
+      "ex": [
+        {
+          "ko": "숙제가 많기 때문에 오늘은 못 가요.",
+          "en": "Because I have a lot of homework, I can't go today."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹기 때문에"
+              ],
+              [
+                "덥다",
+                "덥기 때문에"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "가기 때문에"
+              ],
+              [
+                "예쁘다",
+                "예쁘기 때문에"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-음",
+      "tag": "turns a verb/adjective into a noun",
+      "def_ko": "동사나 형용사를 명사형으로 만들어 문장에서 명사처럼 쓰이게 합니다.",
+      "def_en": "Nominalizes a verb or adjective so it can act as a noun in the sentence.",
+      "info_en": "동사, 형용사 + -음/-ㅁ",
+      "ex": [
+        {
+          "ko": "가영 씨는 고양이를 좋아함이 분명해요.",
+          "en": "It's clear that Gayoung likes cats."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹음"
+              ],
+              [
+                "작다",
+                "작음"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "감"
+              ],
+              [
+                "예쁘다",
+                "예쁨"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "만들다",
+                "만듦"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

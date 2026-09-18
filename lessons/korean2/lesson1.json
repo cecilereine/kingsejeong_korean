@@ -1,0 +1,156 @@
+{
+  "lesson": "1",
+  "num": "1과",
+  "title": "비가 너무 많이 오네요",
+  "en": "It's raining so much",
+  "topic": "Weather · 날씨",
+  "vocab": [
+    {
+      "theme": "기후 · Climate",
+      "items": [
+        {
+          "kw": "기온이 높다",
+          "mean": "the temperature is high"
+        },
+        {
+          "kw": "기온이 낮다",
+          "mean": "the temperature is low"
+        },
+        {
+          "kw": "장마",
+          "mean": "rainy season"
+        },
+        {
+          "kw": "태풍",
+          "mean": "typhoon"
+        },
+        {
+          "kw": "사계절",
+          "mean": "four seasons"
+        }
+      ]
+    },
+    {
+      "theme": "날씨 · Weather",
+      "items": [
+        {
+          "kw": "햇빛",
+          "mean": "sunlight"
+        },
+        {
+          "kw": "비가 그치다",
+          "mean": "the rain stops"
+        },
+        {
+          "kw": "선선하다",
+          "mean": "cool"
+        },
+        {
+          "kw": "쌀쌀하다",
+          "mean": "chilly"
+        },
+        {
+          "kw": "구름이 끼다",
+          "mean": "to be cloudy"
+        },
+        {
+          "kw": "안개가 끼다",
+          "mean": "to be foggy"
+        },
+        {
+          "kw": "바람이 불다",
+          "mean": "the wind blows"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-겠-",
+      "tag": "speculation / guess",
+      "def_ko": "어떤 일이나 상황을 추측하는 것을 나타냅니다.",
+      "def_en": "Indicates one's speculation about an action or a situation (\"must be / would be\").",
+      "info_en": "동사, 형용사 + -겠-",
+      "ex": [
+        {
+          "ko": "정말 좋겠어요.",
+          "en": "That must be really nice."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹겠어요"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "오다",
+                "오겠어요"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-네",
+      "tag": "reacting to something just noticed",
+      "def_ko": "지금 보거나 들어서 새롭게 알게 된 사실을 나타냅니다.",
+      "def_en": "Indicates a fact newly realized from seeing or hearing it right now.",
+      "info_en": "동사, 형용사 + -네",
+      "ex": [
+        {
+          "ko": "와, 귀걸이가 예쁘네요.",
+          "en": "Wow, the earrings are pretty!"
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹네요"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "하다",
+                "하네요"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "놀다",
+                "노네요"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

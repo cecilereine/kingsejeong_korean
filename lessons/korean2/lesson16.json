@@ -1,0 +1,174 @@
+{
+  "lesson": "16",
+  "num": "16과",
+  "title": "이 원피스를 입어 봐도 돼요?",
+  "en": "May I try on this dress?",
+  "topic": "Clothing · 의복",
+  "vocab": [
+    {
+      "theme": "옷 종류 · Types of clothes",
+      "items": [
+        {
+          "kw": "원피스",
+          "mean": "dress"
+        },
+        {
+          "kw": "바지",
+          "mean": "pants"
+        },
+        {
+          "kw": "치마",
+          "mean": "skirt"
+        },
+        {
+          "kw": "티셔츠",
+          "mean": "T-shirt"
+        },
+        {
+          "kw": "정장",
+          "mean": "suit"
+        },
+        {
+          "kw": "코트",
+          "mean": "coat"
+        }
+      ]
+    },
+    {
+      "theme": "옷 쇼핑 · Shopping for clothes",
+      "items": [
+        {
+          "kw": "가격",
+          "mean": "price"
+        },
+        {
+          "kw": "사이즈",
+          "mean": "size"
+        },
+        {
+          "kw": "색깔",
+          "mean": "color"
+        },
+        {
+          "kw": "디자인",
+          "mean": "design"
+        }
+      ]
+    },
+    {
+      "theme": "탈착 표현 · Putting on / taking off",
+      "quiz": false,
+      "items": [
+        {
+          "kw": "(옷)을 입다",
+          "mean": "to wear (clothes)"
+        },
+        {
+          "kw": "(옷, 신발)을 벗다",
+          "mean": "to take off (clothes/shoes)"
+        },
+        {
+          "kw": "(신발)을 신다",
+          "mean": "to wear (shoes)"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "처럼",
+      "tag": "like / same as (comparison)",
+      "def_ko": "어떤 모양이나 행동이 다른 것과 비슷하거나 같을 때 씁니다.",
+      "def_en": "Used when a shape or action is similar to or the same as another (\"like\").",
+      "info_en": "명사 + 처럼  (Noun + 처럼)",
+      "ex": [
+        {
+          "ko": "꼭 가수처럼 노래를 하네요.",
+          "en": "You sing just like a real singer."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "선생님",
+                "선생님처럼"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "요리사",
+                "요리사처럼"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-어도 되다",
+      "tag": "asking / giving permission",
+      "def_ko": "어떤 행동이나 상태에 대해 허락을 하거나 허락을 구할 때 씁니다.",
+      "def_en": "Used to ask for or grant permission (\"may / it's okay to\").",
+      "info_en": "동사, 형용사 + -어도/-아도 되다",
+      "ex": [
+        {
+          "ko": "이 옷 한번 입어 봐도 돼요?",
+          "en": "May I try on these clothes?"
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "ㅏ,ㅗ X",
+            [
+              [
+                "먹다",
+                "먹어도 되다"
+              ],
+              [
+                "멀다",
+                "멀어도 되다"
+              ]
+            ]
+          ],
+          [
+            "ㅏ,ㅗ O",
+            [
+              [
+                "가다",
+                "가도 되다"
+              ],
+              [
+                "작다",
+                "작아도 되다"
+              ]
+            ]
+          ],
+          [
+            "-하다",
+            [
+              [
+                "말하다",
+                "말해도 되다"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

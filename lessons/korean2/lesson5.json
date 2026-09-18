@@ -1,0 +1,153 @@
+{
+  "lesson": "5",
+  "num": "5과",
+  "title": "주문할게요",
+  "en": "I'll order now",
+  "topic": "Ordering · 주문",
+  "vocab": [
+    {
+      "theme": "주문 · Order",
+      "items": [
+        {
+          "kw": "예약",
+          "mean": "reservation"
+        },
+        {
+          "kw": "주문",
+          "mean": "order"
+        },
+        {
+          "kw": "취소",
+          "mean": "cancel"
+        },
+        {
+          "kw": "포장",
+          "mean": "to-go, take-out"
+        }
+      ]
+    },
+    {
+      "theme": "식기 · Tableware",
+      "items": [
+        {
+          "kw": "접시",
+          "mean": "plate"
+        },
+        {
+          "kw": "숟가락",
+          "mean": "spoon"
+        },
+        {
+          "kw": "젓가락",
+          "mean": "chopsticks"
+        },
+        {
+          "kw": "수저",
+          "mean": "spoon & chopsticks (set)"
+        }
+      ]
+    },
+    {
+      "theme": "계산 · Pay",
+      "items": [
+        {
+          "kw": "계산",
+          "mean": "bill / payment"
+        },
+        {
+          "kw": "영수증",
+          "mean": "receipt"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-을게",
+      "tag": "will / promise to do (informal)",
+      "def_ko": "동사 뒤에 붙어 미래에 어떤 일을 하겠다는 의지나 약속을 나타냅니다.",
+      "def_en": "Comes after a verb to express a will or promise to do something in the future.",
+      "info_en": "동사 + -을게/-ㄹ게",
+      "ex": [
+        {
+          "ko": "내가 나중에 전화할게.",
+          "en": "I'll call you later."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹을게"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "하다",
+                "할게"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "팔다",
+                "팔게"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-기",
+      "tag": "turns a verb/adjective into a noun",
+      "def_ko": "동사나 형용사 뒤에 붙어 그것이 명사로 기능함을 나타냅니다.",
+      "def_en": "Attaches to a verb or adjective to make it function as a noun.",
+      "info_en": "동사, 형용사 + -기",
+      "ex": [
+        {
+          "ko": "집 근처에 슈퍼마켓이 있어서 살기가 편해요.",
+          "en": "It's convenient to live here because there's a supermarket nearby."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹기"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "만나다",
+                "만나기"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

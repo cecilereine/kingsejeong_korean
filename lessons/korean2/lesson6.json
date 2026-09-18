@@ -1,0 +1,157 @@
+{
+  "lesson": "6",
+  "num": "6과",
+  "title": "휴가를 어떻게 보내기로 했어요?",
+  "en": "How did you decide to spend your vacation?",
+  "topic": "Vacation · 휴가",
+  "vocab": [
+    {
+      "theme": "날짜 · Date",
+      "items": [
+        {
+          "kw": "하루",
+          "mean": "one day"
+        },
+        {
+          "kw": "이틀",
+          "mean": "two days"
+        },
+        {
+          "kw": "사흘",
+          "mean": "three days"
+        }
+      ]
+    },
+    {
+      "theme": "관광·여행 · Tourism · Travel",
+      "items": [
+        {
+          "kw": "해외여행",
+          "mean": "overseas trip"
+        },
+        {
+          "kw": "항공권",
+          "mean": "flight ticket"
+        },
+        {
+          "kw": "기차표",
+          "mean": "train ticket"
+        },
+        {
+          "kw": "경치",
+          "mean": "scenery"
+        },
+        {
+          "kw": "관광",
+          "mean": "sightseeing"
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-기로 하다",
+      "tag": "decide / plan to do",
+      "def_ko": "어떤 행위에 대하여 그렇게 할 것을 계획하거나 결정함을 나타냅니다.",
+      "def_en": "Indicates planning or deciding to carry out a certain action.",
+      "info_en": "동사 + -기로 하다",
+      "ex": [
+        {
+          "ko": "도서관에서 만나기로 해요.",
+          "en": "Let's decide to meet at the library."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "앉다",
+                "앉기로 하다"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "가다",
+                "가기로 하다"
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-은 적이 있다",
+      "tag": "have (past) experience of",
+      "def_ko": "과거의 사건이나 경험을 이야기할 때 사용합니다.",
+      "def_en": "Used to talk about a past incident or experience (\"have done before\").",
+      "info_en": "동사 + -은/-ㄴ 적이 있다",
+      "ex": [
+        {
+          "ko": "불고기를 먹은 적이 있어요.",
+          "en": "I have eaten bulgogi before."
+        }
+      ],
+      "table": {
+        "head": [
+          "형태",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            [
+              [
+                "먹다",
+                "먹은 적이 있다"
+              ]
+            ]
+          ],
+          [
+            "받침 X",
+            [
+              [
+                "보다",
+                "본 적이 있다"
+              ]
+            ]
+          ],
+          [
+            "ㄹ 받침",
+            [
+              [
+                "만들다",
+                "만든 적이 있다"
+              ]
+            ]
+          ],
+          [
+            "불규칙",
+            [
+              [
+                "듣다",
+                "들은 적이 있다"
+              ],
+              [
+                "눕다",
+                "누운 적이 있다"
+              ],
+              [
+                "짓다",
+                "지은 적이 있다"
+              ]
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
