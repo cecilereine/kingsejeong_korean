@@ -1,0 +1,296 @@
+{
+  "num": "10과",
+  "lesson": "10",
+  "title": "공부면 공부, 운동이면 운동 정말 못하는 게 없는 것 같아요",
+  "en": "Studying, sports — there really doesn't seem to be anything they can't do",
+  "vocab": [
+    {
+      "theme": "능력 · Ability",
+      "items": [
+        {
+          "kw": "가능하다",
+          "mean": "to be possible, doable",
+          "ex": "지연 씨는 한 번에 두 가지 일을 하는 것이 가능해요.",
+          "exen": "Jiyeon is able to do two things at once."
+        },
+        {
+          "kw": "관찰력",
+          "mean": "powers of observation",
+          "ex": "쯔엉 씨는 관찰력이 좋아서 그림을 잘 그려요.",
+          "exen": "Trương has a good eye for detail, so he draws well."
+        },
+        {
+          "kw": "기억력",
+          "mean": "memory (the ability)",
+          "ex": "저는 기억력이 나빠서 중요한 일을 자주 잊어버려요.",
+          "exen": "My memory is bad, so I often forget important things."
+        },
+        {
+          "kw": "(악기를) 다루다",
+          "mean": "to play, handle (an instrument)",
+          "ex": "나타샤 씨는 무슨 악기를 다룰 수 있어요?",
+          "exen": "What instrument can you play, Natasha?"
+        },
+        {
+          "kw": "재능",
+          "mean": "talent, gift",
+          "ex": "지훈 씨는 외국어에 재능이 있어서 여러 나라의 말을 할 수 있어요.",
+          "exen": "Jihoon has a talent for languages, so he can speak several."
+        },
+        {
+          "kw": "집중(하다)",
+          "mean": "to concentrate, focus",
+          "ex": "저는 공부를 할 때 주변이 시끄러우면 집중이 안 돼요.",
+          "exen": "When it's noisy around me, I can't concentrate on studying."
+        },
+        {
+          "kw": "호기심",
+          "mean": "curiosity",
+          "ex": "가영 씨는 호기심이 많아서 질문도 많아요.",
+          "exen": "Gayeong is very curious, so she asks a lot of questions."
+        }
+      ]
+    },
+    {
+      "theme": "평판 · Reputation",
+      "items": [
+        {
+          "kw": "대단하다",
+          "mean": "to be amazing, impressive",
+          "ex": "리사 씨, 정말 발표를 잘하네요. 대단해요.",
+          "exen": "Lisa, you presented really well. That's impressive."
+        },
+        {
+          "kw": "뛰어나다",
+          "mean": "to be outstanding, excellent",
+          "ex": "샤오위는 다른 사람들보다 운동 능력이 뛰어나요.",
+          "exen": "Xiaoyu's athletic ability is outstanding compared to others."
+        },
+        {
+          "kw": "마음씨",
+          "mean": "nature, disposition (kindness of heart)",
+          "ex": "샤오위 씨는 어려운 사람을 보면 도와주는 착한 마음씨를 가졌어요.",
+          "exen": "Xiaoyu has a kind heart and helps people in difficulty."
+        },
+        {
+          "kw": "배려심",
+          "mean": "considerateness, thoughtfulness",
+          "ex": "미카 씨는 배려심이 깊어서 친구들이 좋아합니다.",
+          "exen": "Mika is deeply considerate, so her friends like her."
+        },
+        {
+          "kw": "부족하다",
+          "mean": "to be lacking, insufficient",
+          "ex": "저는 아직 부족한 점이 많습니다. 많이 도와주세요.",
+          "exen": "I still have many shortcomings. Please help me a lot."
+        },
+        {
+          "kw": "서투르다",
+          "mean": "to be clumsy, unskilled (at something)",
+          "ex": "사비나는 한국말이 서툴러서 실수할 때가 있어요.",
+          "exen": "Sabina's Korean is still shaky, so she sometimes makes mistakes."
+        },
+        {
+          "kw": "성실하다",
+          "mean": "to be sincere, diligent",
+          "ex": "후안 씨는 성실해서 회사에 한 번도 지각한 적이 없어요.",
+          "exen": "Juan is diligent — he has never once been late to work."
+        },
+        {
+          "kw": "예의",
+          "mean": "manners, etiquette",
+          "ex": "어른들께 말할 때는 예의를 잘 지켜야 한다.",
+          "exen": "When speaking to elders you must mind your manners."
+        },
+        {
+          "kw": "존경(하다)",
+          "mean": "to respect, look up to",
+          "ex": "명숙 씨는 가족들에게서 사랑과 존경을 받고 있어요.",
+          "exen": "Myeongsuk receives love and respect from her family."
+        },
+        {
+          "kw": "책임감",
+          "mean": "sense of responsibility",
+          "ex": "민국 씨는 책임감이 강해서 좋은 아버지가 될 거예요.",
+          "exen": "Mingook has a strong sense of responsibility, so he'll be a good father."
+        },
+        {
+          "kw": "태도",
+          "mean": "attitude",
+          "ex": "정우는 수업 태도가 좋아서 선생님들께 자주 칭찬을 받았다.",
+          "exen": "Jeongwoo's attitude in class was good, so teachers often praised him."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-는 편이다",
+      "tag": "tends to be / is rather… (softened statement)",
+      "def_ko": "앞 말의 내용이 어떠하다고 단정하지 않고 대체로 어떤 쪽에 속하거나 가까움을 나타내는 표현.",
+      "def_en": "An expression that avoids stating something flatly and instead says it leans one way — 'tends to be / is on the ~ side'. A handy way to soften an opinion.",
+      "ex": [
+        {
+          "ko": "쯔엉 씨는 컴퓨터를 잘 다루는 편이에요.",
+          "en": "Trương is rather good with computers."
+        },
+        {
+          "ko": "리사 씨는 모든 일에 호기심이 많은 편이다.",
+          "en": "Lisa tends to be curious about everything."
+        },
+        {
+          "ko": "저는 김치를 좋아하는 편이에요.",
+          "en": "I'd say I like kimchi."
+        },
+        {
+          "ko": "미카는 머리가 긴 편이에요.",
+          "en": "Mika's hair is on the long side."
+        }
+      ],
+      "info_ko": "동사는 '-는 편이다', 형용사는 '-(으)ㄴ 편이다'와 결합한다.",
+      "info_en": "Verbs take -는 편이다; adjectives take -(으)ㄴ 편이다. 있다/없다 adjectives follow the verb pattern (재미있는 편이다).",
+      "table": {
+        "head": [
+          "품사",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사",
+            "먹다",
+            "먹는 편이다"
+          ],
+          [
+            "동사",
+            "오다",
+            "오는 편이다"
+          ],
+          [
+            "동사 · 받침 'ㄹ'",
+            "살다",
+            "사는 편이다"
+          ],
+          [
+            "형용사 · 받침 O",
+            "작다",
+            "작은 편이다"
+          ],
+          [
+            "형용사 · 받침 X",
+            "크다",
+            "큰 편이다"
+          ],
+          [
+            "형용사 · 받침 'ㄹ'",
+            "길다",
+            "긴 편이다"
+          ],
+          [
+            "형용사 · 있다/없다",
+            "재미있다",
+            "재미있는 편이다"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "같이",
+      "tag": "like, just like (simile particle)",
+      "def_ko": "'앞 말이 가지는 전형적인 어떤 특징처럼'의 뜻을 나타내는 조사.",
+      "def_en": "A particle attached to a noun to draw a comparison — 'like ~', pointing to the typical quality of that noun.",
+      "ex": [
+        {
+          "ko": "나타샤는 가수같이 노래를 잘해요.",
+          "en": "Natasha sings well, like a singer."
+        },
+        {
+          "ko": "외출에서 돌아온 언니의 손이 얼음같이 차가웠다.",
+          "en": "My sister's hands were cold as ice when she came back from outside."
+        },
+        {
+          "ko": "리사는 모델같이 키가 커요.",
+          "en": "Lisa is tall like a model."
+        }
+      ],
+      "info_ko": "명사에 붙는다. 받침에 관계없이 '같이'를 쓴다.",
+      "info_en": "Attaches to nouns; the form is always 같이 regardless of a final consonant.",
+      "table": {
+        "head": [
+          "품사",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "명사",
+            "학생",
+            "학생같이"
+          ],
+          [
+            "명사",
+            "의사",
+            "의사같이"
+          ],
+          [
+            "명사",
+            "얼음",
+            "얼음같이"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "(이)면",
+      "tag": "whether it's A or B…  ·  부가 문법 (Additional grammar)",
+      "extra": true,
+      "def_ko": "둘 이상의 사물을 같은 자격으로 이어 주는 조사.",
+      "def_en": "A particle that links two or more things as equals — used in the pattern 'A면 A, B면 B' to mean 'whether it's A or B, (they're all good)'.",
+      "ex": [
+        {
+          "ko": "민국 씨는 청소면 청소, 요리면 요리 못하는 집안일이 없어요.",
+          "en": "Cleaning, cooking — there's no housework Mingook can't do."
+        },
+        {
+          "ko": "그 가수는 노래면 노래, 춤이면 춤 뭐 하나 부족한 것이 없다.",
+          "en": "Singing, dancing — that singer lacks nothing at all."
+        },
+        {
+          "ko": "정우는 어릴 때 수학이면 수학, 역사면 역사 못하는 과목이 없었다.",
+          "en": "Maths, history — as a child Jeongwoo had no subject he was bad at."
+        }
+      ],
+      "info_ko": "명사에 붙는다. 받침이 있으면 '이면', 없으면 '면'을 쓴다.",
+      "info_en": "Attaches to nouns: 이면 after a final consonant, 면 after a vowel. This is the pattern in the lesson title (공부면 공부, 운동이면 운동).",
+      "table": {
+        "head": [
+          "받침",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            "학생",
+            "학생이면"
+          ],
+          [
+            "받침 X",
+            "의사",
+            "의사면"
+          ],
+          [
+            "받침 O",
+            "운동",
+            "운동이면"
+          ],
+          [
+            "받침 X",
+            "공부",
+            "공부면"
+          ]
+        ]
+      }
+    }
+  ]
+}
