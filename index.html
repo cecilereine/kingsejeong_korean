@@ -8,7 +8,7 @@
      bump EVERY ?v= below to the same new number (app.js reuses it for the lesson files).
      GitHub Pages sends cache-control: max-age=600, so without this a browser can pair
      new HTML with a stale script, stylesheet, or lesson data. -->
-<link rel="stylesheet" href="styles.css?v=15">
+<link rel="stylesheet" href="styles.css?v=16">
 <script>
   /* Decide before the first paint whether this is the landing page (no #course in the
      address) or a course, and which course's colours to use, so neither the wrong page
@@ -58,7 +58,10 @@
     </aside>
 
     <div class="controls">
-      <input type="text" class="search" id="search" placeholder="🔍  Search Korean or English…">
+      <div class="search-wrap">
+        <input type="text" class="search" id="search" placeholder="🔍  Search Korean or English…">
+        <button type="button" class="search-clear hidden" id="searchClear" aria-label="Clear the search">&times;</button>
+      </div>
       <div class="row">
         <!-- One tab per lesson in the chosen course, built by app.js from its manifest -->
         <div class="tabs" id="tabs"></div>
@@ -66,6 +69,8 @@
         <button class="fc-btn" id="fcStart">🎴 Flashcards</button>
         <button class="qz-btn" id="qzStart">✏️ Quiz</button>
       </div>
+      <!-- Shown by app.js while a query is reaching past the selected lesson tab. -->
+      <div class="search-note hidden" id="searchNote"></div>
       <noscript><div class="hint" style="color:#b45; font-weight:600">Note: search & flashcards need a full browser (Chrome/Safari). The word &amp; grammar list below works everywhere.</div></noscript>
     </div>
 
@@ -142,7 +147,7 @@
   </div>
 </div>
 
-<script src="app.js?v=15"></script>
-<script src="quiz.js?v=15"></script>
+<script src="app.js?v=16"></script>
+<script src="quiz.js?v=16"></script>
 </body>
 </html>

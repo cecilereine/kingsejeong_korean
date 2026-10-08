@@ -220,6 +220,8 @@ const tabs         = $('#tabs');
 const enToggle     = $('#enToggle');
 const hint         = $('#hint');
 const expandAllBtn = $('#expandAll');
+const searchNote   = $('#searchNote');
+const searchClear  = $('#searchClear');
 let activeLesson = 'all';
 let currentView  = 'all';      // 'all' = vocabulary + grammar, 'grammar' = grammar list only
 
@@ -245,20 +247,34 @@ function setView(nextView) {
   applyFilters();
 }
 
+/* An English query matches at the start of a word, so "sit" finds "to sit down"
+   and "situation" but not "university", while a prefix like "univ" still finds it.
+   Korean has no word boundaries to use, so it stays a plain substring match. */
+function buildMatcher(query) {
+  if (!/^[a-z0-9]/.test(query)) return text => text.includes(query);
+  const pattern = new RegExp(`\\b${escapeRegExp(query)}`);
+  return text => pattern.test(text);
+}
+
 function applyFilters() {
   const query = search.value.trim().toLowerCase();
+  const matchesText = buildMatcher(query);
   const root = viewRoot();
+  /* The lesson tabs choose what to browse, but a query looks through every lesson,
+     so a word can be found without knowing which lesson taught it. The selected
+     tab takes over again as soon as the search box is empty. */
+  const scopeToTab = !query && activeLesson !== 'all';
   let anyVisible = false;
 
   $$('section.lesson', root).forEach(section => {
-    if (activeLesson !== 'all' && section.dataset.lesson !== activeLesson) {
+    if (scopeToTab && section.dataset.lesson !== activeLesson) {
       section.classList.add('hidden');
       return;
     }
 
     let sectionHasMatch = false;
     $$('[data-search]', section).forEach(card => {
-      const hit = !query || card.dataset.search.includes(query);
+      const hit = !query || matchesText(card.dataset.search);
       card.classList.toggle('hidden', !hit);
       if (hit) sectionHasMatch = true;
     });
@@ -276,16 +292,38 @@ function applyFilters() {
   });
 
   $('.noresult', root)?.classList.toggle('hidden', anyVisible);
+  searchClear.classList.toggle('hidden', !search.value);
+  updateSearchNote(query);
   highlight(query, root);
   syncExpandAll();
 }
 
+/* Says so while a search reaches past the selected lesson, so the highlighted tab
+   and the results on screen don't look like they disagree. The label comes from the
+   tab itself, so it reads "1과" whichever course is loaded. */
+function updateSearchNote(query) {
+  const crossLesson = Boolean(query) && activeLesson !== 'all';
+  if (crossLesson) {
+    const label = $('.tab.active', tabs)?.textContent.trim() || activeLesson;
+    searchNote.textContent =
+      `Searching every lesson — clear the search box to see ${label} on its own again.`;
+  }
+  searchNote.classList.toggle('hidden', !crossLesson);
+}
+
 function highlight(query, root) {
   // Unwrap previous highlights everywhere — the hidden view may still hold stale ones.
-  $$('mark').forEach(mark => mark.replaceWith(document.createTextNode(mark.textContent)));
+  $$('mark').forEach(mark => {
+    const parent = mark.parentNode;
+    mark.replaceWith(document.createTextNode(mark.textContent));
+    // Merge the pieces back, or the next query can't match across the old split.
+    parent.normalize();
+  });
   if (!query) return;
 
-  const matcher = new RegExp(`(${escapeRegExp(query)})`, 'gi');
+  // The same word-start rule as the filter, so only what matched gets highlighted.
+  const boundary = /^[a-z0-9]/.test(query) ? '\\b' : '';
+  const matcher = new RegExp(`(${boundary}${escapeRegExp(query)})`, 'gi');
   $$('.vcard:not(.hidden), .gcard:not(.hidden), .gpoint:not(.hidden)', root)
     .forEach(card => markMatches(card, matcher));
 }
@@ -681,6 +719,22 @@ tabs.addEventListener('click', event => {
 });
 
 search.addEventListener('input', applyFilters);
+
+/* The × inside the search box, and Escape while typing in it, both empty the box
+   and hand the cursor back so the next word can be typed straight away. */
+searchClear.addEventListener('click', () => {
+  search.value = '';
+  search.focus();
+  applyFilters();
+});
+
+search.addEventListener('keydown', event => {
+  // Escape mid-conversion belongs to the IME: it cancels the 한글 being composed.
+  if (event.isComposing || event.keyCode === 229) return;
+  if (event.key !== 'Escape' || !search.value) return;
+  search.value = '';
+  applyFilters();
+});
 
 enToggle.addEventListener('change', () => {
   $('.wrap').classList.toggle('en-hide', !enToggle.checked);

@@ -170,11 +170,21 @@
     position:sticky;top:0;z-index:20;
     background:var(--bg);padding:14px 0 10px;margin-top:14px;
   }
+  .search-wrap{position:relative}
+  /* The right padding keeps a long query from running underneath the ×. */
   .search{
-    width:100%;padding:13px 16px;font-size:16px;border:1.5px solid var(--line);
+    width:100%;padding:13px 46px 13px 16px;font-size:16px;border:1.5px solid var(--line);
     border-radius:12px;background:#fff;outline:none;box-shadow:var(--shadow);
   }
   .search:focus{border-color:var(--primary)}
+  /* Clears the search box; hidden until there is something to clear. */
+  .search-clear{
+    position:absolute;right:10px;top:50%;transform:translateY(-50%);
+    width:28px;height:28px;display:flex;align-items:center;justify-content:center;
+    border:none;border-radius:50%;background:var(--primary-soft);color:var(--primary-deep);
+    font-size:20px;line-height:1;cursor:pointer;transition:.15s;
+  }
+  .search-clear:hover{background:var(--primary);color:#fff}
   .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px}
   /* Lesson tabs take a full line of their own and scroll sideways, so a 20-lesson course
      doesn't take over the sticky bar; Show English, Flashcards and Quiz wrap onto the
@@ -286,6 +296,11 @@
   }
   .fc-btn:hover{filter:brightness(1.05)}
   .hint{font-size:12px;color:var(--muted);margin-top:8px;padding-left:4px}
+  /* Both course themes define these tokens, so the note follows whichever is loaded. */
+  .search-note{
+    font-size:12px;font-weight:600;color:var(--primary-deep);margin-top:8px;
+    padding:6px 10px;border-radius:8px;background:var(--primary-soft);
+  }
 
   /* ---------- view switch + grammar list ---------- */
   .viewbar{display:flex;align-items:center;flex-wrap:wrap;gap:8px 10px;margin-top:2px}
