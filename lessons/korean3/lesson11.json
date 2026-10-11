@@ -1,0 +1,324 @@
+{
+  "num": "11과",
+  "lesson": "11",
+  "title": "채소를 사려거든 시장에 가세요",
+  "en": "If you want to buy vegetables, go to the market",
+  "vocab": [
+    {
+      "theme": "과일 · Fruits",
+      "items": [
+        {
+          "kw": "딸기",
+          "mean": "strawberry",
+          "ex": "딸기로 잼을 만들었어요.",
+          "exen": "I made jam with strawberries."
+        },
+        {
+          "kw": "레몬",
+          "mean": "lemon",
+          "ex": "감기에 걸렸을 때 따뜻한 물에 레몬을 잘라서 넣어 마시면 좋다.",
+          "exen": "When you have a cold, it's good to slice lemon into warm water and drink it."
+        },
+        {
+          "kw": "수박",
+          "mean": "watermelon",
+          "ex": "날씨가 더우니까 시원한 수박을 먹읍시다.",
+          "exen": "It's hot out, so let's have some cold watermelon."
+        },
+        {
+          "kw": "복숭아",
+          "mean": "peach",
+          "ex": "요즘 복숭아가 잘 익어서 아주 달아요.",
+          "exen": "Peaches are nicely ripe these days, so they're very sweet."
+        }
+      ]
+    },
+    {
+      "theme": "채소 · Vegetables",
+      "items": [
+        {
+          "kw": "감자",
+          "mean": "potato",
+          "ex": "오늘 점심 때 감자를 먹었어요.",
+          "exen": "I had potatoes at lunch today."
+        },
+        {
+          "kw": "고구마",
+          "mean": "sweet potato",
+          "ex": "고구마는 달고 맛있어요.",
+          "exen": "Sweet potatoes are sweet and tasty."
+        },
+        {
+          "kw": "고추",
+          "mean": "chilli pepper",
+          "ex": "고추가 들어간 음식은 맵다.",
+          "exen": "Food with chilli in it is spicy."
+        },
+        {
+          "kw": "당근",
+          "mean": "carrot",
+          "ex": "어머니는 매일 아침에 당근 주스를 만들어 주세요.",
+          "exen": "My mother makes me carrot juice every morning."
+        },
+        {
+          "kw": "마늘",
+          "mean": "garlic",
+          "ex": "고기는 마늘과 같이 먹으면 더 맛있다.",
+          "exen": "Meat tastes better eaten together with garlic."
+        },
+        {
+          "kw": "무",
+          "mean": "Korean radish, daikon",
+          "ex": "무로 만든 김치를 깍두기라고 한다.",
+          "exen": "Kimchi made with radish is called kkakdugi."
+        },
+        {
+          "kw": "배추",
+          "mean": "napa cabbage",
+          "ex": "저는 배추로 만든 김치를 가장 좋아해요.",
+          "exen": "I like kimchi made with napa cabbage best."
+        },
+        {
+          "kw": "버섯",
+          "mean": "mushroom",
+          "ex": "버섯으로 반찬을 만들었어요.",
+          "exen": "I made a side dish with mushrooms."
+        },
+        {
+          "kw": "신선하다",
+          "mean": "to be fresh (vegetables, produce, air)",
+          "ex": "할아버지께서 직접 기르신 채소가 아주 신선해요.",
+          "exen": "The vegetables my grandfather grew himself are very fresh."
+        },
+        {
+          "kw": "양파",
+          "mean": "onion",
+          "ex": "양파를 그냥 먹으면 맵지만 요리해서 먹으면 단맛이 나요.",
+          "exen": "Onion is sharp eaten raw, but it turns sweet once you cook it."
+        },
+        {
+          "kw": "오이",
+          "mean": "cucumber",
+          "ex": "오이는 물이 많아요.",
+          "exen": "Cucumbers have a lot of water in them."
+        },
+        {
+          "kw": "파",
+          "mean": "spring onion, green onion",
+          "ex": "라면에 파를 넣어서 먹으면 더 맛있어요.",
+          "exen": "Ramyeon tastes better if you add spring onion."
+        },
+        {
+          "kw": "호박",
+          "mean": "pumpkin, squash",
+          "ex": "노란 호박으로 죽을 만들어 먹었어요.",
+          "exen": "I made porridge with yellow pumpkin."
+        }
+      ]
+    },
+    {
+      "theme": "해물 · Seafood",
+      "items": [
+        {
+          "kw": "새우",
+          "mean": "shrimp, prawn",
+          "ex": "제 동생은 새우가 들어간 음식은 다 좋아해요.",
+          "exen": "My younger sibling likes any dish with shrimp in it."
+        },
+        {
+          "kw": "싱싱하다",
+          "mean": "to be fresh (fish, seafood — of something still lively)",
+          "ex": "시장에서 사 온 생선이 아주 싱싱해요.",
+          "exen": "The fish I bought at the market is very fresh."
+        },
+        {
+          "kw": "오징어",
+          "mean": "squid",
+          "ex": "오징어는 다리가 10개입니다.",
+          "exen": "A squid has ten legs."
+        },
+        {
+          "kw": "조개",
+          "mean": "clam, shellfish",
+          "ex": "칼국수에 조개를 넣으면 국물이 시원해요.",
+          "exen": "If you put clams in kalguksu, the broth tastes clean and refreshing."
+        },
+        {
+          "kw": "해물",
+          "mean": "seafood",
+          "ex": "바닷가에 가면 해물을 싸게 살 수 있어요.",
+          "exen": "At the seaside you can buy seafood cheaply."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-기 위해",
+      "tag": "in order to, for the purpose of",
+      "def_ko": "어떤 상황이나 행동을 하는 목적 또는 의도를 나타내는 표현.",
+      "def_en": "Marks the purpose or intention behind an action — 'in order to ~', 'so as to ~'. The goal comes first, the action taken for it second.",
+      "ex": [
+        {
+          "ko": "친구와 같이 점심을 먹기 위해 친구가 올 때까지 기다렸어요.",
+          "en": "I waited until my friend arrived so we could have lunch together."
+        },
+        {
+          "ko": "한국어를 배우기 위해 세종학당에 다녀요.",
+          "en": "I attend the King Sejong Institute in order to learn Korean."
+        },
+        {
+          "ko": "내년에 집을 사기 위해 돈을 모으고 있어요.",
+          "en": "I'm saving money in order to buy a house next year."
+        }
+      ],
+      "info_ko": "동사와 결합한다. 받침에 관계없이 '-기 위해'를 쓴다.",
+      "info_en": "Combines with verbs only, and the form never changes — always -기 위해, with or without a final consonant. -기 위해서 is equally common in speech, and -기 위하여 is the formal written form. With a noun, use 을/를 위해 (건강을 위해).",
+      "table": {
+        "head": [
+          "품사",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 · 받침 O",
+            "먹다",
+            "먹기 위해"
+          ],
+          [
+            "동사 · 받침 X",
+            "오다",
+            "오기 위해"
+          ],
+          [
+            "동사 · 받침 X",
+            "사다",
+            "사기 위해"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-거든",
+      "tag": "if / when it turns out that… (then do ~)",
+      "def_ko": "앞에 오는 내용과 뒤에 오는 내용이 서로 다름을 나타내는 연결 어미.",
+      "def_en": "A connective ending that sets up a condition: 'if (and when) the first clause actually happens, then do the second'. The second clause is nearly always a suggestion, request or command — not a plain statement.",
+      "ex": [
+        {
+          "ko": "집에 도착하거든 전화해 주세요.",
+          "en": "Call me when you get home."
+        },
+        {
+          "ko": "내일 날씨가 좋거든 산책을 갑시다.",
+          "en": "If the weather's good tomorrow, let's go for a walk."
+        },
+        {
+          "ko": "아기를 안으려거든 손을 씻고 오세요.",
+          "en": "If you're going to hold the baby, wash your hands first."
+        },
+        {
+          "ko": "부산에 빨리 가려거든 KTX를 타세요.",
+          "en": "If you want to get to Busan quickly, take the KTX."
+        },
+        {
+          "ko": "목이 아프거든 빨리 병원에 가세요.",
+          "en": "If your throat hurts, go to the doctor right away."
+        }
+      ],
+      "info_ko": "동사, 형용사, '이다'와 결합한다. '-(으)려거든'은 '그렇게 할 생각이면'의 뜻을 더한다.",
+      "info_en": "Combines with verbs, adjectives and (명사)이다; no vowel change, just add -거든. -(으)려거든 adds 'if you intend to ~' — that's the form in this lesson's title (사려거든). Note: the book's Korean definition line here describes a contrast ending, but every example — and the actual use — is conditional. Don't confuse this connective with the sentence-final -거든(요) 'you see, because…' from 9과.",
+      "table": {
+        "head": [
+          "품사",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사",
+            "먹다",
+            "먹거든"
+          ],
+          [
+            "동사",
+            "오다",
+            "오거든"
+          ],
+          [
+            "형용사",
+            "작다",
+            "작거든"
+          ],
+          [
+            "형용사",
+            "크다",
+            "크거든"
+          ],
+          [
+            "(명사)이다 · 받침 O",
+            "학생",
+            "학생이거든"
+          ],
+          [
+            "(명사)이다 · 받침 X",
+            "의사",
+            "의사이거든 / 의사거든"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "(이)고",
+      "tag": "both A and B, A or B — the lot  ·  부가 문법 (Additional grammar)",
+      "extra": true,
+      "def_ko": "둘 이상의 사물을 같은 자격으로 나열하여 똑같이 선택함을 나타내는 조사.",
+      "def_en": "A particle that lists two or more things as equals, in the pattern 'A고 B고' — 'both A and B', 'A, B, the whole lot of it'. It sweeps the listed items together rather than choosing between them.",
+      "ex": [
+        {
+          "ko": "마트에 가면 생선이고 과일이고 다 있어요.",
+          "en": "At the supermarket there's everything — fish, fruit, the lot."
+        },
+        {
+          "ko": "지수는 배가 고파서 빵이고 과자고 눈에 보이는 것은 모두 먹었어요.",
+          "en": "Jisu was so hungry she ate everything in sight — bread, biscuits, all of it."
+        },
+        {
+          "ko": "백화점에서는 옷이고 가방이고 다 팔아요.",
+          "en": "The department store sells everything — clothes, bags, you name it."
+        }
+      ],
+      "info_ko": "명사에 붙는다. 받침이 있으면 '이고', 없으면 '고'를 쓴다.",
+      "info_en": "Attaches to nouns: 이고 after a final consonant, 고 after a vowel. Usually paired with 다, 모두 or 전부 in the following clause.",
+      "table": {
+        "head": [
+          "받침",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            "학생",
+            "학생이고"
+          ],
+          [
+            "받침 X",
+            "의사",
+            "의사고"
+          ],
+          [
+            "받침 O",
+            "생선",
+            "생선이고"
+          ],
+          [
+            "받침 X",
+            "과자",
+            "과자고"
+          ]
+        ]
+      }
+    }
+  ]
+}
