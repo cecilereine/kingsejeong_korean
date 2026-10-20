@@ -1,0 +1,330 @@
+{
+  "num": "12과",
+  "lesson": "12",
+  "title": "오늘은 제가 점심을 살 테니 새로 생긴 한식당에 가요",
+  "en": "I'll buy lunch today, so let's go to the Korean restaurant that just opened",
+  "vocab": [
+    {
+      "theme": "식당의 종류 · Types of restaurants",
+      "items": [
+        {
+          "kw": "레스토랑",
+          "mean": "restaurant (Western-style, sit-down)",
+          "ex": "저 건물 1층에는 스파게티가 맛있는 레스토랑이 있어요.",
+          "exen": "On the ground floor of that building there's a restaurant with great spaghetti."
+        },
+        {
+          "kw": "본점",
+          "mean": "main branch, flagship store (↔ 분점)",
+          "ex": "이 은행의 본점은 서울에 있다.",
+          "exen": "This bank's main branch is in Seoul."
+        },
+        {
+          "kw": "분식집",
+          "mean": "snack shop — tteokbokki, gimbap, ramyeon and the like",
+          "ex": "가영 씨는 떡볶이와 김밥을 좋아해서 분식집에 자주 가요.",
+          "exen": "Gayeong likes tteokbokki and gimbap and often goes to a snack shop."
+        },
+        {
+          "kw": "분점",
+          "mean": "branch (a second shop opened by the main one)",
+          "ex": "대전에서 제일 유명한 빵집의 분점이 서울에도 생겼다.",
+          "exen": "A branch of Daejeon's most famous bakery has opened in Seoul too."
+        },
+        {
+          "kw": "뷔페",
+          "mean": "buffet",
+          "ex": "뷔페에는 여러 종류의 음식이 다양하게 있어요.",
+          "exen": "A buffet has all sorts of different food."
+        },
+        {
+          "kw": "일식집",
+          "mean": "Japanese restaurant",
+          "ex": "친구와 함께 일식집에 가서 초밥을 먹었어요.",
+          "exen": "I went to a Japanese restaurant with a friend and had sushi."
+        },
+        {
+          "kw": "중국집",
+          "mean": "Chinese restaurant (the jjajangmyeon kind)",
+          "ex": "자장면을 먹으러 집 근처에 있는 중국집에 갔다.",
+          "exen": "I went to the Chinese restaurant near my house to have jjajangmyeon."
+        },
+        {
+          "kw": "체인점",
+          "mean": "chain store, chain branch",
+          "ex": "명동에 있는 갈비 가게는 외국인에게도 인기가 많아서 외국에도 체인점을 냈다.",
+          "exen": "The galbi place in Myeongdong is popular with foreigners too, so it has opened chain branches abroad."
+        },
+        {
+          "kw": "한식당",
+          "mean": "Korean restaurant",
+          "ex": "요즘은 외국에도 한국 음식을 파는 한식당이 많이 생겼어요.",
+          "exen": "These days a lot of Korean restaurants selling Korean food have opened abroad as well."
+        }
+      ]
+    },
+    {
+      "theme": "식당의 특징 · Restaurants' characteristics",
+      "items": [
+        {
+          "kw": "만족스럽다",
+          "mean": "to be satisfying, to be pleasing",
+          "ex": "작가는 만족스러운 사진이 나올 때까지 사진을 찍었다.",
+          "exen": "The photographer kept shooting until a satisfying picture came out."
+        },
+        {
+          "kw": "부담스럽다",
+          "mean": "to feel like too much, to be a burden on you (money, obligation, attention)",
+          "ex": "친구가 비싼 선물을 줘서 부담스러워요.",
+          "exen": "My friend gave me an expensive present, and it feels like too much."
+        },
+        {
+          "kw": "불만족스럽다",
+          "mean": "to be unsatisfactory, disappointing",
+          "ex": "그 식당은 음식 맛은 좋았지만 서비스가 불만족스러웠어요.",
+          "exen": "The food at that restaurant tasted good, but the service was unsatisfactory."
+        },
+        {
+          "kw": "불친절하다",
+          "mean": "to be unfriendly, to be rude (service)",
+          "ex": "저 식당은 점원이 불친절해서 자주 가지 않아요.",
+          "exen": "The staff at that restaurant are unfriendly, so I don't go often."
+        },
+        {
+          "kw": "붐비다",
+          "mean": "to be crowded, to be packed",
+          "ex": "퇴근 시간이라서 도로가 차들로 붐볐다.",
+          "exen": "It was going-home time, so the roads were packed with cars."
+        },
+        {
+          "kw": "저렴하다",
+          "mean": "to be cheap, to be inexpensive (price)",
+          "ex": "이 식당은 음식 가격이 저렴해서 학생들에게 인기가 많아요.",
+          "exen": "This restaurant's prices are low, so it's popular with students."
+        },
+        {
+          "kw": "지저분하다",
+          "mean": "to be messy, to be dirty, untidy",
+          "ex": "며칠 동안 청소를 못 해서 방이 지저분해요.",
+          "exen": "I haven't been able to clean for a few days, so my room is messy."
+        },
+        {
+          "kw": "친절하다",
+          "mean": "to be kind, to be friendly",
+          "ex": "한국 생활이 처음에는 힘들었지만 친절한 이웃들 덕분에 빨리 적응했어요.",
+          "exen": "Life in Korea was hard at first, but thanks to kind neighbours I settled in quickly."
+        },
+        {
+          "kw": "쾌적하다",
+          "mean": "to be pleasant and comfortable (clean, airy, roomy)",
+          "ex": "식당이 깔끔하고 넓어서 쾌적한 분위기에서 식사할 수 있었습니다.",
+          "exen": "The restaurant was neat and spacious, so we could eat in a pleasant atmosphere."
+        },
+        {
+          "kw": "한산하다",
+          "mean": "to be quiet, to be uncrowded (↔ 붐비다)",
+          "ex": "방학에는 학생들이 없어서 학교가 한산하다.",
+          "exen": "During the holidays there are no students, so the campus is quiet."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-(으)ㄹ 테니",
+      "tag": "I'll ~, so… / it'll probably ~, so…",
+      "def_ko": "1. 앞 절을 뒤 절의 내용에 대한 조건이 되게 하겠다는 의지를 나타내는 표현. 2. 앞 절이 뒤 절의 내용에 대한 조건이라고 강하게 추측하여 나타내는 표현.",
+      "def_en": "1. The speaker's intention, offered as the condition for what follows — 'I'll do A, so (you) do B'. 2. A confident guess about A, given as the reason for the suggestion or request in B — 'it'll probably be A, so let's B'. Either way the second clause is normally a suggestion, request or command, not a plain statement.",
+      "ex": [
+        {
+          "dia": "가:",
+          "ko": "내가 지금 잠깐 나가야 하는데 아까 주문한 피자 배달 오면 대신 좀 받아 줘.",
+          "en": "I have to pop out for a bit — could you take the pizza I ordered when it arrives?"
+        },
+        {
+          "dia": "나:",
+          "ko": "그래. 내가 대신 받아 줄 테니 걱정하지 마.",
+          "en": "Sure. I'll take it for you, so don't worry. (intention)"
+        },
+        {
+          "dia": "가:",
+          "ko": "지난번에 빌려 간 책 오늘 줄 수 있어?",
+          "en": "Can you give me back the book you borrowed last time today?"
+        },
+        {
+          "dia": "나:",
+          "ko": "얼른 읽을 테니 조금만 기다려 줘.",
+          "en": "I'll read it quickly, so give me just a little longer."
+        },
+        {
+          "dia": "가:",
+          "ko": "오후에 비가 올 테니 우산을 가져가세요.",
+          "en": "It'll probably rain this afternoon, so take an umbrella. (guess)"
+        },
+        {
+          "dia": "나:",
+          "ko": "알려 줘서 고마워요.",
+          "en": "Thanks for letting me know."
+        },
+        {
+          "dia": "가:",
+          "ko": "토요일에 영화관에 갈까?",
+          "en": "Shall we go to the cinema on Saturday?"
+        },
+        {
+          "dia": "나:",
+          "ko": "주말에는 사람이 많을 테니 가지 말자.",
+          "en": "It'll be crowded at the weekend, so let's not go."
+        }
+      ],
+      "info_ko": "뜻 1은 동사와 결합하고, 뜻 2는 동사, 형용사, '명사+이다'와 결합한다. 받침이 있으면 '-을 테니', 받침이 없거나 'ㄹ' 받침이면 '-ㄹ 테니'를 쓴다.",
+      "info_en": "After a final consonant -을 테니, otherwise -ㄹ 테니 (a ㄹ stem just drops the ㄹ: 살다 → 살 테니). Meaning 1 (intention) takes verbs only — the first table; meaning 2 (guess) also takes adjectives and (명사)이다 — the second table. -(으)ㄹ 테니까 is the same thing and just as common. Compare -(으)ㄹ 텐데 from 8과, which sets up a worry or a contrast instead of a reason.",
+      "table": {
+        "head": [
+          "품사",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 · 받침 O",
+            "먹다",
+            "먹을 테니"
+          ],
+          [
+            "동사 · 받침 X",
+            "오다",
+            "올 테니"
+          ],
+          [
+            "동사 · 받침 'ㄹ'",
+            "살다",
+            "살 테니"
+          ]
+        ]
+      },
+      "table2": {
+        "caption": "뜻 2 · Strong guess — 동사, 형용사, '(명사)이다'와 모두 결합해요",
+        "head": [
+          "품사",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 · 받침 O",
+            "먹다",
+            "먹을 테니"
+          ],
+          [
+            "동사 · 받침 X",
+            "오다",
+            "올 테니"
+          ],
+          [
+            "동사 · 받침 'ㄹ'",
+            "살다",
+            "살 테니"
+          ],
+          [
+            "형용사 · 받침 O",
+            "작다",
+            "작을 테니"
+          ],
+          [
+            "형용사 · 받침 X",
+            "크다",
+            "클 테니"
+          ],
+          [
+            "형용사 · 받침 'ㄹ'",
+            "길다",
+            "길 테니"
+          ],
+          [
+            "(명사)이다 · 받침 O",
+            "학생",
+            "학생일 테니"
+          ],
+          [
+            "(명사)이다 · 받침 X",
+            "의사",
+            "의사일 테니 / 의살 테니"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-도록",
+      "tag": "so that… / to the point that…",
+      "def_ko": "1. 뒤에 나오는 행위의 목적을 나타낼 때 쓰는 연결 어미. 2. 뒤에 나오는 동작, 작용의 정도나 한계를 나타낼 때 쓰는 연결 어미.",
+      "def_en": "1. Marks the goal of the action that follows — 'so that ~', 'in order that ~'. 2. Marks how far that action goes — '(so much) that ~', 'until ~'.",
+      "ex": [
+        {
+          "dia": "가:",
+          "ko": "나타샤 씨, 한국어 말하기 대회에서 발표할 때 정말 한국 사람 같았어요.",
+          "en": "Natasha, when you presented at the Korean speech contest you sounded just like a Korean."
+        },
+        {
+          "dia": "나:",
+          "ko": "정말요? 고마워요. 대회에서 실수하지 않도록 연습을 많이 했거든요.",
+          "en": "Really? Thank you. I practised a lot so that I wouldn't make mistakes at the contest. (purpose)"
+        },
+        {
+          "dia": "가:",
+          "ko": "이 영화를 보고 배꼽이 빠지도록 웃었어요.",
+          "en": "I laughed my head off watching this film. (extent — lit. 'till my belly button fell out')"
+        },
+        {
+          "dia": "나:",
+          "ko": "그렇게 재미있어요? 저도 한번 봐야겠어요.",
+          "en": "Is it that funny? I'll have to watch it too."
+        },
+        {
+          "ko": "친구 생일을 잊지 않도록 달력에 표시했어요.",
+          "en": "I marked it on the calendar so I wouldn't forget my friend's birthday."
+        },
+        {
+          "ko": "새벽 두 시가 넘도록 숙제를 하느라 잠을 못 잤다.",
+          "en": "I was doing homework until past two in the morning, so I didn't get any sleep. (extent)"
+        }
+      ],
+      "info_ko": "동사와 결합한다. 받침에 관계없이 '-도록'을 쓴다. 부정은 '-지 않도록', '-지 못하도록'을 쓴다.",
+      "info_en": "Attaches to verbs, and the form never changes — always -도록, with or without a final consonant. Negative: -지 않도록 / -지 못하도록 ('so that you don't ~'). Meaning 2 usually comes with a time or degree phrase: 밤이 새도록, 목이 아프도록, 배꼽이 빠지도록. Close to -게 for purpose (실수하지 않게 = 실수하지 않도록), but -도록 sounds a touch more formal.",
+      "table": {
+        "head": [
+          "품사",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 · 받침 O",
+            "먹다",
+            "먹도록"
+          ],
+          [
+            "동사 · 받침 X",
+            "오다",
+            "오도록"
+          ],
+          [
+            "동사 · 받침 'ㄹ'",
+            "살다",
+            "살도록"
+          ],
+          [
+            "동사 · 하다",
+            "공부하다",
+            "공부하도록"
+          ],
+          [
+            "동사 · 부정",
+            "실수하지 않다",
+            "실수하지 않도록"
+          ]
+        ]
+      }
+    }
+  ]
+}
