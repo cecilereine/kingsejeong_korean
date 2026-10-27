@@ -1,0 +1,409 @@
+{
+  "num": "13과",
+  "lesson": "13",
+  "title": "고기를 양념에 넣고 나서 30분을 기다립니다",
+  "en": "Put the meat in the marinade, then wait 30 minutes",
+  "vocab": [
+    {
+      "theme": "요리 종류 · Types of dishes",
+      "items": [
+        {
+          "kw": "구이",
+          "mean": "grilled or roasted dish",
+          "ex": "이 골목은 생선 구이로 유명합니다.",
+          "exen": "This alley is famous for grilled fish."
+        },
+        {
+          "kw": "볶음",
+          "mean": "stir-fried dish",
+          "ex": "볶음 요리를 맛있게 하려면 기름을 충분히 넣고 센 불에 볶아야 합니다.",
+          "exen": "To make a stir-fry taste good you need plenty of oil and a high flame."
+        },
+        {
+          "kw": "찜",
+          "mean": "steamed or braised dish",
+          "ex": "저는 찜 요리 중에서 해물찜을 가장 좋아해요.",
+          "exen": "Of all the jjim dishes, seafood jjim is my favourite."
+        },
+        {
+          "kw": "튀김",
+          "mean": "deep-fried food, fritters",
+          "ex": "감자튀김은 아이들 간식으로 인기가 많다.",
+          "exen": "Chips are a popular snack with children."
+        }
+      ]
+    },
+    {
+      "theme": "요리 방법 · Cooking methods",
+      "items": [
+        {
+          "kw": "굽다",
+          "mean": "to grill, to roast, to bake (ㅂ irregular → 구워)",
+          "ex": "겨울에 고구마를 구워 먹으면 맛있어요.",
+          "exen": "Roasted sweet potatoes are delicious in winter."
+        },
+        {
+          "kw": "끓이다",
+          "mean": "to boil, to make (soup, stew, noodles)",
+          "ex": "한국에서는 설날에 떡국을 끓여 먹는다.",
+          "exen": "In Korea people make tteokguk on New Year's Day."
+        },
+        {
+          "kw": "다듬다",
+          "mean": "to trim, to prepare (vegetables, fish) before cooking",
+          "ex": "요리를 시작하기 전에 채소를 미리 다듬어야 해요.",
+          "exen": "You should trim the vegetables before you start cooking."
+        },
+        {
+          "kw": "다지다",
+          "mean": "to mince, to chop finely",
+          "ex": "한국 음식에는 다진 마늘이 많이 들어갑니다.",
+          "exen": "A lot of Korean food has minced garlic in it."
+        },
+        {
+          "kw": "데치다",
+          "mean": "to blanch, to parboil briefly",
+          "ex": "샤부샤부는 고기와 채소, 해물을 끓는 물에 데쳐서 먹는 요리다.",
+          "exen": "Shabu-shabu is a dish where you blanch meat, vegetables and seafood in boiling water."
+        },
+        {
+          "kw": "볶다",
+          "mean": "to stir-fry, to fry in a pan with oil",
+          "ex": "오징어 볶음을 할 때 오징어보다 채소를 먼저 볶아야 해요.",
+          "exen": "When you make stir-fried squid, fry the vegetables before the squid."
+        },
+        {
+          "kw": "부치다",
+          "mean": "to pan-fry in a thin layer (jeon, pancakes)",
+          "ex": "한국에서는 명절에 여러 종류의 전을 부쳐서 먹는다.",
+          "exen": "On holidays Koreans pan-fry several kinds of jeon."
+        },
+        {
+          "kw": "불리다",
+          "mean": "to soak (rice, beans, dried food) in water",
+          "ex": "밥을 짓기 전에 쌀을 물에 불려야 더 맛이 좋아요.",
+          "exen": "Rice tastes better if you soak it before cooking."
+        },
+        {
+          "kw": "삶다",
+          "mean": "to boil something in water (eggs, noodles, meat)",
+          "ex": "계란을 냄비에 넣고 10분 정도 삶으면 완전히 익는다.",
+          "exen": "Put the eggs in a pot and boil them for about 10 minutes and they cook through."
+        },
+        {
+          "kw": "섞다",
+          "mean": "to mix, to stir together",
+          "ex": "간장에 설탕과 다진 마늘을 넣고 잘 섞어 주세요.",
+          "exen": "Add sugar and minced garlic to the soy sauce and mix it well."
+        },
+        {
+          "kw": "썰다",
+          "mean": "to slice, to cut up (ㄹ stem → 썰어, 써니)",
+          "ex": "김치찌개에 돼지고기를 썰어서 넣으세요.",
+          "exen": "Slice the pork and put it into the kimchi stew."
+        },
+        {
+          "kw": "익히다",
+          "mean": "to cook something through, to let it cook until done",
+          "ex": "감자는 푹 익혀야 부드러워져요.",
+          "exen": "Potatoes have to be cooked right through to go soft."
+        },
+        {
+          "kw": "자르다",
+          "mean": "to cut (르 irregular → 잘라서)",
+          "ex": "어머니는 갈비를 먹기 좋게 잘라서 주셨어요.",
+          "exen": "My mother cut the galbi into easy-to-eat pieces for me."
+        },
+        {
+          "kw": "조리다",
+          "mean": "to simmer down in sauce, to braise",
+          "ex": "생선과 무에 간장을 넣고 조렸어요.",
+          "exen": "I simmered fish and radish in soy sauce."
+        },
+        {
+          "kw": "찌다",
+          "mean": "to steam",
+          "ex": "여름에는 간식으로 옥수수나 감자를 쪄 먹습니다.",
+          "exen": "In summer we steam corn or potatoes for a snack."
+        },
+        {
+          "kw": "튀기다",
+          "mean": "to deep-fry",
+          "ex": "튀김은 바삭하게 튀겨야 맛있습니다.",
+          "exen": "Fried food has to be fried until crisp to taste good."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-는 만큼 / 만큼",
+      "tag": "as much as, to the extent that",
+      "def_ko": "앞에 말한 내용과 비슷한 정도나 한도임을 나타내는 표현. '만큼'은 앞에 말한 내용과 비슷한 정도나 한도임을 나타내는 조사.",
+      "def_en": "Shows that something matches the degree, amount or limit of what came before — 'as much as ~', 'to the extent that ~'. After a verb or adjective it is -는 / -(으)ㄴ / -(으)ㄹ 만큼; straight after a noun, 만큼 is a particle and is written joined to the noun (아버지만큼).",
+      "ex": [
+        {
+          "ko": "아는 만큼 보인다.",
+          "en": "You see as much as you know. (a saying)"
+        },
+        {
+          "ko": "누구나 일한 만큼 월급을 받아야 해요.",
+          "en": "Everyone should be paid as much as they worked."
+        },
+        {
+          "ko": "기대가 높은 만큼 실망도 컸다.",
+          "en": "The expectations were high, and the disappointment was just as big."
+        },
+        {
+          "ko": "리사 씨가 기쁜 만큼 저도 기뻐요.",
+          "en": "I'm as happy as Lisa is."
+        },
+        {
+          "ko": "저는 고등학교 때 이미 아버지만큼 키가 컸어요.",
+          "en": "By high school I was already as tall as my father. (noun + 만큼)"
+        },
+        {
+          "ko": "음식이 많네요. 먹을 만큼 드세요.",
+          "en": "That's a lot of food. Have as much as you can eat."
+        }
+      ],
+      "info_ko": "동사, 형용사, '이다'와 결합한다. 동사는 시제에 따라 '-는/-은/-을 만큼'을 쓰고, 명사 뒤에는 '만큼'을 붙여 쓴다.",
+      "info_en": "Verbs pick the ending by tense: -는 만큼 (present), -(으)ㄴ 만큼 (past), -(으)ㄹ 만큼 (future, or 'enough to'). Adjectives take -(으)ㄴ 만큼, except 있다/없다 adjectives, which take -는 만큼 (재미있는 만큼). After a noun, 만큼 attaches directly with no space.",
+      "table": {
+        "head": [
+          "품사",
+          "-는 만큼",
+          "-(으)ㄴ 만큼",
+          "-(으)ㄹ 만큼"
+        ],
+        "rows": [
+          [
+            "동사",
+            [
+              [
+                "먹다",
+                "먹는 만큼"
+              ],
+              [
+                "오다",
+                "오는 만큼"
+              ]
+            ],
+            [
+              [
+                "먹다",
+                "먹은 만큼"
+              ],
+              [
+                "오다",
+                "온 만큼"
+              ],
+              [
+                "살다",
+                "산 만큼"
+              ]
+            ],
+            [
+              [
+                "먹다",
+                "먹을 만큼"
+              ],
+              [
+                "오다",
+                "올 만큼"
+              ],
+              [
+                "살다",
+                "살 만큼"
+              ]
+            ]
+          ],
+          [
+            "형용사",
+            [
+              [
+                "재미있다",
+                "재미있는 만큼"
+              ],
+              [
+                "맛없다",
+                "맛없는 만큼"
+              ]
+            ],
+            [
+              [
+                "작다",
+                "작은 만큼"
+              ],
+              [
+                "크다",
+                "큰 만큼"
+              ],
+              [
+                "길다",
+                "긴 만큼"
+              ]
+            ],
+            "—"
+          ]
+        ]
+      },
+      "table2": {
+        "caption": "명사 + 만큼 · The particle — 명사에 붙여 써요 (띄어쓰기 없이)",
+        "head": [
+          "받침",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            "학생",
+            "학생만큼"
+          ],
+          [
+            "받침 X",
+            "의사",
+            "의사만큼"
+          ],
+          [
+            "받침 X",
+            "아버지",
+            "아버지만큼"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-고 나다",
+      "tag": "after finishing ~",
+      "def_ko": "앞에 오는 말의 행동이 끝난 다음에 뒤의 내용이 일어남을 나타내는 표현.",
+      "def_en": "Shows that what follows happens once the first action is finished — 'after ~ing'. The stress is on completion, so it almost always appears as -고 나서, -고 나니(까) or -고 나면.",
+      "ex": [
+        {
+          "ko": "먼저 영화를 보고 나서 쇼핑을 합시다.",
+          "en": "Let's watch the film first and then go shopping."
+        },
+        {
+          "ko": "노래를 부르고 나니 배가 고파요.",
+          "en": "Now that I've sung, I'm hungry."
+        },
+        {
+          "ko": "이 책을 읽고 나면 생각이 달라질 거예요.",
+          "en": "Once you've read this book, your thinking will change."
+        },
+        {
+          "ko": "글을 잘 읽고 나서 문제를 푸세요.",
+          "en": "Read the text carefully, then answer the questions."
+        },
+        {
+          "ko": "계란을 먼저 넣고 나서 밥을 넣고 볶으세요.",
+          "en": "Put the egg in first, then add the rice and stir-fry it."
+        }
+      ],
+      "info_ko": "동사와 결합한다. 받침에 관계없이 '-고 나다'를 쓰며, 보통 '-고 나서, -고 나니(까), -고 나면'의 형태로 쓴다.",
+      "info_en": "Attaches to verbs, and the form never changes — always -고 나다, with or without a final consonant. Compare -(으)ㄴ 다음에 below (same idea, noun-based) and -자마자 from 7과, which is 'the moment you ~' rather than 'after you've finished ~'.",
+      "table": {
+        "head": [
+          "품사",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 · 받침 O",
+            "먹다",
+            "먹고 나다"
+          ],
+          [
+            "동사 · 받침 X",
+            "오다",
+            "오고 나다"
+          ],
+          [
+            "동사 · 받침 'ㄹ'",
+            "살다",
+            "살고 나다"
+          ],
+          [
+            "동사 · 하다",
+            "공부하다",
+            "공부하고 나다"
+          ]
+        ]
+      },
+      "table2": {
+        "caption": "자주 쓰는 형태 · The three forms you actually use",
+        "head": [
+          "형태",
+          "예",
+          "뜻"
+        ],
+        "rows": [
+          [
+            "-고 나서",
+            "숙제를 하고 나서 잤어요.",
+            "…and then (sequence)"
+          ],
+          [
+            "-고 나니(까)",
+            "숙제를 하고 나니 기분이 좋아요.",
+            "now that I've… (discovery)"
+          ],
+          [
+            "-고 나면",
+            "숙제를 하고 나면 놀 수 있어요.",
+            "once you've… (condition)"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-(으)ㄴ 다음에",
+      "tag": "after ~ing  ·  부가 문법 (Additional grammar)",
+      "extra": true,
+      "def_ko": "어떤 행위를 먼저 한 후에 뒤의 행위를 함을 나타내는 표현.",
+      "def_en": "Shows that one action is done first and the next one follows — 'after ~ing'.",
+      "ex": [
+        {
+          "ko": "조개를 씻은 다음에 물에 넣고 끓이세요.",
+          "en": "Wash the clams, then put them in water and boil them."
+        },
+        {
+          "ko": "숙제를 다 끝낸 다음에 친구를 만났어요.",
+          "en": "I met my friend after I'd finished all my homework."
+        },
+        {
+          "ko": "고기를 양념에 넣은 다음에 30분을 기다립니다.",
+          "en": "After putting the meat in the marinade, you wait 30 minutes."
+        }
+      ],
+      "info_ko": "동사와 결합한다. 받침이 있으면 '-은 다음에', 받침이 없거나 'ㄹ' 받침이면 '-ㄴ 다음에'를 쓴다.",
+      "info_en": "Attaches to verbs: -은 다음에 after a final consonant, -ㄴ 다음에 otherwise (a ㄹ stem drops the ㄹ: 살다 → 산 다음에). -(으)ㄴ 후에 and -(으)ㄴ 뒤에 mean the same thing.",
+      "table": {
+        "head": [
+          "받침",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "받침 O",
+            "먹다",
+            "먹은 다음에"
+          ],
+          [
+            "받침 X",
+            "오다",
+            "온 다음에"
+          ],
+          [
+            "받침 'ㄹ'",
+            "살다",
+            "산 다음에"
+          ]
+        ]
+      }
+    }
+  ]
+}
