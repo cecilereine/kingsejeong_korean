@@ -1,0 +1,307 @@
+{
+  "num": "14과",
+  "lesson": "14",
+  "title": "휴가철이 다 되어 가는데 휴가 계획은 세웠어요?",
+  "en": "The holiday season is almost here — have you made holiday plans?",
+  "vocab": [
+    {
+      "theme": "여행 계획 · Travel plans",
+      "items": [
+        {
+          "kw": "교통편",
+          "mean": "transport options, means of transport",
+          "ex": "제주도 여행을 가려고 숙소와 교통편을 알아봤어요.",
+          "exen": "I looked into accommodation and transport for a trip to Jeju."
+        },
+        {
+          "kw": "변경(하다/되다)",
+          "mean": "change; to change / to be changed",
+          "ex": "주말에 여행을 가려고 했는데 급한 일이 생겨서 계획을 변경했어요.",
+          "exen": "I was going to travel at the weekend, but something urgent came up, so I changed my plans."
+        },
+        {
+          "kw": "비교하다",
+          "mean": "to compare",
+          "ex": "수진 씨는 물건을 사기 전에 여러 가게에 가서 가격을 비교한다.",
+          "exen": "Sujin goes to several shops to compare prices before buying something."
+        },
+        {
+          "kw": "여행 경비",
+          "mean": "travel expenses, travel budget",
+          "ex": "해외여행을 가려면 여행 경비가 많이 든다.",
+          "exen": "Travelling abroad costs a lot of money."
+        },
+        {
+          "kw": "여행지",
+          "mean": "travel destination",
+          "ex": "이번 휴가 때 갈 여행지는 제주도이다.",
+          "exen": "The destination for this holiday is Jeju."
+        },
+        {
+          "kw": "연기하다",
+          "mean": "to postpone, to put off",
+          "ex": "오늘 오전 회의를 오후로 연기했다.",
+          "exen": "We postponed this morning’s meeting until the afternoon."
+        },
+        {
+          "kw": "예약제",
+          "mean": "reservation-only system, advance-order system",
+          "ex": "이 가게는 케이크를 예약제로 판매하고 있어서 구입하려면 미리 주문해야 해요.",
+          "exen": "This shop sells cakes by advance order, so you need to order ahead to buy one."
+        },
+        {
+          "kw": "1박 2일",
+          "mean": "one night and two days",
+          "ex": "나타샤 씨는 1박 2일로 부산 출장을 다녀왔다.",
+          "exen": "Natasha went on a two-day, one-night business trip to Busan."
+        },
+        {
+          "kw": "추가(하다/되다)",
+          "mean": "addition; to add / to be added",
+          "ex": "여기 삼겹살 1인분 더 추가해 주세요.",
+          "exen": "Please add one more serving of pork belly here."
+        }
+      ]
+    },
+    {
+      "theme": "휴가철 · Holiday season",
+      "items": [
+        {
+          "kw": "겨울철",
+          "mean": "winter season",
+          "ex": "추운 겨울철에는 감기에 걸리기 쉬워요.",
+          "exen": "It is easy to catch a cold in the chilly winter season."
+        },
+        {
+          "kw": "비수기",
+          "mean": "low season, off-season",
+          "ex": "비수기에는 비행기 표 값이 성수기보다 훨씬 싸요.",
+          "exen": "Flights are much cheaper in the low season than in the high season."
+        },
+        {
+          "kw": "성수기",
+          "mean": "high season, peak season",
+          "ex": "여행 성수기에는 어디에 가나 사람들이 많아요.",
+          "exen": "During peak travel season, everywhere you go is crowded."
+        },
+        {
+          "kw": "여름철",
+          "mean": "summer season",
+          "ex": "여름철에는 날씨가 더워서 음식이 쉽게 상한다.",
+          "exen": "In summer, food spoils easily because it is hot."
+        },
+        {
+          "kw": "여름휴가",
+          "mean": "summer holiday, summer vacation",
+          "ex": "이번에 가족들과 바닷가로 여름휴가를 다녀왔어요.",
+          "exen": "I went to the seaside with my family for our summer holiday."
+        },
+        {
+          "kw": "휴가철",
+          "mean": "holiday season, vacation season",
+          "ex": "휴가철에는 호텔을 예약하기 어려워요.",
+          "exen": "It is difficult to book a hotel during the holiday season."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-아/어 가다 / -아/어 오다",
+      "tag": "gradually progressing / continuing up to now",
+      "def_ko": "어떤 동작이나 상태가 계속 변화하거나 진행됨을 나타내는 표현.",
+      "def_en": "Shows an action or state continuing or gradually changing. -아/어 가다 looks forward as it develops from now on; -아/어 오다 looks back over a process that has continued up to now.",
+      "ex": [
+        {
+          "ko": "방학이 다 끝나 가요.",
+          "en": "The school holiday is almost over."
+        },
+        {
+          "ko": "제가 한국에 온 지도 3년이 다 되어 가요.",
+          "en": "It is getting close to three years since I came to Korea."
+        },
+        {
+          "ko": "가을이 되어서 나뭇잎이 빨갛게 변해 가요.",
+          "en": "As autumn arrives, the leaves are gradually turning red."
+        },
+        {
+          "ko": "해외여행을 가고 싶어서 작년부터 용돈을 모아 왔어요.",
+          "en": "I have been saving my pocket money since last year because I want to travel abroad."
+        },
+        {
+          "ko": "선생님은 10년 전부터 지금까지 계속 한국어를 가르쳐 오셨어요.",
+          "en": "The teacher has been teaching Korean continuously for the past ten years."
+        },
+        {
+          "ko": "피아노 대회를 위해서 1년 전부터 시간이 있을 때마다 준비해 왔어요.",
+          "en": "I have been preparing for the piano competition whenever I have time since a year ago."
+        }
+      ],
+      "info_ko": "동사와 결합한다. 어간의 모음이 ㅏ, ㅗ이면 -아, 그 외에는 -어, 하다는 -해를 쓴다.",
+      "info_en": "Use -아 after ㅏ/ㅗ, -어 after other vowels, and -해 with 하다. Both 가다 and 오다 conjugate normally: 먹어 가요 / 먹어 왔어요. Here they describe progress over time; compare literal movement in 가져가다 / 가져오다.",
+      "table": {
+        "head": [
+          "품사 / 받침",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 · ㅏ, ㅗ",
+            "모으다",
+            "모아 가다 / 모아 오다"
+          ],
+          [
+            "동사 · 그 외",
+            "먹다",
+            "먹어 가다 / 먹어 오다"
+          ],
+          [
+            "동사 · 하다",
+            "공부하다",
+            "공부해 가다 / 공부해 오다"
+          ],
+          [
+            "동사 · 모음 축약",
+            "되다",
+            "되어 가다 / 되어 오다"
+          ],
+          [
+            "동사 · ㄹ 받침",
+            "살다",
+            "살아 가다 / 살아 오다"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-는다고 / -ㄴ다고 / -다고 / (이)라고",
+      "tag": "because / saying that… (reason or intention)",
+      "def_ko": "근거나 이유, 목적 및 의도를 나타내는 연결 어미.",
+      "def_en": "Connects an action to a stated reason, purpose or intention — “because…”, “saying that…”, or “intending to…”. It can also reject an assumption: being A does not mean B. This lesson teaches the connective use, rather than reported speech followed by 하다.",
+      "ex": [
+        {
+          "ko": "쯔엉 씨가 책을 빌린다고 도서관에 갔어요.",
+          "en": "Jjeueong went to the library to borrow a book."
+        },
+        {
+          "ko": "동생이 춥다고 옷장에서 두꺼운 옷을 꺼내 입었어요.",
+          "en": "My younger sibling said it was cold and took a thick coat out of the wardrobe to put on."
+        },
+        {
+          "ko": "한국 사람이라고 한국에 대해 다 아는 것은 아니에요.",
+          "en": "Being Korean does not mean you know everything about Korea."
+        },
+        {
+          "ko": "사비나는 한국어를 배운다고 온라인 세종학당에 등록했다.",
+          "en": "Sabina enrolled at the Online King Sejong Institute to learn Korean."
+        }
+      ],
+      "info_ko": "동사, 형용사, 명사+이다와 결합한다. 동사는 받침 O -는다고, 받침 X/ㄹ -ㄴ다고, 형용사는 -다고, 명사는 (이)라고를 쓴다.",
+      "info_en": "Present-tense verbs take -는다고 after a consonant and -ㄴ다고 after a vowel; ㄹ drops (살다 → 산다고). Adjectives take -다고; nouns take -이라고 / -라고. 있다/없다 also take -다고 (있다고, 없다고). The final clause explains the action or result connected to that reason or intention.",
+      "table": {
+        "head": [
+          "품사 / 받침",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 · 받침 O",
+            "먹다",
+            "먹는다고"
+          ],
+          [
+            "동사 · 받침 X",
+            "오다",
+            "온다고"
+          ],
+          [
+            "동사 · 받침 ㄹ",
+            "살다",
+            "산다고"
+          ],
+          [
+            "형용사",
+            "작다",
+            "작다고"
+          ],
+          [
+            "형용사",
+            "크다",
+            "크다고"
+          ],
+          [
+            "(명사)이다 · 받침 O",
+            "학생",
+            "학생이라고"
+          ],
+          [
+            "(명사)이다 · 받침 X",
+            "의사",
+            "의사라고"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "만 아니면",
+      "tag": "if only it were not for… / as long as it is not…  ·  부가 문법 (Additional grammar)",
+      "extra": true,
+      "def_ko": "앞에 오는 말이 뒤에 오는 내용에 대해 벗어날 수 없는 조건이나 이유임을 강조하는 표현.",
+      "def_en": "Emphasizes a particular condition or obstacle: “if only it were not for…”. It can also set one exception — “as long as it is not…”. With a past counterfactual, use 만 아니었으면: “if it had not been for…”.",
+      "ex": [
+        {
+          "dia": "가:",
+          "ko": "지훈 씨, 이따 같이 명동에 갈래요?",
+          "en": "Jihun, would you like to go to Myeongdong together later?"
+        },
+        {
+          "dia": "나:",
+          "ko": "내일 시험만 아니면 저도 갈 텐데. 다음에 같이 가요.",
+          "en": "If only I did not have an exam tomorrow, I would go too. Let’s go together another time."
+        },
+        {
+          "dia": "가:",
+          "ko": "후안 씨, 왜 지난 주말에 모임에 안 왔어요?",
+          "en": "Juan, why did you not come to the gathering last weekend?"
+        },
+        {
+          "dia": "나:",
+          "ko": "아르바이트만 아니었으면 저도 참석했을 텐데. 다음에는 평일에 모이면 좋겠어요.",
+          "en": "If it had not been for my part-time job, I would have joined too. I hope we can meet on a weekday next time."
+        },
+        {
+          "ko": "저는 공포 영화만 아니면 아무거나 봐도 괜찮아요.",
+          "en": "I am happy to watch anything as long as it is not a horror film."
+        }
+      ],
+      "info_ko": "명사와 결합한다. 받침에 관계없이 만 아니면을 쓴다. 과거의 가정에는 만 아니었으면을 쓴다.",
+      "info_en": "Attach 만 to the noun with no space, then write 아니면 separately: 시험만 아니면. The form is the same with or without a final consonant. Past counterfactual: 시험만 아니었으면. Often paired with -(으)ㄹ 텐데 to express regret.",
+      "table": {
+        "head": [
+          "품사 / 받침",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "명사 · 받침 O",
+            "학생",
+            "학생만 아니면"
+          ],
+          [
+            "명사 · 받침 X",
+            "의사",
+            "의사만 아니면"
+          ],
+          [
+            "명사 · 과거 가정",
+            "아르바이트",
+            "아르바이트만 아니었으면"
+          ]
+        ]
+      }
+    }
+  ]
+}
