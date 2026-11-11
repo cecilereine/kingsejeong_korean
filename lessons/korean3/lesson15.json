@@ -1,0 +1,505 @@
+{
+  "num": "15과",
+  "lesson": "15",
+  "title": "여행을 가려고 인터넷에서 숙소를 찾는 중이에요",
+  "en": "I’m looking for a place to stay online for my trip",
+  "vocab": [
+    {
+      "theme": "숙소 · Accommodation",
+      "items": [
+        {
+          "kw": "객실",
+          "mean": "guest room, hotel room",
+          "ex": "바다가 보이는 객실은 다른 객실보다 비싸다.",
+          "exen": "Rooms with a sea view cost more than other rooms."
+        },
+        {
+          "kw": "민박집",
+          "mean": "homestay, lodging run out of a private home",
+          "ex": "바닷가 근처 저렴한 민박집에서 하룻밤을 잤다.",
+          "exen": "I spent a night at an inexpensive homestay near the coast."
+        },
+        {
+          "kw": "숙소",
+          "mean": "accommodation, place to stay",
+          "ex": "휴가철에는 숙소를 잡기가 어려워요.",
+          "exen": "It is hard to find a place to stay during the holiday season."
+        },
+        {
+          "kw": "시설",
+          "mean": "facilities, amenities",
+          "ex": "이 콘도에는 수영장, 헬스장 등 다양한 시설이 있다.",
+          "exen": "This condo has various facilities, including a pool and a gym."
+        },
+        {
+          "kw": "여관",
+          "mean": "inn, budget lodging",
+          "ex": "여행 경비를 줄이기 위해서 호텔보다 저렴한 여관을 예약했어요.",
+          "exen": "To cut travel costs, I booked an inn that was cheaper than a hotel."
+        },
+        {
+          "kw": "1인실",
+          "mean": "single room, room for one person",
+          "ex": "저는 혼자 여행할 때 게스트하우스의 1인실을 예약해요.",
+          "exen": "When I travel alone, I book a single room at a guesthouse."
+        },
+        {
+          "kw": "전통적",
+          "mean": "traditional",
+          "ex": "한복은 전통적인 아름다움을 갖고 있다.",
+          "exen": "Hanbok has a traditional beauty."
+        },
+        {
+          "kw": "청결하다",
+          "mean": "to be clean, to be sanitary",
+          "ex": "그 숙소는 청결한 욕실, 아름다운 창밖 풍경 등 모든 것이 완벽했다.",
+          "exen": "Everything about the accommodation was perfect, from the clean bathroom to the lovely view."
+        },
+        {
+          "kw": "체크아웃",
+          "mean": "check-out",
+          "ex": "오전에 호텔에서 체크아웃을 한 다음 택시를 타고 공항으로 갔다.",
+          "exen": "I checked out of the hotel in the morning and took a taxi to the airport."
+        },
+        {
+          "kw": "체크인",
+          "mean": "check-in",
+          "ex": "숙소에 도착해서 제일 먼저 체크인을 하고 객실 열쇠를 받았다.",
+          "exen": "When I arrived, the first thing I did was check in and get my room key."
+        },
+        {
+          "kw": "최고급",
+          "mean": "top-class, luxury, highest grade",
+          "ex": "신혼여행을 위해 그 지역에서 가장 비싼 최고급 호텔을 예약했어요.",
+          "exen": "We booked the most expensive luxury hotel in the area for our honeymoon."
+        },
+        {
+          "kw": "콘도",
+          "mean": "holiday condo, self-catering resort apartment",
+          "ex": "이번 휴가는 콘도에서 직접 음식을 해 먹으면서 지낼 거예요.",
+          "exen": "This holiday we are staying in a condo and cooking our own meals."
+        },
+        {
+          "kw": "펜션",
+          "mean": "holiday cottage, vacation guesthouse",
+          "ex": "우리 가족은 지난 여름에 숲속에 있는 펜션에서 휴가를 보냈어요.",
+          "exen": "My family spent last summer’s holiday at a cottage in the woods."
+        },
+        {
+          "kw": "한옥",
+          "mean": "traditional Korean house",
+          "ex": "전주에는 한옥이 많아서 옛날 분위기를 느낄 수 있다.",
+          "exen": "Jeonju has many traditional Korean houses, so you can get a feel for the past."
+        },
+        {
+          "kw": "현대적",
+          "mean": "modern",
+          "ex": "이 호텔은 객실을 현대적으로 꾸며서 젊은 사람들에게 인기가 많아요.",
+          "exen": "This hotel is popular with young people because its rooms are decorated in a modern style."
+        }
+      ]
+    },
+    {
+      "theme": "숙박 · Staying overnight",
+      "items": [
+        {
+          "kw": "머물다",
+          "mean": "to stay, to remain",
+          "ex": "이번 여름휴가에는 시골에 있는 외할머니 댁에서 며칠 머물 거예요.",
+          "exen": "This summer holiday I will stay at my grandmother’s house in the countryside for a few days."
+        },
+        {
+          "kw": "묵다",
+          "mean": "to stay overnight, to lodge",
+          "ex": "밤이 너무 늦어서 친구 집에서 하룻밤을 묵었어요.",
+          "exen": "It was so late that I stayed overnight at a friend’s place."
+        },
+        {
+          "kw": "숙박비",
+          "mean": "accommodation cost, lodging fee",
+          "ex": "7월하고 8월은 여름 휴가철이라서 숙박비가 비싸다.",
+          "exen": "Accommodation is expensive in July and August because it is the summer holiday season."
+        },
+        {
+          "kw": "숙박하다",
+          "mean": "to stay overnight, to lodge",
+          "ex": "이번 여행은 편안하게 호텔에서 숙박하기로 했어요.",
+          "exen": "We decided to stay at a hotel for comfort on this trip."
+        },
+        {
+          "kw": "장기간",
+          "mean": "a long period, an extended period",
+          "ex": "장기간 출장 때문에 집을 오래 비웠습니다.",
+          "exen": "I was away from home for a long time on an extended business trip."
+        },
+        {
+          "kw": "혜택",
+          "mean": "benefit, perk",
+          "ex": "여행 비수기에는 호텔에서 다양한 할인 혜택을 받을 수 있다.",
+          "exen": "You can get a range of hotel discounts during the off-season."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-는 중이다",
+      "tag": "to be in the middle of doing something",
+      "def_ko": "앞 말의 행위가 진행되고 있음을 나타내는 표현.",
+      "def_en": "Shows that an action is in progress, as in “I’m in the middle of looking for a room.”",
+      "ex": [
+        {
+          "dia": "가:",
+          "ko": "나타샤 씨, 지금 뭐 하고 있어요?",
+          "en": "Natasha, what are you doing now?"
+        },
+        {
+          "dia": "나:",
+          "ko": "한국 드라마를 보면서 한국어를 공부하는 중이에요.",
+          "en": "I’m studying Korean by watching a Korean drama."
+        },
+        {
+          "dia": "가:",
+          "ko": "지금 일하고 있어요?",
+          "en": "Are you working right now?"
+        },
+        {
+          "dia": "나:",
+          "ko": "아니요. 책 읽는 중이에요. 뭐 도와드릴까요?",
+          "en": "No, I’m reading a book. Can I help you?"
+        }
+      ],
+      "info_en": "Use a verb stem + -는 중이다. A stem-final ㄹ drops before -는 (살다 → 사는 중이다). With an activity noun, you can also use noun + 중이다 (회의 중이에요).",
+      "table": {
+        "head": [
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "먹다",
+            "먹는 중이다"
+          ],
+          [
+            "오다",
+            "오는 중이다"
+          ],
+          [
+            "살다",
+            "사는 중이다"
+          ],
+          [
+            "찾다",
+            "찾는 중이다"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-는다고 / -ㄴ다고 / -다고 / (이)라고",
+      "tag": "reported statements · said that…",
+      "def_ko": "앞의 내용을 간접적으로 전달하는 표현.",
+      "def_en": "Reports what someone said or wrote as a statement. The same endings appeared in lesson 14 to give a reason or intention. Here a reporting verb such as 하다 or 말하다 carries the quote.",
+      "ex": [
+        {
+          "dia": "가:",
+          "ko": "사비나 씨는 밥 먹으러 같이 안 왔어요?",
+          "en": "Didn’t Sabina come to eat with you?"
+        },
+        {
+          "dia": "나:",
+          "ko": "사비나 씨는 남자 친구하고 먹는다고 했어요.",
+          "en": "Sabina said she was eating with her boyfriend."
+        },
+        {
+          "dia": "가:",
+          "ko": "너 이 영화 봤어?",
+          "en": "Have you seen this film?"
+        },
+        {
+          "dia": "나:",
+          "ko": "아니. 아직 못 봤는데 친구들이 재미있다고 했어.",
+          "en": "No, I haven’t seen it yet, but my friends said it was good."
+        },
+        {
+          "dia": "가:",
+          "ko": "마트 할인 행사는 언제까지야?",
+          "en": "When does the supermarket sale end?"
+        },
+        {
+          "dia": "나:",
+          "ko": "어제 신문에 오늘이 마지막이라고 적혀 있었어.",
+          "en": "Yesterday’s paper said today was the last day."
+        }
+      ],
+      "info_en": "For a present-tense action, use -는다고 after a consonant and -ㄴ다고 after a vowel or ㄹ (drop ㄹ). Descriptive verbs take -다고. Nouns take -이라고 after a consonant or -라고 after a vowel. Past statements take -았/었다고, as in 갔다고 했어요.",
+      "table": {
+        "head": [
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "먹다",
+            "먹는다고"
+          ],
+          [
+            "오다",
+            "온다고"
+          ],
+          [
+            "살다",
+            "산다고"
+          ],
+          [
+            "작다",
+            "작다고"
+          ],
+          [
+            "크다",
+            "크다고"
+          ],
+          [
+            "길다",
+            "길다고"
+          ],
+          [
+            "학생이다",
+            "학생이라고"
+          ],
+          [
+            "의사이다",
+            "의사라고"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-냐고",
+      "tag": "reported questions · asked whether or what…",
+      "def_ko": "앞에 오는 질문 내용을 간접적으로 전달하는 표현.",
+      "def_en": "Relays a question indirectly, usually with 묻다 or 물어보다.",
+      "ex": [
+        {
+          "ko": "오늘 점심은 뭐 먹느냐고 물었어요.",
+          "en": "He asked what we were having for lunch."
+        },
+        {
+          "ko": "오늘 도서관에 가느냐고 물어봤어요.",
+          "en": "I asked whether he was going to the library today."
+        },
+        {
+          "ko": "저한테 어디가 아프냐고 물어보셨어요.",
+          "en": "The doctor asked me where it hurt."
+        }
+      ],
+      "info_en": "Action verbs use -느냐고 or the common spoken -냐고. Descriptive verbs can use -(으)냐고 or -냐고. Nouns use (이)냐고.",
+      "table": {
+        "head": [
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "먹다",
+            "먹느냐고 / 먹냐고"
+          ],
+          [
+            "오다",
+            "오느냐고 / 오냐고"
+          ],
+          [
+            "살다",
+            "사느냐고 / 사냐고"
+          ],
+          [
+            "작다",
+            "작으냐고 / 작냐고"
+          ],
+          [
+            "크다",
+            "크냐고"
+          ],
+          [
+            "길다",
+            "기냐고"
+          ],
+          [
+            "학생이다",
+            "학생이냐고"
+          ],
+          [
+            "의사이다",
+            "의사냐고"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-(으)라고",
+      "tag": "reported commands or requests · told someone to…",
+      "def_ko": "앞에 오는 명령이나 부탁의 내용을 간접적으로 전달하는 표현.",
+      "def_en": "Reports what someone told or asked another person to do.",
+      "ex": [
+        {
+          "ko": "텔레비전에서 의사 선생님이 손을 자주 씻으라고 했어요.",
+          "en": "A doctor on TV said to wash our hands often."
+        },
+        {
+          "ko": "수업이 끝나고 교실에서 기다리라고 하셨어요.",
+          "en": "The teacher told us to wait in the classroom after class."
+        }
+      ],
+      "info_en": "Use -으라고 after a consonant and -라고 after a vowel or ㄹ. Use -지 말라고 for a negative command.",
+      "table": {
+        "head": [
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "먹다",
+            "먹으라고"
+          ],
+          [
+            "오다",
+            "오라고"
+          ],
+          [
+            "살다",
+            "살라고"
+          ],
+          [
+            "가지 말다",
+            "가지 말라고"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-자고",
+      "tag": "reported suggestions · suggested doing something together",
+      "def_ko": "앞에 오는 권유나 제안의 내용을 간접적으로 전달하는 표현.",
+      "def_en": "Reports a suggestion to do something together, such as “She suggested we watch a film.”",
+      "ex": [
+        {
+          "ko": "주말에 함께 영화를 보자고 했어요.",
+          "en": "I suggested we watch a film together at the weekend."
+        },
+        {
+          "ko": "아까 가영이가 나한테 내일 같이 놀자고 해서 명동에 갈 거야.",
+          "en": "Gayeong suggested hanging out tomorrow, so I’m going to Myeongdong."
+        }
+      ],
+      "info_en": "Attach -자고 directly to an action verb stem. Use -지 말자고 to report “let’s not…”.",
+      "table": {
+        "head": [
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "먹다",
+            "먹자고"
+          ],
+          [
+            "오다",
+            "오자고"
+          ],
+          [
+            "살다",
+            "살자고"
+          ],
+          [
+            "만나다",
+            "만나자고"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "(이)란",
+      "tag": "as for… / what we mean by…  ·  부가 문법 (Additional grammar)",
+      "def_ko": "앞에 오는 말이 이야기의 화제임을 강조하여 나타내는 조사.",
+      "def_en": "Highlights a noun as the topic, often when asking what something means or giving a definition.",
+      "ex": [
+        {
+          "ko": "건강한 사람이란 신체뿐만 아니라 마음까지 건강한 사람이다.",
+          "en": "A healthy person is someone who is healthy in both body and mind."
+        },
+        {
+          "ko": "좋은 친구란 힘들 때 옆에 있어 주는 친구예요.",
+          "en": "A good friend is someone who stays by your side when times are hard."
+        }
+      ],
+      "info_en": "Attach -이란 after a noun ending in a consonant and -란 after a noun ending in a vowel.",
+      "table": {
+        "head": [
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "학생",
+            "학생이란"
+          ],
+          [
+            "의사",
+            "의사란"
+          ]
+        ]
+      },
+      "extra": true
+    },
+    {
+      "form": "(이)라고",
+      "tag": "direct quotation · quoting exact words  ·  부가 문법 (Additional grammar)",
+      "def_ko": "원래 말하거나 쓴 그대로 직접적으로 전달함을 나타내는 조사.",
+      "def_en": "Marks the exact word, phrase, or sentence someone said or wrote.",
+      "ex": [
+        {
+          "dia": "가:",
+          "ko": "한국 사람들은 밥 먹기 전에 뭐라고 말해요?",
+          "en": "What do Koreans say before eating?"
+        },
+        {
+          "dia": "나:",
+          "ko": "한국 사람들은 밥 먹기 전에 “잘 먹겠습니다.”라고 말해요.",
+          "en": "Before eating, Koreans say “잘 먹겠습니다” (“I’ll enjoy the meal”)."
+        },
+        {
+          "dia": "가:",
+          "ko": "‘금연 구역’이라고 쓰여 있는데 무슨 뜻이에요?",
+          "en": "It says “금연 구역”. What does that mean?"
+        },
+        {
+          "dia": "나:",
+          "ko": "담배를 피우면 안 되는 곳이라는 뜻이에요.",
+          "en": "It means a place where smoking is prohibited."
+        }
+      ],
+      "info_en": "After a quoted noun, use 이라고 after a consonant and 라고 after a vowel. Use 라고 after a full quoted utterance: “잘 먹겠습니다.”라고 말해요. Keep the original words inside the quotation marks.",
+      "table": {
+        "head": [
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "학생",
+            "‘학생’이라고"
+          ],
+          [
+            "의사",
+            "‘의사’라고"
+          ],
+          [
+            "불이야!",
+            "“불이야!”라고"
+          ]
+        ]
+      },
+      "extra": true
+    }
+  ]
+}
