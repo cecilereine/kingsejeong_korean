@@ -14,6 +14,7 @@
      lesson.vocab   → [{ theme, quiz?, items: [{ kw, mean, ex?, exen? }] }]
                       quiz: false keeps a group (e.g. whole phrases) out of the typed quiz
      lesson.grammar → [{ form, tag, def_ko, def_en, info_en, ex, table, table2?, extra? }]
+                      type: 'info' adds a reference section with optional examples and table
    ============================================================= */
 
 let COURSES = [];
@@ -91,17 +92,21 @@ function renderTable(table, isResultCell) {
 
 const grammarSearchText = entry => searchText(
   entry.form, entry.tag, entry.def_ko, entry.def_en,
-  entry.ex.map(example => `${example.ko} ${example.en}`).join(' ')
+  entry.ex?.map(example => `${example.ko} ${example.en}`).join(' ')
 );
 
 /* Everything below a grammar point's heading — definition, examples, tables.
    Shared by the full card in the All view and the expandable row in the grammar list. */
 function renderGrammarDetails(entry) {
-  const examples = entry.ex.map(example => `
+  const examples = (entry.ex || []).map(example => `
     <li>
       ${example.dia ? `<span class="dia">${esc(example.dia)}</span> ` : ''}${esc(example.ko)}
       <span class="exen">${esc(example.en)}</span>
     </li>`).join('');
+
+  if (entry.type === 'info') return `
+      ${examples ? `<ul class="ex-list">${examples}</ul>` : ''}
+      ${entry.table ? renderTable(entry.table, NO_EMPHASIS) : ''}`;
 
   const secondTable = entry.table2
     ? `<div class="lbl">${esc(entry.table2.caption)}</div>${renderTable(entry.table2, NO_EMPHASIS)}`
@@ -124,7 +129,8 @@ function renderGrammarDetails(entry) {
 
 function renderGrammarCard(entry) {
   return `
-    <div class="gcard ${entry.extra ? 'extra' : ''}" data-search="${esc(grammarSearchText(entry))}">
+    <div class="gcard ${entry.extra ? 'extra' : ''} ${entry.type === 'info' ? 'info' : ''}" data-search="${esc(grammarSearchText(entry))}">
+      ${entry.type === 'info' ? '<div class="lbl">참고 · Additional information</div>' : ''}
       <span class="form">${esc(entry.form)}</span>
       <div class="tagline">${esc(entry.tag)}</div>
       ${renderGrammarDetails(entry)}
@@ -143,6 +149,7 @@ function renderGrammarPoint(entry) {
         <span class="gpoint-form">${esc(entry.form)}</span>
         <span class="gpoint-tag en">${esc(shortTag(entry))}</span>
         ${entry.extra ? '<span class="gpoint-badge">부가 · Extra</span>' : ''}
+        ${entry.type === 'info' ? '<span class="gpoint-badge">참고 · Info</span>' : ''}
       </summary>
       <div class="gpoint-body">${renderGrammarDetails(entry)}</div>
     </details>`;
@@ -225,6 +232,52 @@ const searchClear  = $('#searchClear');
 let activeLesson = 'all';
 let currentView  = 'all';      // 'all' = vocabulary + grammar, 'grammar' = grammar list only
 
+/* Keep each course's reading position in this browser. Saving stays disabled
+   while lesson data and fonts load so an unfinished page cannot overwrite it. */
+let readingReady = false;
+let readingSaveTimer;
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+function savedReadingPosition(id) {
+  try {
+    const saved = JSON.parse(localStorage.getItem(`ksi_reading_${id}`));
+    return saved && typeof saved === 'object' ? saved : {};
+  } catch { return {}; }
+}
+
+function saveReadingPosition() {
+  if (!readingReady || !course || document.documentElement.dataset.page !== 'course') return;
+  const saved = {
+    lesson: activeLesson,
+    view: currentView,
+    search: search.value,
+    english: enToggle.checked,
+    openGrammar: $$('.gpoint', grammarList).flatMap((point, index) => point.open ? [index] : []),
+    scrollY: window.scrollY,
+    tabsScrollLeft: tabs.scrollLeft,
+  };
+  try { localStorage.setItem(`ksi_reading_${course.id}`, JSON.stringify(saved)); } catch { /* Storage may be unavailable. */ }
+}
+
+async function restoreReadingPosition(token) {
+  const saved = savedReadingPosition(course.id);
+  activeLesson = LESSONS.some(lesson => lesson.lesson === saved.lesson) ? saved.lesson : 'all';
+  search.value = typeof saved.search === 'string' ? saved.search : '';
+  enToggle.checked = saved.english !== false;
+  $('.wrap').classList.toggle('en-hide', !enToggle.checked);
+  $$('.tab', tabs).forEach(tab => tab.classList.toggle('active', tab.dataset.lesson === activeLesson));
+  const openGrammar = new Set(Array.isArray(saved.openGrammar) ? saved.openGrammar : []);
+  $$('.gpoint', grammarList).forEach((point, index) => { point.open = openGrammar.has(index); });
+  setView(saved.view === 'grammar' ? 'grammar' : 'all');
+  // Font metrics and the selected view must settle before restoring the offset.
+  await document.fonts.ready;
+  await new Promise(resolve => requestAnimationFrame(resolve));
+  if (token !== loadToken || document.documentElement.dataset.page !== 'course') return;
+  tabs.scrollLeft = Number.isFinite(saved.tabsScrollLeft) ? saved.tabsScrollLeft : 0;
+  window.scrollTo(0, Number.isFinite(saved.scrollY) ? Math.max(0, saved.scrollY) : 0);
+  readingReady = true;
+}
+
 const HINTS = {
   all:     'Tip: click any vocabulary card to flip it and hide the answer.',
   grammar: 'Tip: tap a grammar point to open its definition, examples and forms.',
@@ -296,6 +349,7 @@ function applyFilters() {
   updateSearchNote(query);
   highlight(query, root);
   syncExpandAll();
+  saveReadingPosition();
 }
 
 /* Says so while a search reaches past the selected lesson, so the highlighted tab
@@ -591,6 +645,9 @@ function renderLanding() {
 }
 
 function showLanding() {
+  saveReadingPosition();
+  readingReady = false;
+  ++loadToken;
   $$('.overlay').forEach(panel => panel.classList.remove('on'));
   document.documentElement.dataset.page = 'landing';
   delete document.documentElement.dataset.theme;
@@ -606,7 +663,6 @@ function route() {
   const id = hashCourseId();
   if (!COURSES.some(c => c.id === id)) { showLanding(); return; }
   document.documentElement.dataset.page = 'course';
-  if (id === course?.id && LESSONS.length) { showCourseDetails(); window.scrollTo(0, 0); return; }  // already loaded
   setCourse(id);
 }
 
@@ -646,6 +702,8 @@ function renderLessonButtons() {
 }
 
 async function setCourse(id) {
+  saveReadingPosition();
+  readingReady = false;
   const token = ++loadToken;
   course = COURSES.find(c => c.id === id);
   $$('.overlay').forEach(panel => panel.classList.remove('on'));   // flashcards and quiz belong to one course
@@ -662,8 +720,8 @@ async function setCourse(id) {
     render();
     renderLessonButtons();
     refreshBadges();
-    applyFilters();
     document.dispatchEvent(new CustomEvent('lessons:loaded'));
+    await restoreReadingPosition(token);
   } catch (error) {
     if (token !== loadToken) return;
     console.error('Lesson data failed to load:', error);
@@ -707,6 +765,15 @@ courseSwitch.addEventListener('click', event => {
 // Landing cards, the 🏠 link, the back button and any …/#korean2 link all go through the address.
 window.addEventListener('hashchange', route);
 
+window.addEventListener('scroll', () => {
+  clearTimeout(readingSaveTimer);
+  readingSaveTimer = setTimeout(saveReadingPosition, 150);
+}, { passive: true });
+window.addEventListener('pagehide', saveReadingPosition);
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') saveReadingPosition();
+});
+
 [tabs, $('#fcScope'), $('#qzScope')].forEach(scrollSidewaysOnWheel);
 
 tabs.addEventListener('click', event => {
@@ -738,6 +805,7 @@ search.addEventListener('keydown', event => {
 
 enToggle.addEventListener('change', () => {
   $('.wrap').classList.toggle('en-hide', !enToggle.checked);
+  saveReadingPosition();
 });
 
 // Click a vocabulary card in the list to hide/reveal its answer.
@@ -759,7 +827,10 @@ expandAllBtn.addEventListener('click', () => {
 });
 
 // `toggle` doesn't bubble, so listen in the capture phase to hear every row.
-grammarList.addEventListener('toggle', syncExpandAll, true);
+grammarList.addEventListener('toggle', () => {
+  syncExpandAll();
+  saveReadingPosition();
+}, true);
 
 $('#fcStart').addEventListener('click', () => setScope(activeLesson));
 $('#fcScope').addEventListener('click', event => {
