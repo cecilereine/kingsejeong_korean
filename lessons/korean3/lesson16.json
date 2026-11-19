@@ -1,0 +1,334 @@
+{
+  "num": "16과",
+  "lesson": "16",
+  "title": "여행 가방을 잃어버리지 않도록 가방에 이름표를 달았어요",
+  "en": "I attached a name tag to my luggage so I would not lose it",
+  "vocab": [
+    {
+      "theme": "여행 준비 · Travel preparation",
+      "items": [
+        {
+          "kw": "귀국(하다)",
+          "mean": "return to one’s home country; to return home",
+          "ex": "언니가 10년간의 유학 생활을 마치고 내일 귀국해요.",
+          "exen": "My older sister is returning home tomorrow after studying abroad for ten years."
+        },
+        {
+          "kw": "깨지다",
+          "mean": "to break, to shatter (intransitive)",
+          "ex": "바람이 너무 세게 불어서 창문이 깨졌어요.",
+          "exen": "The wind blew so hard that the window broke."
+        },
+        {
+          "kw": "달다",
+          "mean": "to attach, to fasten, to hang",
+          "ex": "여행 가방을 잃어버리지 않도록 가방에 이름표를 달았어요.",
+          "exen": "I attached a name tag to my luggage so I would not lose it."
+        },
+        {
+          "kw": "바퀴",
+          "mean": "wheel",
+          "ex": "계단에서 여행 가방을 떨어뜨려서 바퀴가 고장 났어요.",
+          "exen": "I dropped my suitcase on the stairs and a wheel broke."
+        },
+        {
+          "kw": "비자",
+          "mean": "visa",
+          "ex": "한국에 가기 위해 한국 대사관에 가서 비자를 신청했어요.",
+          "exen": "I went to the Korean embassy to apply for a visa to go to Korea."
+        },
+        {
+          "kw": "손잡이",
+          "mean": "handle, handrail, grab handle",
+          "ex": "달리는 버스 안에서는 넘어지지 않도록 손잡이를 꽉 잡으세요.",
+          "exen": "Hold the handrail tightly on a moving bus so you do not fall."
+        },
+        {
+          "kw": "승객",
+          "mean": "passenger",
+          "ex": "승객 여러분, 이 비행기는 곧 인천국제공항에 도착할 예정입니다.",
+          "exen": "Passengers, this flight will arrive at Incheon International Airport shortly."
+        },
+        {
+          "kw": "승무원",
+          "mean": "crew member, flight attendant",
+          "ex": "비행기 안에서는 승무원의 안내에 따라 주시기 바랍니다.",
+          "exen": "Please follow the crew’s instructions on the plane."
+        },
+        {
+          "kw": "일정표",
+          "mean": "schedule, itinerary",
+          "ex": "여행 가서 구경할 곳과 시간을 정리해서 일정표를 짰어요.",
+          "exen": "I made an itinerary listing the places to visit and when to see them."
+        },
+        {
+          "kw": "입국(하다)",
+          "mean": "entry into a country; to enter a country",
+          "ex": "친구가 오후 12시 비행기로 입국할 거예요.",
+          "exen": "My friend will enter the country on the noon flight."
+        },
+        {
+          "kw": "챙기다",
+          "mean": "to gather and take what you need, to make sure to bring",
+          "ex": "여행 가방을 챙겨서 일찍 공항으로 갔어요.",
+          "exen": "I got my luggage together and went to the airport early."
+        },
+        {
+          "kw": "출국(하다)",
+          "mean": "departure from a country; to leave a country",
+          "ex": "이번 주 월요일에 출국해서 주말에 돌아올 예정이에요.",
+          "exen": "I plan to leave the country this Monday and return at the weekend."
+        },
+        {
+          "kw": "탑승(하다)",
+          "mean": "boarding; to board (a plane, ship, vehicle)",
+          "ex": "비행기가 곧 출발하니까 빨리 탑승해야 해요.",
+          "exen": "The plane leaves soon, so we need to board quickly."
+        }
+      ]
+    },
+    {
+      "theme": "짐 싸기 · Packing luggage",
+      "items": [
+        {
+          "kw": "겉옷",
+          "mean": "outerwear, jacket or coat",
+          "ex": "밤에 추울까 봐 겉옷도 하나 넣었어요.",
+          "exen": "I packed a jacket too, in case it gets cold at night."
+        },
+        {
+          "kw": "배낭",
+          "mean": "backpack, rucksack",
+          "ex": "큰 배낭에 짐을 가득 넣고 여행을 떠났어요.",
+          "exen": "I filled a large backpack with my belongings and set off on a trip."
+        },
+        {
+          "kw": "비상금",
+          "mean": "emergency money, emergency funds",
+          "ex": "쯔엉 씨는 갑자기 문제가 생겼을 때 쓸 수 있도록 비상금을 준비해 뒀어요.",
+          "exen": "Jjeueong set aside emergency money to use if an unexpected problem came up."
+        },
+        {
+          "kw": "세면도구",
+          "mean": "toiletries",
+          "ex": "호텔에서는 비누, 수건 등 세면도구를 줍니다.",
+          "exen": "The hotel provides toiletries such as soap and towels."
+        },
+        {
+          "kw": "속옷",
+          "mean": "underwear",
+          "ex": "오래 여행하려면 속옷을 여러 벌 가져가야 한다.",
+          "exen": "You need to bring several changes of underwear for a long trip."
+        },
+        {
+          "kw": "충전기",
+          "mean": "charger",
+          "ex": "여행할 때는 휴대 전화 충전기를 꼭 가지고 가야 해요.",
+          "exen": "Make sure to bring your phone charger when you travel."
+        },
+        {
+          "kw": "짐을 싸다",
+          "mean": "to pack one’s bags",
+          "ex": "여행을 가기 위해 미리 짐을 쌌어요.",
+          "exen": "I packed my bags ahead of time for the trip."
+        },
+        {
+          "kw": "짐을 풀다",
+          "mean": "to unpack",
+          "ex": "호텔에 도착해서 짐을 풀었어요.",
+          "exen": "I unpacked when I arrived at the hotel."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-아/어 가지고",
+      "tag": "because… / having done… (conversational)",
+      "def_ko": "앞 절의 행위나 상태가 뒤 절 내용의 이유나 원인이 됨을 나타내는 표현.",
+      "def_en": "Gives an action or state as the reason for what follows. A conversational expression similar to -아/어서. It can also connect completed preparation to the next action, as in buying something and taking it along.",
+      "ex": [
+        {
+          "ko": "그 가방은 너무 비싸 가지고 못 샀어요.",
+          "en": "That bag was too expensive, so I could not buy it."
+        },
+        {
+          "ko": "친구가 약속 시간에 늦어 가지고 영화를 못 봤어요.",
+          "en": "My friend was late for our meeting, so we could not see the film."
+        },
+        {
+          "ko": "지훈 씨는 잘 웃고 성격이 활발해 가지고 인기가 많아요.",
+          "en": "Jihun smiles a lot and has an outgoing personality, so he is popular."
+        }
+      ],
+      "info_ko": "동사, 형용사와 결합한다. ㅏ, ㅗ 뒤에는 -아 가지고, 그 외에는 -어 가지고, 하다 뒤에는 -해 가지고를 쓴다.",
+      "info_en": "Use -아 가지고 after ㅏ/ㅗ, -어 가지고 after other vowels, and -해 가지고 with 하다. Commonly shortened in speech to -아/어 갖고. The lesson focuses on the reason/cause meaning.",
+      "table": {
+        "head": [
+          "품사 / 형태",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 · ㅏ, ㅗ",
+            "오다",
+            "와 가지고"
+          ],
+          [
+            "동사 · 그 외",
+            "먹다",
+            "먹어 가지고"
+          ],
+          [
+            "동사 · 하다",
+            "공부하다",
+            "공부해 가지고"
+          ],
+          [
+            "형용사 · ㅏ, ㅗ",
+            "작다",
+            "작아 가지고"
+          ],
+          [
+            "형용사 · 그 외",
+            "길다",
+            "길어 가지고"
+          ],
+          [
+            "형용사 · 하다",
+            "조용하다",
+            "조용해 가지고"
+          ],
+          [
+            "형용사 · ㅂ 불규칙",
+            "맵다",
+            "매워 가지고"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-던데(요)",
+      "tag": "I noticed… / it was… (recalling an observation)",
+      "def_ko": "듣는 사람의 반응을 기대하며 과거의 어떤 일에 대해 감탄함을 나타내는 종결 어미.",
+      "def_en": "Recalls something the speaker personally observed or experienced, often with surprise or admiration and an expectation of the listener’s response. At the end of a sentence it can sound like “I noticed…” or “It was…, you know.”",
+      "ex": [
+        {
+          "ko": "한국 대학교 축제에는 유명한 가수도 오던데.",
+          "en": "I noticed that famous singers come to Korean university festivals too."
+        },
+        {
+          "ko": "명동에 사람이 아주 많던데.",
+          "en": "Myeongdong was really crowded when I was there."
+        },
+        {
+          "ko": "오빠가 양복을 입은 모습이 멋있던데요.",
+          "en": "My older brother looked handsome in a suit."
+        },
+        {
+          "ko": "과일은 마트보다 시장이 더 싸던데!",
+          "en": "I noticed fruit was cheaper at the market than at the supermarket!"
+        }
+      ],
+      "info_ko": "동사, 형용사, 이다와 결합한다. 요를 붙이면 높임이 된다.",
+      "info_en": "Attach -던데 directly to verbs and adjectives. With nouns use -이던데 after a consonant and -(이)던데 after a vowel. Add 요 for politeness. This is the sentence-final use. In a longer sentence, -던데 can also set up background or a contrast. Compare -(으)ㄹ 텐데 in lesson 8, which expresses an assumption.",
+      "table": {
+        "head": [
+          "품사 / 형태",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사",
+            "먹다",
+            "먹던데(요)"
+          ],
+          [
+            "동사",
+            "오다",
+            "오던데(요)"
+          ],
+          [
+            "형용사",
+            "작다",
+            "작던데(요)"
+          ],
+          [
+            "형용사",
+            "크다",
+            "크던데(요)"
+          ],
+          [
+            "(명사)이다 · 받침 O",
+            "학생",
+            "학생이던데(요)"
+          ],
+          [
+            "(명사)이다 · 받침 X",
+            "의사",
+            "의사이던데(요) / 의사던데(요)"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-아/어다가",
+      "tag": "do something, then bring/use the result elsewhere  ·  부가 문법 (Additional grammar)",
+      "extra": true,
+      "def_ko": "앞에 행위가 먼저 이루어지고 그 결과로 뒤의 행위가 이루어짐을 나타내는 연결 어미.",
+      "def_en": "Connects a completed action to a later action that uses its result, often in a different place. For example, buy medicine somewhere and bring it to someone, or prepare food at home and take it to the park.",
+      "ex": [
+        {
+          "ko": "제가 아플 때 친구가 약을 사다가 줬어요.",
+          "en": "When I was ill, my friend bought medicine and brought it to me."
+        },
+        {
+          "ko": "아버지는 옆집에서 꽃을 얻어다가 마당에 심으셨어요.",
+          "en": "My father got flowers from next door and planted them in our yard."
+        },
+        {
+          "ko": "남은 음식을 포장해다가 집에서 먹었어요.",
+          "en": "I had the leftover food packed up and ate it at home."
+        }
+      ],
+      "info_ko": "동사와 결합한다. ㅏ, ㅗ 뒤에는 -아다가, 그 외에는 -어다가, 하다 뒤에는 -해다가를 쓴다.",
+      "info_en": "Use -아다가 after ㅏ/ㅗ, -어다가 after other vowels, and -해다가 with 하다. The 가 can be omitted (사다 줬어요). Unlike -다가 from lesson 5, which switches away from an action in progress, this form carries the result of a completed action into the next one.",
+      "table": {
+        "head": [
+          "품사 / 형태",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 · ㅏ, ㅗ",
+            "가다",
+            "가다가"
+          ],
+          [
+            "동사 · 그 외",
+            "먹다",
+            "먹어다가"
+          ],
+          [
+            "동사 · 하다",
+            "공부하다",
+            "공부해다가"
+          ],
+          [
+            "동사 · ㅏ, ㅗ",
+            "사다",
+            "사다가"
+          ],
+          [
+            "동사 · 하다",
+            "포장하다",
+            "포장해다가"
+          ]
+        ]
+      }
+    }
+  ]
+}
