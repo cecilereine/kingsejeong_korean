@@ -1,0 +1,376 @@
+{
+  "num": "17과",
+  "lesson": "17",
+  "title": "흰색 셔츠가 청바지와 잘 어울려요",
+  "en": "A white shirt goes well with jeans",
+  "vocab": [
+    {
+      "theme": "옷의 착용 상태 · Clothing fit and appearance",
+      "items": [
+        {
+          "kw": "고급스럽다",
+          "mean": "to look luxurious, to be elegant",
+          "ex": "이 가방은 고급스럽지만 가격이 너무 비쌉니다.",
+          "exen": "This bag looks luxurious, but it is too expensive."
+        },
+        {
+          "kw": "멋지다",
+          "mean": "to look great, to be stylish",
+          "ex": "지훈 씨는 정장을 입었을 때 가장 멋져요.",
+          "exen": "Jihun looks his best in a suit."
+        },
+        {
+          "kw": "세련되다",
+          "mean": "to be sophisticated, stylish",
+          "ex": "쯔엉 씨는 세련된 옷차림과 친절한 행동으로 친구들에게 인기가 많습니다.",
+          "exen": "Jjeueong is popular with friends for her stylish clothes and kindness."
+        },
+        {
+          "kw": "어울리다",
+          "mean": "to suit, to go well with",
+          "ex": "흰색 셔츠가 청바지와 잘 어울려요.",
+          "exen": "A white shirt goes well with jeans."
+        },
+        {
+          "kw": "연하다",
+          "mean": "to be light, pale (a colour)",
+          "ex": "저는 어제 인터넷 쇼핑몰에서 연한 파란색 바지를 샀어요.",
+          "exen": "Yesterday I bought pale blue trousers from an online shop."
+        },
+        {
+          "kw": "적당하다",
+          "mean": "to be suitable, just right",
+          "ex": "코트 길이가 이 정도면 너무 짧지도 않고 길지도 않고 딱 적당한 것 같아요.",
+          "exen": "At this length, the coat seems just right, neither too short nor too long."
+        },
+        {
+          "kw": "진하다",
+          "mean": "to be deep, dark, strong (a colour)",
+          "ex": "진한 파란색 바지에는 흰색 티셔츠가 잘 어울려요.",
+          "exen": "A white T-shirt goes well with dark blue trousers."
+        },
+        {
+          "kw": "촌스럽다",
+          "mean": "to be unfashionable, old-fashioned",
+          "ex": "10년 전 옷을 꺼내 보니 촌스러워서 입을 수 없었어요.",
+          "exen": "I took out clothes from ten years ago, but they looked too old-fashioned to wear."
+        },
+        {
+          "kw": "헐렁하다",
+          "mean": "to be loose, baggy",
+          "ex": "살을 많이 빼서 바지가 헐렁해졌어요.",
+          "exen": "I lost a lot of weight, so my trousers became loose."
+        },
+        {
+          "kw": "화려하다",
+          "mean": "to be colourful, showy, ornate",
+          "ex": "리사가 화려한 옷을 입고 행사에 왔습니다.",
+          "exen": "Lisa came to the event in a showy outfit."
+        },
+        {
+          "kw": "딱 맞다",
+          "mean": "to fit perfectly",
+          "ex": "새로 산 신발이 크지도 작지도 않고 딱 맞아요.",
+          "exen": "My new shoes are neither too big nor too small. They fit perfectly."
+        },
+        {
+          "kw": "딱 붙다",
+          "mean": "to fit tightly, to cling to the body",
+          "ex": "요즘은 몸에 딱 붙는 바지가 유행입니다.",
+          "exen": "Tight-fitting trousers are in fashion these days."
+        }
+      ]
+    },
+    {
+      "theme": "옷의 부분 · Clothing details and patterns",
+      "items": [
+        {
+          "kw": "꽃무늬",
+          "mean": "floral pattern",
+          "ex": "어머니께서는 꽃이 많이 그려진 꽃무늬 셔츠를 좋아하세요.",
+          "exen": "My mother likes floral shirts covered in flowers."
+        },
+        {
+          "kw": "물방울무늬",
+          "mean": "polka-dot pattern",
+          "ex": "파란 물방울이 그려진 물방울무늬 우산을 샀어요.",
+          "exen": "I bought a polka-dot umbrella with blue dots."
+        },
+        {
+          "kw": "줄무늬",
+          "mean": "stripes, striped pattern",
+          "ex": "저는 빨간 줄무늬가 있는 넥타이가 마음에 들어요.",
+          "exen": "I like the tie with red stripes."
+        },
+        {
+          "kw": "체크무늬",
+          "mean": "checked pattern, checks",
+          "ex": "요즘은 체크무늬 셔츠가 유행이다.",
+          "exen": "Checked shirts are in fashion these days."
+        },
+        {
+          "kw": "끈을 묶다",
+          "mean": "to tie a lace or string",
+          "ex": "정우가 달리기 전에 신발 끈을 잘 묶었다.",
+          "exen": "Jeongu tied his shoelaces securely before running."
+        },
+        {
+          "kw": "소매를 접다",
+          "mean": "to fold or roll up one’s sleeves",
+          "ex": "설거지할 때는 옷이 젖지 않게 소매를 접으세요.",
+          "exen": "Roll up your sleeves when washing dishes so your clothes do not get wet."
+        },
+        {
+          "kw": "(지퍼, 단추)를 잠그다",
+          "mean": "to zip up, to fasten (a zip or buttons)",
+          "ex": "추우니까 지퍼를 잠그세요.",
+          "exen": "It is cold, so zip up your jacket."
+        },
+        {
+          "kw": "(지퍼, 단추)를 채우다",
+          "mean": "to fasten (a zip or buttons), to button up",
+          "ex": "셔츠의 단추를 다 채우면 단정해 보인다.",
+          "exen": "You look neat when all the buttons on your shirt are fastened."
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "form": "-기는",
+      "tag": "gently denying or pushing back · “Not really…” / “Come on…”",
+      "def_ko": "1. 상대방의 말을 가볍게 부정하거나 반박함을 나타내는 표현. 2. 상대방을 가볍게 비난하거나 핀잔을 줌을 나타내는 표현.",
+      "def_en": "Repeats a word from what the other person said to gently reject it, downplay praise, or mildly scold or tease them. Tone matters: it can be modest (“I’m not that good”) or reproachful (“Why get so startled over that?”).",
+      "ex": [
+        {
+          "dia": "가:",
+          "ko": "오늘은 쯔엉이 안 늦었지?",
+          "en": "Jjeueong was not late today, right?"
+        },
+        {
+          "dia": "나:",
+          "ko": "안 늦기는. 오늘도 20분이나 늦게 왔어.",
+          "en": "Not late? She was twenty minutes late again today."
+        },
+        {
+          "dia": "가:",
+          "ko": "노래를 잘하시네요.",
+          "en": "You sing very well."
+        },
+        {
+          "dia": "나:",
+          "ko": "잘하기는요. 저보다 잘하는 사람이 많아요.",
+          "en": "Oh, not really. Plenty of people sing better than I do."
+        },
+        {
+          "dia": "가:",
+          "ko": "아우, 깜짝이야.",
+          "en": "Oh! That startled me."
+        },
+        {
+          "dia": "나:",
+          "ko": "놀라기는. 뭐 그런 것 가지고 놀라.",
+          "en": "Why get so startled? It is only something like that."
+        },
+        {
+          "dia": "가:",
+          "ko": "이 영화 너무 슬퍼서 눈물이 났어.",
+          "en": "This film was so sad it made me cry."
+        },
+        {
+          "dia": "나:",
+          "ko": "그 정도로 울기는. 너는 눈물도 참 많다.",
+          "en": "Crying over that? You really do cry easily."
+        }
+      ],
+      "info_ko": "동사, 형용사, 이다와 결합한다. 받침과 관계없이 -기는을 쓴다.",
+      "info_en": "Attach -기는 directly to verb and adjective stems. Nouns use -이기는, with 이 optionally omitted after a vowel. Add 요 for politeness. Here -기는 stands at the end of a response. In a longer sentence such as 예쁘기는 한데…, it acknowledges something before adding a reservation (“It is pretty, but…”).",
+      "table": {
+        "head": [
+          "품사 / 형태",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 · 받침 O",
+            "먹다",
+            "먹기는"
+          ],
+          [
+            "동사 · 받침 X",
+            "오다",
+            "오기는"
+          ],
+          [
+            "동사 · 받침 ㄹ",
+            "살다",
+            "살기는"
+          ],
+          [
+            "형용사 · 받침 O",
+            "작다",
+            "작기는"
+          ],
+          [
+            "형용사 · 받침 X",
+            "크다",
+            "크기는"
+          ],
+          [
+            "형용사 · 받침 ㄹ",
+            "길다",
+            "길기는"
+          ],
+          [
+            "(명사)이다 · 받침 O",
+            "학생",
+            "학생이기는"
+          ],
+          [
+            "(명사)이다 · 받침 X",
+            "의사",
+            "의사이기는 / 의사기는"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-(으)면 좋겠다",
+      "tag": "I hope… / I wish… / it would be nice if…",
+      "def_ko": "말하는 사람의 희망이나 현실과 다른 상황을 원함을 나타내는 표현.",
+      "def_en": "Expresses a hope or wish that something will happen, or that a situation were different. It can also soften a request, as in “It would be nice if you could exchange this.”",
+      "ex": [
+        {
+          "ko": "시험을 잘 보면 좋겠어요.",
+          "en": "I hope I do well on the exam."
+        },
+        {
+          "ko": "내일은 날씨가 맑으면 좋겠어요.",
+          "en": "I hope the weather is clear tomorrow."
+        },
+        {
+          "ko": "책장 위에 손이 안 닿아요. 키가 지금보다 5센티미터만 크면 좋겠어요.",
+          "en": "I cannot reach the top of the bookcase. I wish I were just five centimetres taller."
+        },
+        {
+          "ko": "내가 어른이면 좋겠어요.",
+          "en": "I wish I were an adult."
+        }
+      ],
+      "info_ko": "동사, 형용사, 이다와 결합한다. 받침 O -으면 좋겠다, 받침 X/ㄹ -면 좋겠다를 쓴다.",
+      "info_en": "Use -으면 after a consonant, and -면 after a vowel or ㄹ (keep ㄹ). Nouns take -(이)면 좋겠다. -았/었으면 좋겠다 is also common for hopes and wishes, even about the future: 내일 날씨가 좋았으면 좋겠어요.",
+      "table": {
+        "head": [
+          "품사 / 형태",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 · 받침 O",
+            "먹다",
+            "먹으면 좋겠다"
+          ],
+          [
+            "동사 · 받침 X",
+            "오다",
+            "오면 좋겠다"
+          ],
+          [
+            "동사 · 받침 ㄹ",
+            "살다",
+            "살면 좋겠다"
+          ],
+          [
+            "형용사 · 받침 O",
+            "작다",
+            "작으면 좋겠다"
+          ],
+          [
+            "형용사 · 받침 X",
+            "크다",
+            "크면 좋겠다"
+          ],
+          [
+            "형용사 · 받침 ㄹ",
+            "길다",
+            "길면 좋겠다"
+          ],
+          [
+            "(명사)이다 · 받침 O",
+            "학생",
+            "학생이면 좋겠다"
+          ],
+          [
+            "(명사)이다 · 받침 X",
+            "의사",
+            "의사이면 좋겠다 / 의사면 좋겠다"
+          ]
+        ]
+      }
+    },
+    {
+      "form": "-아/어 드리다",
+      "tag": "to do something for someone (respectfully)  ·  부가 문법 (Additional grammar)",
+      "extra": true,
+      "def_ko": "윗사람을 위하여 도움을 주는 어떤 행위를 함을 나타내는 표현.",
+      "def_en": "Shows that you do something for someone you treat with respect. It is the humble counterpart of -아/어 주다, honouring the person who receives the help.",
+      "ex": [
+        {
+          "ko": "어머니께 한국어를 가르쳐 드릴 거예요.",
+          "en": "I will teach my mother Korean."
+        },
+        {
+          "ko": "할아버지께 선물을 전해 드렸어요.",
+          "en": "I delivered a gift to my grandfather."
+        },
+        {
+          "ko": "어머니 생신에는 제가 항상 생일 축하 노래를 불러 드려요.",
+          "en": "I always sing Happy Birthday for my mother on her birthday."
+        }
+      ],
+      "info_ko": "동사와 결합한다. ㅏ, ㅗ 뒤에는 -아 드리다, 그 외에는 -어 드리다, 하다 뒤에는 -해 드리다를 쓴다.",
+      "info_en": "Use -아 드리다 after ㅏ/ㅗ, -어 드리다 after other vowels, and -해 드리다 with 하다. The recipient can be marked with 께. For an offer, use -아/어 드릴게요 or -아/어 드릴까요? (제가 문을 열어 드릴게요).",
+      "table": {
+        "head": [
+          "품사 / 형태",
+          "기본형",
+          "활용"
+        ],
+        "rows": [
+          [
+            "동사 · ㅏ, ㅗ",
+            "가다",
+            "가 드리다"
+          ],
+          [
+            "동사 · 그 외",
+            "먹다",
+            "먹어 드리다"
+          ],
+          [
+            "동사 · 하다",
+            "청소하다",
+            "청소해 드리다"
+          ],
+          [
+            "동사 · 가르치다",
+            "가르치다",
+            "가르쳐 드리다"
+          ],
+          [
+            "동사 · ㄷ 불규칙",
+            "듣다",
+            "들어 드리다"
+          ],
+          [
+            "동사 · 르 불규칙",
+            "부르다",
+            "불러 드리다"
+          ]
+        ]
+      }
+    }
+  ]
+}
